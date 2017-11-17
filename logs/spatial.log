@@ -1,0 +1,94 @@
+==========> Opened at 2017-11-17 15:15:06.7174453 +0100 CET
+debug Executing [spatial.exe prepare-for-run]
+debug Current directory = C:\Users\Salvatore\Desktop\S.E\Game
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Building schema descriptor.
+debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\Game\spatialos.json
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Running within a SpatialOS project, using the default input paths '[C:\Users\Salvatore\Desktop\S.E\Game\schema C:\Users\Salvatore\Desktop\S.E\Game\build\dependencies\schema\standard_library]'
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug In '', C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Salvatore\Desktop\S.E\Game\schema --schema_path=C:\Users\Salvatore\Desktop\S.E\Game\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
+debug C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
+info No changes detected, skipping code generation.
+info 'spatial.exe prepare-for-run' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-17 15:15:09.2434155 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Salvatore\Desktop\S.E\Game\workers\unity
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-17 15:15:10.9593272 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Salvatore\Desktop\S.E\Game\workers\unity
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-17 15:15:16.5313125 +0100 CET
+debug Executing [spatial.exe prepare-for-run]
+debug Current directory = C:\Users\Salvatore\Desktop\S.E\Game
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Building schema descriptor.
+debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\Game\spatialos.json
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Running within a SpatialOS project, using the default input paths '[C:\Users\Salvatore\Desktop\S.E\Game\schema C:\Users\Salvatore\Desktop\S.E\Game\build\dependencies\schema\standard_library]'
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug In '', C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Salvatore\Desktop\S.E\Game\schema --schema_path=C:\Users\Salvatore\Desktop\S.E\Game\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
+debug C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
+info No changes detected, skipping code generation.
+info 'spatial.exe prepare-for-run' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-17 15:15:51.5773028 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Salvatore\Desktop\S.E\Game\workers\unity
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-17 15:15:52.7337329 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Salvatore\Desktop\S.E\Game\workers\unity
+debug Found project root at C:\Users\Salvatore\Desktop\S.E\Game
+debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-17 20:58:17.5165377 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game\spatialos.json
+debug Specified target does not match with the hash present in the target directory "C:\\Users\\Felix\\Documenti\\github\\Game\\workers\\unity\\Assets\\Plugins\\Improbable\\CoreSdk\\core-dynamic-x86-win32". Re-extracting.
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game\spatialos.json
+info Extracting packages 0/1 percent=0
+debug Unpacking core-dynamic-x86-win32.zip
+info Extracting packages 1/1 percent=100
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.2s category=success
+==========> Opened at 2017-11-17 20:58:19.0286242 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game\spatialos.json
+debug Specified target does not match with the hash present in the target directory "C:\\Users\\Felix\\Documenti\\github\\Game\\workers\\unity\\Assets\\Plugins\\Improbable\\CoreSdk\\core-dynamic-x86_64-win32". Re-extracting.
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game\spatialos.json
+info Extracting packages 0/1 percent=0
+debug Unpacking core-dynamic-x86_64-win32.zip
+info Extracting packages 1/1 percent=100
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.4s
+==========> Opened at 2017-11-17 20:58:28.8091836 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-17 20:58:30.040254 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.1s
