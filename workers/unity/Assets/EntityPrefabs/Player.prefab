@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 114528940433136766}
   - component: {fileID: 114304315377000846}
   - component: {fileID: 114208116019289602}
+  - component: {fileID: 114769958668580282}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14cd07789e8a1414a8fa3726332d9f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CannonballPrefab: {fileID: 140448, guid: 9d4a5bb3cd6097d4a93eb35f82f5ac65, type: 2}
+  ShootPrefab: {fileID: 140448, guid: 9d4a5bb3cd6097d4a93eb35f82f5ac65, type: 2}
 --- !u!114 &114407001287692022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,6 +195,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bf7dae924ac17a48a622301f3870c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114769958668580282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1926672238117096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f3dd2f722842746a0dd690533db4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114790098416012844

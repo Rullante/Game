@@ -1,19 +1,19 @@
 ﻿using UnityEngine;
 
-namespace Assets.Gamelogic
+namespace Assets.Gamelogic.Shoot
 {
-	public class Cannon : MonoBehaviour
+	public class Shoot : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject CannonballPrefab;
+		private GameObject ShootPrefab;
 
 		private float InitialVelocity = 15f;
 		private float MaxPitch = 25f;
 		private float MaxAimDeviationAngle = 5f;
-		private float CannonFireDistance = 10f;
+		private float ShootDistance = 10f;
 
-		private float timeCannonsWereLastFired;
-		private float cannonRechargeTime;
+		private float timeShootsWereLastFired;
+		private float shootRechargeTime;
 		private Collider[] firerColliders;
 		private float maxRange = 1f;
 
@@ -27,24 +27,24 @@ namespace Assets.Gamelogic
 
 		public void Fire(Vector3 dir)
 		{
-			var firingPitch = Mathf.Clamp01(CannonFireDistance / maxRange) * MaxPitch;
+			var firingPitch = Mathf.Clamp01(ShootDistance / maxRange) * MaxPitch;
 
-			if (CannonballPrefab != null)
+			if (ShootPrefab != null)
 			{
-				var cannonball = Instantiate(CannonballPrefab, transform.position+dir*0.6f, transform.rotation) as GameObject;
+				var shoot = Instantiate(ShootPrefab, transform.position+dir*0.6f, transform.rotation) as GameObject;
 				var entityId = gameObject.EntityId();
-				cannonball.GetComponent<DestroyCannonball>().firerEntityId = entityId;
-				EnsureCannonBallWillNotCollideWithFirer(cannonball);
-				FireCannonball(cannonball, dir, firingPitch);
+				shoot.GetComponent<DestroyShoot>().firerEntityId = entityId;
+				EnsureShootWillNotCollideWithFirer(shoot);
+				FireShoot(shoot, dir, firingPitch);
 				//cannonFireAudioSource.PlayOneShot(cannonFireAudioClips[Random.Range(0, cannonFireAudioClips.Length)]);
 			}
 		}
 
-		private void FireCannonball(GameObject cannonball, Vector3 firingDirection, float firingPitch)
+		private void FireShoot(GameObject shoot, Vector3 firingDirection, float firingPitch)
 		{
-			var cannonballRigidbody = cannonball.GetComponent<Rigidbody>();
+			var shootRigidbody = shoot.GetComponent<Rigidbody>();
 
-			if (cannonballRigidbody != null)
+			if (shootRigidbody != null)
 			{
 				var deviation = Vector2.zero;
 
@@ -58,11 +58,11 @@ namespace Assets.Gamelogic
 
 				// Calculate the initial velocity
 				var firingDir = Quaternion.LookRotation(firingDirection);
-				cannonballRigidbody.velocity = (firingDir * Quaternion.Euler(-firingPitch + deviation.x, deviation.y, 0f)) * Vector3.forward * InitialVelocity;
+				shootRigidbody.velocity = (firingDir * Quaternion.Euler(-firingPitch + deviation.x, deviation.y, 0f)) * Vector3.forward * InitialVelocity;
 			}
 			else
 			{
-				Debug.LogWarning("The cannon ball is missing its rigidbody");
+				Debug.LogWarning("The shoot is missing its rigidbody");
 			}
 		}
 
@@ -78,10 +78,10 @@ namespace Assets.Gamelogic
 			return Mathf.Cos(Mathf.Deg2Rad * MaxPitch) * InitialVelocity * time;
 		}
 
-		private void EnsureCannonBallWillNotCollideWithFirer(GameObject cannonball)
+		private void EnsureShootWillNotCollideWithFirer(GameObject shoot)
 		{
 			if (firerColliders == null) return;
-			var col = cannonball.GetComponent<Collider>();
+			var col = shoot.GetComponent<Collider>();
 			if (col == null) return;
 			foreach (var c in firerColliders)
 			{

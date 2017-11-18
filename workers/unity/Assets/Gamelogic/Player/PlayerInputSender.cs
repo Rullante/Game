@@ -1,4 +1,4 @@
-﻿using Assets.Gamelogic;
+﻿using Assets.Gamelogic.Shoot;
 using UnityEngine;
 using Improbable.Unity;
 using Improbable.Unity.Visualizer;
@@ -9,12 +9,12 @@ public class PlayerInputSender : MonoBehaviour
 {
 
 	[Require] private PlayerInput.Writer PlayerInputWriter;
-	private CannonFirer cannonFirer;
+	private ShootFirer cannonFirer;
 
 
 	void OnEnable()
 	{
-		cannonFirer = GetComponent<CannonFirer>();
+		cannonFirer = GetComponent<ShootFirer>();
 	
 	}
 
@@ -26,13 +26,11 @@ public class PlayerInputSender : MonoBehaviour
 		var update = new PlayerInput.Update();
 		update.SetJoystick(new Joystick(xAxis, yAxis));
 		PlayerInputWriter.Send(update);
+
 		if (Input.GetKeyDown(KeyCode.Q))
 		{
-			// Port broadside (Fire the left cannons)
-			if (cannonFirer != null)
-			{
-				cannonFirer.AttemptToFireCannons(transform.forward);
-			}
+			PlayerInputWriter.Send(new PlayerInput.Update().AddFire(new Fire()));
+		}
 		}
 	}
-}
+

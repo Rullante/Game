@@ -2,9 +2,9 @@
 using Improbable.Collections;
 using UnityEngine;
 
-namespace Assets.Gamelogic
+namespace Assets.Gamelogic.Shoot
 {
-	public class DestroyCannonball : MonoBehaviour
+	public class DestroyShoot : MonoBehaviour
 	{
 		public Option<EntityId> firerEntityId = new Option<EntityId>();
 

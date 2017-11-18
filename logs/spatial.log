@@ -1,78 +1,82 @@
-==========> Opened at 2017-11-18 15:12:20.8337658 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.1s
-==========> Opened at 2017-11-18 15:12:32.5377272 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-18 15:12:34.3201364 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-18 15:18:45.760514 +0100 CET
+==========> Opened at 2017-11-18 19:38:55.5188584 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-18 19:38:56.823933 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-18 19:39:31.143896 +0100 CET
+debug Executing [spatial.exe build build-config UnityClient UnityWorker]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Building worker assemblies.
+info Generating bridge settings for UnityClient.
+debug Worker 'UnityClient' defined at 'C:\Users\Felix\Documenti\github\Game2\workers\unity\spatialos.UnityClient.worker.json' has no managed launch configuration defined.
+info Generating bridge settings for UnityWorker.
+info Generating managed worker configuration for UnityWorker.
+info 'spatial.exe build build-config UnityClient UnityWorker' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-18 19:39:59.9485436 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-18 19:40:01.1506123 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-18 19:40:12.3462527 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-18 19:40:13.5513216 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-18 19:40:30.6122974 +0100 CET
 debug Executing [spatial.exe prepare-for-run]
-debug Current directory = C:\Users\mario\Desktop\Game
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found project root at C:\Users\mario\Desktop\Game
+debug Current directory = C:\Users\Felix\Documenti\github\Game2
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
 debug Building schema descriptor.
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\mario\Desktop\Game\schema C:\Users\mario\Desktop\Game\build\dependencies\schema\standard_library]'
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
-debug In '', C:\Users\mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\mario\Desktop\Game\schema --schema_path=C:\Users\mario\Desktop\Game\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
-debug C:\Users\mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Running within a SpatialOS project, using the default input paths '[C:\Users\Felix\Documenti\github\Game2\schema C:\Users\Felix\Documenti\github\Game2\build\dependencies\schema\standard_library]'
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Felix\Documenti\github\Game2\schema --schema_path=C:\Users\Felix\Documenti\github\Game2\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
+debug C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
 info No changes detected, skipping code generation.
-info 'spatial.exe prepare-for-run' succeeded category=success duration=0.4s
-==========> Opened at 2017-11-18 15:19:17.1482183 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.5s category=success
-==========> Opened at 2017-11-18 15:19:20.4299082 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-18 15:19:42.9624425 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.5s category=success
-==========> Opened at 2017-11-18 15:19:48.0479759 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.3s
-==========> Opened at 2017-11-18 15:20:17.0866393 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-18 15:20:26.3722584 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\mario\Desktop\Game\workers\unity
-debug Found project root at C:\Users\mario\Desktop\Game
-debug Found version '12.0.1' in file C:\Users\mario\Desktop\Game\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\Desktop\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+info 'spatial.exe prepare-for-run' succeeded duration=0.7s category=success
+==========> Opened at 2017-11-18 19:41:04.9442611 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-18 19:41:06.2033331 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game2\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game2
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game2\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game2\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.1s
