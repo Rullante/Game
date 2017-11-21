@@ -167,6 +167,14 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 154346, guid: 86672f35e84daff4699b96a3c82ee675, type: 2}
+      propertyPath: m_TagString
+      value: Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 154346, guid: 86672f35e84daff4699b96a3c82ee675, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86672f35e84daff4699b96a3c82ee675, type: 2}
   m_IsPrefabParent: 0
@@ -181,10 +189,10 @@ MeshCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 98745483}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}

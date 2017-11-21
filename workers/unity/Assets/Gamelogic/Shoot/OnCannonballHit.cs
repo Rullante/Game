@@ -31,6 +31,13 @@ namespace Assets.Gamelogic.Shoot
 				int newHealth = HealthWriter.Data.currentHealth - 250;
 				HealthWriter.Send(new Health.Update().SetCurrentHealth(newHealth));
 			}
-		}
+
+            if (other != null && other.gameObject.tag == "Lava")
+            {
+                // Dead
+                HealthWriter.Send(new Health.Update().SetCurrentHealth(0));
+
+            }
+        }
 	}
 }
