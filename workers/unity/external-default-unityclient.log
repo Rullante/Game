@@ -28,14 +28,14 @@ Platform assembly: C:\Users\Felix\Documenti\github\Game2\workers\unity\build\wor
 Loading C:\Users\Felix\Documenti\github\Game2\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Threading.dll into Unity Child Domain
 Platform assembly: C:\Users\Felix\Documenti\github\Game2\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll (this message is harmless)
 Loading C:\Users\Felix\Documenti\github\Game2\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll into Unity Child Domain
-- Completed reload, in  0.133 seconds
+- Completed reload, in  0.026 seconds
 Platform assembly: C:\Users\Felix\Documenti\github\Game2\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Felix\Documenti\github\Game2\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.342861 ms
+UnloadTime: 3.553415 ms
 Command line build/worker/UnityClient@Windows/UnityClient@Windows.exe +assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName your_project_name_here -logfile external-default-unityclient.log
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -46,9 +46,9 @@ ProjectName = your_project_name_here
 AssemblyName = local_assembly
 DeploymentId = 
 DeploymentTag = prod
-EngineId = UnityClient1239971c-4366-45fe-b6ce-3b0537316de7
+EngineId = UnityClientcd44d42f-4106-4dfd-85cd-2abeff365ee8
 EnginePlatform = UnityClient
-WorkerId = UnityClient1239971c-4366-45fe-b6ce-3b0537316de7
+WorkerId = UnityClientcd44d42f-4106-4dfd-85cd-2abeff365ee8
 WorkerPlatform = UnityClient
 EntityCreationLimitPerFrame = 100
 InfraServiceUrl = http://127.0.0.1:21000
@@ -89,8 +89,8 @@ Platform assembly: C:\Users\Felix\Documenti\github\Game2\workers\unity\build\wor
 Platform assembly: C:\Users\Felix\Documenti\github\Game2\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Configuration.dll (this message is harmless)
 Platform assembly: C:\Users\Felix\Documenti\github\Game2\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Xml.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2764 -> priority: 1 
-  Thread -> id: 9888 -> priority: 1 
+  Thread -> id: 920 -> priority: 1 
+  Thread -> id: 12b0 -> priority: 1 
 Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
  
 (Filename:  Line: 371)
