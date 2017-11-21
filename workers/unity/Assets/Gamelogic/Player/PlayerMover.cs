@@ -27,26 +27,26 @@ public class PlayerMover : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
+        
 		var joystick = PlayerInputReader.Data.joystick;
 		var direction = new Vector3(joystick.xAxis, 0, joystick.yAxis);
-		rigidbody.AddForce(direction * SimulationSettings.PlayerAcceleration);
+        rigidbody.AddForce(direction * SimulationSettings.PlayerAcceleration);
+        rigidbody.AddForce(new Vector3(0,joystick.zAxis,0) * SimulationSettings.PlayerAcceleration);
 
-		var pos = rigidbody.position;
+        var pos = rigidbody.position;
 		var positionUpdate = new Position.Update()
 			.SetCoords(new Coordinates(pos.x, pos.y, pos.z));
 		PositionWriter.Send(positionUpdate);
 
+        
 		var rotationUpdate = new Rotation.Update()
 			.SetRotation(rigidbody.rotation.ToNativeQuaternion());
 		RotationWriter.Send(rotationUpdate);
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rigidbody.velocity = new Vector3(0.0f, 5, 0.0f);
-        }
+        
 		if (HealthWriter.Data.currentHealth <= 0){
 			HealthWriter.Send (new Health.Update ().SetCurrentHealth (1000));
 			transform.position = new Vector3 (0, 10, 0);
     }
 }
 }
+ 
