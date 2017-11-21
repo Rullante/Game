@@ -38,7 +38,7 @@ namespace Assets.Gamelogic.EntityTemplates
                 .AddComponent(new ClientConnection.Data(SimulationSettings.TotalHeartbeatsBeforeTimeout), CommonRequirementSets.PhysicsOnly)
 				.AddComponent(new ClientAuthorityCheck.Data(), CommonRequirementSets.SpecificClientOnly(clientId))
 				.AddComponent(new ClientConnection.Data(SimulationSettings.TotalHeartbeatsBeforeTimeout), CommonRequirementSets.PhysicsOnly)
-				.AddComponent(new PlayerInput.Data(new Joystick(xAxis: 0, yAxis: 0)), CommonRequirementSets.SpecificClientOnly(clientId))
+				.AddComponent(new PlayerInput.Data(new Joystick(xAxis: 0, yAxis: 0,zAxis: 0)), CommonRequirementSets.SpecificClientOnly(clientId))
 				.AddComponent(new Health.Data(1000), CommonRequirementSets.PhysicsOnly)
 				.Build();
 

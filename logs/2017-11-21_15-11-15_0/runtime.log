@@ -1,0 +1,1173 @@
+2017-11-21 15:11:20,339 INFO  [i.deployment.InternalGameLauncher] [] [] [] : Parsed 362 internal flags at startup
+2017-11-21 15:11:20,482 INFO  [i.deployment.InternalGameLauncher] [] [] [] : SpatialOS runtime version: 11-20171114T103507Z-cc9d195
+2017-11-21 15:11:20,669 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Initialized Fabric flagz registry with 11 set fields.
+2017-11-21 15:11:21,769 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.StatusDiscoveryInternalService) on 127.0.0.1:5301.
+2017-11-21 15:11:21,771 INFO  [i.c.discovery.ServiceDiscoveryImpl] [] [] [] : Status discovery address: host: "127.0.0.1"
+port: 5301
+
+2017-11-21 15:11:21,776 INFO  [improbable.module.ModuleNode] [] [] [] : Starting Fabric node as master (IP: 127.0.0.1).
+2017-11-21 15:11:21,778 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_NODES_STARTED
+2017-11-21 15:11:21,778 INFO  [improbable.module.ModuleNode] [] [] [] : Node master has started, waiting for other nodes to reach the same checkpoint.
+2017-11-21 15:11:21,779 INFO  [improbable.module.ModuleNode] [] [] [] : All nodes have been started.
+2017-11-21 15:11:21,797 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ModuleService) on 127.0.0.1:9000.
+2017-11-21 15:11:21,818 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.HealthCheckService) on 127.0.0.1:9001.
+2017-11-21 15:11:21,829 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.PerfInternalService) on 127.0.0.1:9002.
+2017-11-21 15:11:21,844 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ContentionInternalService) on 127.0.0.1:9003.
+2017-11-21 15:11:21,858 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-21 15:11:21,858 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 4 server(s) (previously: 0)
+2017-11-21 15:11:21,868 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.FeatureService) on 127.0.0.1:9004.
+2017-11-21 15:11:21,895 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Initialized worker flagz registry with 0 set fields.
+2017-11-21 15:11:21,901 INFO  [improbable.module.ModuleNode] [] [] [] : Using master node configuration loader.
+2017-11-21 15:11:21,911 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.NodeConfigurationInternalService) on 127.0.0.1:9005.
+2017-11-21 15:11:21,938 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Using roles [MASTER, GSIM, BRIDGE, WORKER_RUNNER, INSPECTION] for node node_id {
+  deployment_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+private_ip: "127.0.0.1"
+roles: MASTER
+roles: GSIM
+roles: BRIDGE
+roles: WORKER_RUNNER
+roles: INSPECTION
+
+2017-11-21 15:11:21,958 INFO  [improbable.core.config.node.GsimGrid] [] [] [] : Created gsim grid configuration of size (1500, 1500) with 1 columns and 1 rows, using gsims of (30, 30) chunks.
+2017-11-21 15:11:21,973 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Original deployment module configuration (before parsing): {deployment_id {
+  project_id {
+    name: "your_project_name_here"
+  }
+  name: "local"
+}
+name: "master"
+=[ProfilingModule, BridgeModuleOracleModule, BridgeOracleModule, PersistenceModule, ReceptionistModule, RouterModule, GSimModule, BridgeModule, EngineStartupModule, InspectionRestModule]}
+2017-11-21 15:11:21,998 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Master successfully loaded configurations for 1 node(s).
+2017-11-21 15:11:22,007 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded node configuration: node_id {
+  deployment_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+gsim_configurations {
+  extent {
+    bottom_left {
+      x_in_chunks: -15
+      z_in_chunks: -15
+    }
+    top_right {
+      x_in_chunks: 15
+      z_in_chunks: 15
+    }
+  }
+}
+start_router: true
+start_bridge_oracle: true
+start_bridge_module_oracle: true
+start_engine_startup_module: true
+start_receptionist_service: true
+start_inspection_rest_module: true
+start_snapshot_service: true
+start_profiling_module: true
+bridge_modules: "BridgeModule"
+gsim_modules: "GSimModule"
+
+2017-11-21 15:11:22,008 INFO  [improbable.module.ModuleNode] [] [] [] : Using master world extents provider.
+2017-11-21 15:11:22,028 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorldExtentsInternalService) on 127.0.0.1:9006.
+2017-11-21 15:11:22,029 INFO  [i.c.world.MasterWorldExtentsProvider] [] [] [] : Successfully initialized world extents with 1 rectangle(s).
+2017-11-21 15:11:22,034 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded world extents: WorldExtents{proto=rectangles {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+  responsible_gsim_id {
+  }
+}
+bounding_rectangle {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+}
+}
+2017-11-21 15:11:22,197 INFO  [i.e.schema.ParsedFileDescriptorSet] [] [] [] : Parsed file descriptors of 12 proto files.
+2017-11-21 15:11:22,234 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.core.PlayerCreation, improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.core.Rotation, improbable.player.PlayerInput, improbable.core.ClientAuthorityCheck, improbable.player.Health, improbable.player.ClientConnection]
+2017-11-21 15:11:22,243 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.core.ClientAuthorityCheck, improbable.player.PlayerInput, improbable.internal.EntityAuthority, improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.player.Health, improbable.core.PlayerCreation, improbable.core.Rotation, improbable.player.ClientConnection]
+2017-11-21 15:11:22,244 INFO  [improbable.module.ModuleNode] [] [] [] : Successfully loaded schema for entities
+2017-11-21 15:11:22,245 INFO  [improbable.module.ModuleNode] [] [] [] : Validating snapshot at startup and determining max entity id
+2017-11-21 15:11:22,251 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-21 15:11:22,267 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171121151111355
+2017-11-21 15:11:22,296 INFO  [improbable.module.ModuleNode] [] [] [] : Determined the first entity id for the id assigner as 2
+2017-11-21 15:11:22,300 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityIdInternalService) on 127.0.0.1:9007.
+2017-11-21 15:11:22,339 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorkerPrestartRegistryInternalService) on 127.0.0.1:9008.
+2017-11-21 15:11:22,348 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterLookupInternalService) on 127.0.0.1:9009.
+2017-11-21 15:11:22,349 INFO  [i.module.router.ActorSystemFactory$] [] [] [] : Attempting to create ActorSystem akkaFabric with configRecord akkaFabric
+2017-11-21 15:11:22,689 INFO  [akka.event.slf4j.Slf4jLogger] [] [] [] : Slf4jLogger started
+2017-11-21 15:11:22,744 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 11 server(s) (previously: 4)
+2017-11-21 15:11:23,951 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Parsed 1 worker loadbalancing configuration(s)
+2017-11-21 15:11:23,957 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Successfully loaded loadbalancing configurations: {UnityWorker=improbable.loadbalancing.params.AutoHexGridLoadbalancerParams@503224b4}
+2017-11-21 15:11:24,043 INFO  [i.w.a.WorkerAssemblyProviderFactory] [] [] [] : Loaded worker assemblies for these workers types: UnityClient, UnityWorker.
+2017-11-21 15:11:24,045 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded worker assemblies: [worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityClient"
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "visual"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 200.0
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+, worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "your_project_name_here"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityWorker"
+  }
+}
+worker_launch_configuration {
+  platform: WINDOWS
+  worker_zip {
+    command: "UnityWorker@Windows.exe"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Windows.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: MACOS
+  worker_zip {
+    command: "UnityWorker@Mac.app/Contents/MacOS/UnityWorker@Mac"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Mac.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: LINUX
+  worker_zip {
+    command: "UnityWorker@Linux"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Linux.zip"
+    }
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "physics"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 200.0
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+]
+2017-11-21 15:11:24,048 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : Worker configuration for 'UnityClient' does not contain a launch configuration for the current platform 'WINDOWS', so Fabric will not start any managed workers of this type
+2017-11-21 15:11:24,049 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : The following worker configurations do not contain valid managed launch configurations for the current platform WINDOWS, and the runtime will be unable to launch managed workers of this type: [UnityClient]. This is expected for worker types you intend to only connect manually.
+2017-11-21 15:11:24,051 INFO  [i.w.permissions.PermissionsFactory] [] [] [] : Created permissions manager with permissions: {UnityWorker=Permissions{{/sys/CreateEntity=, /sys/DeleteEntity=, /sys/EntityQuery={"component":["*"]}}}, UnityClient=Permissions{{/sys/EntityQuery={"component":[]}}}}
+2017-11-21 15:11:25,625 INFO  [improbable.module.ModuleNode] [] [] [] : Starting router on master
+2017-11-21 15:11:25,629 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterInternalService) on 127.0.0.1:9010.
+2017-11-21 15:11:25,630 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Attempting to register RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-21 15:11:25,637 INFO  [i.c.m.r.l.RouterLookupInternalServiceImpl] [] [] [] : 1/1 router modules started
+2017-11-21 15:11:25,638 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Registered RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-21 15:11:25,639 INFO  [improbable.module.ModuleNode] [] [] [] : Attempting to get addresses of all RouterModules from master node
+2017-11-21 15:11:25,647 INFO  [improbable.module.ModuleNode] [] [] [] : Got all RouterModules from master node
+2017-11-21 15:11:25,680 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RemoteMessageInternalService) on 127.0.0.1:9011.
+2017-11-21 15:11:25,695 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.LocalBrokerInternalService) on 127.0.0.1:9012.
+2017-11-21 15:11:25,700 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for all router modules in the deployment to have started
+2017-11-21 15:11:25,703 INFO  [improbable.module.ModuleNode] [] [] [] : All router modules in the deployment started
+2017-11-21 15:11:25,735 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 14 server(s) (previously: 11)
+2017-11-21 15:11:25,757 INFO  [org.eclipse.jetty.server.Server] [] [] [] : jetty-8.y.z-SNAPSHOT
+2017-11-21 15:11:25,777 INFO  [o.e.jetty.server.AbstractConnector] [] [] [] : Started SelectChannelConnector@0.0.0.0:5006
+2017-11-21 15:11:25,777 INFO  [improbable.http.ServletContainer$] [] [] [] : Servlet container started
+2017-11-21 15:11:25,779 INFO  [improbable.module.ModuleNode] [] [] [] : Starting BridgeOracle on master
+2017-11-21 15:11:25,786 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeOracle to have started
+2017-11-21 15:11:25,948 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeOracleInternalService) on 127.0.0.1:9013.
+2017-11-21 15:11:26,733 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeOracle started
+2017-11-21 15:11:26,733 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 15 server(s) (previously: 14)
+2017-11-21 15:11:26,739 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.GlobalBrokerInternalService) on 127.0.0.1:9014.
+2017-11-21 15:11:26,740 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeModuleOracle to have started
+2017-11-21 15:11:26,742 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleOracleActor(Actor[akka://akkaFabric/user/BridgeModuleOracleModule#1095707089]).
+2017-11-21 15:11:26,754 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeServiceOracleInternalService) on 127.0.0.1:9015.
+2017-11-21 15:11:27,734 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 17 server(s) (previously: 15)
+2017-11-21 15:11:27,734 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeModuleOracle started
+2017-11-21 15:11:27,738 INFO  [improbable.module.ModuleNode] [] [] [] : Starting gsim GSimModule
+2017-11-21 15:11:27,742 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 entity query service(s) to start.
+2017-11-21 15:11:27,757 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.LocalSnapshotInternalService) on 127.0.0.1:9016.
+2017-11-21 15:11:27,776 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ScalingStatsInternalService) on 127.0.0.1:9017.
+2017-11-21 15:11:27,797 INFO  [i.p.gsim.GSimPersistenceWriter] [] [] [] : Transitioning GSimPersistenceActor(0) from State [Idle] to [Idle].  Time Elapsed: 1 millisecond
+2017-11-21 15:11:27,816 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityQueryInternalService) on 127.0.0.1:9018.
+2017-11-21 15:11:27,994 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-21 15:11:28,735 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 20 server(s) (previously: 17)
+2017-11-21 15:11:28,735 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 entity query service(s) have started.
+2017-11-21 15:11:28,736 INFO  [improbable.module.ModuleNode] [] [] [] : Creating entity query client.
+2017-11-21 15:11:28,751 INFO  [improbable.module.ModuleNode] [] [] [] : Entity query client created with directory: EntityQueryServiceDirectory{allServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9018
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], localServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9018
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], remoteServices=[]}
+2017-11-21 15:11:28,759 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 bridge service(s) to start.
+2017-11-21 15:11:28,775 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleActor(Actor[akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6#1170001858]).
+2017-11-21 15:11:28,788 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeInternalService) on 127.0.0.1:9019.
+2017-11-21 15:11:28,789 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Waiting for BridgeModuleOracle service to be available
+2017-11-21 15:11:28,799 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Registered(BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6)) on BridgeModuleOracleService
+2017-11-21 15:11:29,733 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 21 server(s) (previously: 20)
+2017-11-21 15:11:29,733 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 bridge service(s) have started.
+2017-11-21 15:11:29,733 INFO  [improbable.module.ModuleNode] [] [] [] : Starting WorkerRunner service (EngineStartupModule)
+2017-11-21 15:11:29,737 INFO  [improbable.worker.exec.WorkerStats] [] [] [] : Cannot read /proc/self/stat; worker stats reporting will not work.
+2017-11-21 15:11:29,745 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.inner.worker.WorkerRunner) on 127.0.0.1:9020.
+2017-11-21 15:11:29,752 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ReceptionistInternalService) on 127.0.0.1:9021.
+2017-11-21 15:11:29,758 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ReceptionistService) on 127.0.0.1:7777.
+2017-11-21 15:11:29,758 INFO  [improbable.module.ModuleNode] [] [] [] : Starting InspectionRestModule
+2017-11-21 15:11:29,759 INFO  [improbable.module.ModuleNode] [] [] [] : Starting ProfilingModule
+2017-11-21 15:11:29,760 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_MODULES_STARTED
+2017-11-21 15:11:29,761 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on this node started, waiting for other nodes to reach the same checkpoint.
+2017-11-21 15:11:29,764 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started ProfilingModuleActor(Actor[akka://akkaFabric/user/ProfilingModule#-2043107237]).
+2017-11-21 15:11:29,768 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.debug.HeatmapCellCacheInternalService) on 127.0.0.1:9022.
+2017-11-21 15:11:29,791 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.InspectionService) on 127.0.0.1:9023.
+2017-11-21 15:11:29,832 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started InspectionRestModuleActor(Actor[akka://akkaFabric/user/InspectionRestModule#1788711602]).
+2017-11-21 15:11:29,933 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-21 15:11:30,176 INFO  [spray.can.server.HttpListener] [akka://akkaFabric/user/IO-HTTP/listener-0] [akkaFabric-akka.actor.default-dispatcher-26] [] : Bound to /0.0.0.0:5005
+2017-11-21 15:11:30,735 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-21 15:11:30,735 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on all nodes have been started.
+2017-11-21 15:11:30,735 INFO  [improbable.module.ModuleNode] [] [] [] : Loading a snapshot.
+2017-11-21 15:11:30,737 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 26 server(s) (previously: 21)
+2017-11-21 15:11:30,754 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loading snapshot on GSim(0).
+2017-11-21 15:11:30,754 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-21 15:11:30,764 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171121151111355
+2017-11-21 15:11:30,767 INFO  [i.p.gsim.GSimPersistenceLoader] [] [] [] : Loading snapshot
+2017-11-21 15:11:30,775 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loaded 1 entities on GSim(0).
+2017-11-21 15:11:30,777 INFO  [i.p.c.PersistenceLoaderCoordinatorActor] [] [] [] : All Snapshots loaded.
+2017-11-21 15:11:30,777 INFO  [improbable.module.ModuleNode] [] [] [] : Snapshot has been loaded.
+2017-11-21 15:11:30,777 INFO  [improbable.module.ModuleNode] [] [] [] : Starting SnapshotService.
+2017-11-21 15:11:30,786 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.SnapshotService) on 127.0.0.1:9024.
+2017-11-21 15:11:30,787 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: LOAD_SNAPSHOT_FINISHED
+2017-11-21 15:11:30,788 INFO  [improbable.module.ModuleNode] [] [] [] : SpatialOS runtime startup complete.
+2017-11-21 15:11:30,831 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : LoadbalancerParams for worker type [UnityWorker]: [AutoHexGridLoadbalancerParams{energyLimitingEnabled=true, energyLimit=1.0E9, minWorkerRange=1500.0, maxWorkerRange=1500.0, maxWorkerStepSize=0.0, workerExpansionTimeMs=60000, workerGridSize=0, loadbalancerEnabled=false, hexGridMode=AUTO, scalerAdvisorType=CONSTANT, maxWorkers=1, initialWorkers=1, numEntitiesPerWorker=9223372036854775807, statusReportPeriodMs=30000, pointsOfInterestEnabled=false, hexGridSolution=AutoValue_HexGridSolution{workersUsed=1, hexagonEdgeLength=1500.0, hexagonOrientation=POINTY_TOP, bounds=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}}, pointsOfInterestSolution=Empty}]
+2017-11-21 15:11:31,735 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-21 15:11:31,735 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 27 server(s) (previously: 26)
+2017-11-21 15:11:32,708 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker0
+2017-11-21 15:11:32,721 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-21 15:11:32,722 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting internal receptionist service to register with service discovery
+2017-11-21 15:11:32,724 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the internal receptionist service in service discovery
+2017-11-21 15:11:32,731 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting public receptionist service to register with service discovery
+2017-11-21 15:11:32,731 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the public receptionist service in service discovery
+2017-11-21 15:11:33,543 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Created log file for worker UnityWorker0, type (UnityWorker): [C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\logs\2017-11-21_15-11-15_0\workers\UnityWorker\UnityWorker0-4821528991385739490.log]
+2017-11-21 15:11:33,544 INFO  [i.worker.exec.CommandLineExecutor] [] [] [] : Running command: C:\Users\SALVAT~1\AppData\Local\Temp\zip-downloader2616425671349293676\a4c3dfbd1687349099cf3e17a5eee3cb\UnityWorker@Windows.exe +projectName your_project_name_here +receptionistIp 127.0.0.1 +receptionistPort 7777 +workerType UnityWorker +workerId UnityWorker0 +useInternalIpForBridge true +infraServicesUrl http://127.0.0.1:21000 +assemblyName local_assembly +linkProtocol RakNet -logfile C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\logs\2017-11-21_15-11-15_0\workers\UnityWorker\UnityWorker0-4821528991385739490.log -batchmode -nographics
+2017-11-21 15:11:36,098 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityWorker0 via rpc
+2017-11-21 15:11:36,103 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Selected legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+ with position  which is the nearest bridge service to position (0.0, 0.0, 0.0)
+2017-11-21 15:11:36,108 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),0)].get().toString() for Engine(UnityWorker0)
+2017-11-21 15:11:36,271 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityWorker0"
+ registered with bridge internal service
+2017-11-21 15:11:36,278 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityWorker0"
+
+2017-11-21 15:11:36,278 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityWorker0 registered with SpatialOS successfully.
+2017-11-21 15:11:36,278 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:11:36,281 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityWorker0) started.
+2017-11-21 15:11:36,286 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Worker UnityWorker0 registered with the BridgeOracleWorker manager
+2017-11-21 15:11:36,907 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:11:59,801 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab via rpc
+2017-11-21 15:11:59,801 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab without a position hint, so using a random bridge service
+2017-11-21 15:11:59,803 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab)
+2017-11-21 15:11:59,829 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : LoadbalancerParams for worker type [UnityClient]: [FlagzLoadbalancerParams{energyLimitingEnabled=true, energyLimit=1.0E9, minWorkerRange=Infinity, maxWorkerRange=Infinity, maxWorkerStepSize=50.0, workerExpansionTimeMs=60000, workerGridSize=5, loadbalancerEnabled=true, hexGridMode=OFF, scalerAdvisorType=ENTITY_COUNT, maxWorkers=25, initialWorkers=25, numEntitiesPerWorker=9223372036854775807, statusReportPeriodMs=2000, pointsOfInterestEnabled=false, hexGridSolution=Empty, pointsOfInterestSolution=Empty}]
+2017-11-21 15:11:59,832 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab"
+ registered with bridge internal service
+2017-11-21 15:11:59,833 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab"
+
+2017-11-21 15:11:59,834 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab registered with SpatialOS successfully.
+2017-11-21 15:11:59,834 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:11:59,835 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab) started.
+2017-11-21 15:12:00,431 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:12:59,074 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab
+2017-11-21 15:12:59,077 INFO  [i.b.n.raknet.reporter.RakNetReporter] [] [] [] : Tried to send to RakNet(UnityClient) on Port(7001)3 after closing. Payload: component_update {
+  entity_id: 2
+  component_id: 54
+  entity_co... (Logged every 1000 times)
+2017-11-21 15:12:59,083 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab"
+ unregistered with bridge internal service
+2017-11-21 15:12:59,084 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:12:59,085 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab)
+2017-11-21 15:12:59,089 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab) stopped.
+2017-11-21 15:12:59,100 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab#-19158055] to Actor[akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab#-19158055] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:12:59,100 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab#-19158055] to Actor[akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient41fdd667-c91f-45b4-897a-1e414ce240ab#-19158055] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:12:59,833 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [3] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:13:00,833 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [4] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:13:01,833 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [5] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:13:02,833 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [6] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:13:03,832 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [7] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:13:04,832 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [8] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:13:05,832 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [9] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:13:06,832 INFO  [akka.actor.DeadLetterActorRef] [akka://akkaFabric/deadLetters] [akkaFabric-akka.actor.default-dispatcher-26] [] : Message [improbable.bridge.message.BridgeViewStatusRequest] from Actor[akka://akkaFabric/deadLetters] to Actor[akka://akkaFabric/deadLetters] was not delivered. [10] dead letters encountered, no more dead letters will be logged. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-21 15:15:04,420 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient9272f430-f09f-49cf-aae8-8620a510cc80 via rpc
+2017-11-21 15:15:04,422 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient9272f430-f09f-49cf-aae8-8620a510cc80 without a position hint, so using a random bridge service
+2017-11-21 15:15:04,423 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient9272f430-f09f-49cf-aae8-8620a510cc80)
+2017-11-21 15:15:04,452 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient9272f430-f09f-49cf-aae8-8620a510cc80"
+ registered with bridge internal service
+2017-11-21 15:15:04,453 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient9272f430-f09f-49cf-aae8-8620a510cc80"
+
+2017-11-21 15:15:04,454 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient9272f430-f09f-49cf-aae8-8620a510cc80 registered with SpatialOS successfully.
+2017-11-21 15:15:04,454 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:15:04,454 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient9272f430-f09f-49cf-aae8-8620a510cc80) started.
+2017-11-21 15:15:05,052 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:16:20,764 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient9272f430-f09f-49cf-aae8-8620a510cc80) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient9272f430-f09f-49cf-aae8-8620a510cc80
+2017-11-21 15:16:20,766 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient9272f430-f09f-49cf-aae8-8620a510cc80)
+2017-11-21 15:16:20,767 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient9272f430-f09f-49cf-aae8-8620a510cc80) stopped.
+2017-11-21 15:16:20,767 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient9272f430-f09f-49cf-aae8-8620a510cc80"
+ unregistered with bridge internal service
+2017-11-21 15:16:20,767 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient9272f430-f09f-49cf-aae8-8620a510cc80) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:28:45,681 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient433ba31c-b754-488e-80f2-a0125e451cd0 via rpc
+2017-11-21 15:28:45,682 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient433ba31c-b754-488e-80f2-a0125e451cd0 without a position hint, so using a random bridge service
+2017-11-21 15:28:45,683 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient433ba31c-b754-488e-80f2-a0125e451cd0)
+2017-11-21 15:28:45,710 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient433ba31c-b754-488e-80f2-a0125e451cd0"
+ registered with bridge internal service
+2017-11-21 15:28:45,712 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient433ba31c-b754-488e-80f2-a0125e451cd0"
+
+2017-11-21 15:28:45,712 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient433ba31c-b754-488e-80f2-a0125e451cd0 registered with SpatialOS successfully.
+2017-11-21 15:28:45,712 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:28:45,712 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient433ba31c-b754-488e-80f2-a0125e451cd0) started.
+2017-11-21 15:28:46,260 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:29:46,294 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient433ba31c-b754-488e-80f2-a0125e451cd0) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient433ba31c-b754-488e-80f2-a0125e451cd0
+2017-11-21 15:29:46,295 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient433ba31c-b754-488e-80f2-a0125e451cd0)
+2017-11-21 15:29:46,295 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient433ba31c-b754-488e-80f2-a0125e451cd0"
+ unregistered with bridge internal service
+2017-11-21 15:29:46,296 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient433ba31c-b754-488e-80f2-a0125e451cd0) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:29:46,297 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient433ba31c-b754-488e-80f2-a0125e451cd0) stopped.
+2017-11-21 15:30:56,542 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498 via rpc
+2017-11-21 15:30:56,545 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498 without a position hint, so using a random bridge service
+2017-11-21 15:30:56,546 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498)
+2017-11-21 15:30:56,573 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498"
+ registered with bridge internal service
+2017-11-21 15:30:56,575 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498"
+
+2017-11-21 15:30:56,575 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498 registered with SpatialOS successfully.
+2017-11-21 15:30:56,575 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:30:56,576 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498) started.
+2017-11-21 15:30:57,172 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:32:41,024 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498
+2017-11-21 15:32:41,025 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498"
+ unregistered with bridge internal service
+2017-11-21 15:32:41,025 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498)
+2017-11-21 15:32:41,025 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:32:41,025 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498) stopped.
+2017-11-21 15:32:42,078 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] Incoming command request with ID 99 to entity ID 5 and component ID 1003 was not handled by the worker within the given timeout.
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:32:42,114 INFO  [i.b.client.BridgeServiceTaskRetrier] [] [] [] : An internal operation forwarding EntityCommandRequest for "entity_id: 5
+component_id: 1003
+" failed on the SpatialOS side of the connection to UnityWorker0 after 0 retries, is the deployment under heavy load?
+io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+2017-11-21 15:32:42,150 WARN  [i.b.commands.BridgeCommandHandler] [] [] [] : Failed to execute command entity_command_request {
+  endpoint {
+    entity_id: 5
+    component_id: 1003
+  }
+  payload: "\332>\002\032\000"
+}
+ on UnityClientbce7b3ac-04af-4a20-8610-8ad6ffb11498
+improbable.bridge.commands.exception.CommandException: DEADLINE_EXCEEDED
+	at improbable.bridge.commands.exception.CommandException.ofStatusRuntimeException(CommandException.java:76) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.commands.exception.CommandException.of(CommandException.java:27) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeInternalServiceClient.lambda$invokeCommand$2(BridgeInternalServiceClient.java:93) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:239) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:229) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:130) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:664) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture$CatchingFuture.setResult(AbstractCatchingFuture.java:210) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture.run(AbstractCatchingFuture.java:138) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:112) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.SettableFuture.setException(SettableFuture.java:54) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeServiceTaskRetrier.onFailure(BridgeServiceTaskRetrier.java:102) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1228) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$GrpcFuture.setException(ClientCalls.java:466) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_101]
+Caused by: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+2017-11-21 15:34:25,974 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient22e5777b-19e9-46eb-beea-b06d59156f70 via rpc
+2017-11-21 15:34:25,976 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient22e5777b-19e9-46eb-beea-b06d59156f70 without a position hint, so using a random bridge service
+2017-11-21 15:34:25,976 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient22e5777b-19e9-46eb-beea-b06d59156f70)
+2017-11-21 15:34:26,005 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient22e5777b-19e9-46eb-beea-b06d59156f70"
+ registered with bridge internal service
+2017-11-21 15:34:26,006 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient22e5777b-19e9-46eb-beea-b06d59156f70"
+
+2017-11-21 15:34:26,007 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient22e5777b-19e9-46eb-beea-b06d59156f70 registered with SpatialOS successfully.
+2017-11-21 15:34:26,007 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:34:26,007 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient22e5777b-19e9-46eb-beea-b06d59156f70) started.
+2017-11-21 15:34:26,605 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:35:07,053 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient22e5777b-19e9-46eb-beea-b06d59156f70) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient22e5777b-19e9-46eb-beea-b06d59156f70
+2017-11-21 15:35:07,053 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient22e5777b-19e9-46eb-beea-b06d59156f70"
+ unregistered with bridge internal service
+2017-11-21 15:35:07,053 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient22e5777b-19e9-46eb-beea-b06d59156f70)
+2017-11-21 15:35:07,053 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient22e5777b-19e9-46eb-beea-b06d59156f70) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:35:07,053 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient22e5777b-19e9-46eb-beea-b06d59156f70) stopped.
+2017-11-21 15:35:07,988 INFO  [i.b.client.BridgeServiceTaskRetrier] [] [] [] : An internal operation forwarding EntityCommandRequest for "entity_id: 6
+component_id: 1003
+" failed on the SpatialOS side of the connection to UnityWorker0 after 0 retries, is the deployment under heavy load?
+io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: Timed out trying to invoke command
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+2017-11-21 15:35:07,990 WARN  [i.b.commands.BridgeCommandHandler] [] [] [] : Failed to execute command entity_command_request {
+  endpoint {
+    entity_id: 6
+    component_id: 1003
+  }
+  payload: "\332>\002\032\000"
+}
+ on UnityClient22e5777b-19e9-46eb-beea-b06d59156f70
+improbable.bridge.commands.exception.CommandException: INTERNAL_ERROR
+	at improbable.bridge.commands.exception.CommandException.ofStatusRuntimeException(CommandException.java:76) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.commands.exception.CommandException.of(CommandException.java:27) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeInternalServiceClient.lambda$invokeCommand$2(BridgeInternalServiceClient.java:93) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:239) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:229) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:130) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:664) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture$CatchingFuture.setResult(AbstractCatchingFuture.java:210) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture.run(AbstractCatchingFuture.java:138) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:112) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.SettableFuture.setException(SettableFuture.java:54) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeServiceTaskRetrier.onFailure(BridgeServiceTaskRetrier.java:102) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1228) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$GrpcFuture.setException(ClientCalls.java:466) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_101]
+Caused by: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: Timed out trying to invoke command
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+2017-11-21 15:35:08,013 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] Incoming command request with ID 114 to entity ID 6 and component ID 1003 was not handled by the worker within the given timeout.
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:44:18,725 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18 via rpc
+2017-11-21 15:44:18,727 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18 without a position hint, so using a random bridge service
+2017-11-21 15:44:18,729 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18)
+2017-11-21 15:44:18,763 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18"
+ registered with bridge internal service
+2017-11-21 15:44:18,764 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18"
+
+2017-11-21 15:44:18,764 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18 registered with SpatialOS successfully.
+2017-11-21 15:44:18,765 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:44:18,765 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18) started.
+2017-11-21 15:44:19,362 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:44:43,703 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18
+2017-11-21 15:44:43,703 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18"
+ unregistered with bridge internal service
+2017-11-21 15:44:43,704 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18)
+2017-11-21 15:44:43,704 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:44:43,704 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18) stopped.
+2017-11-21 15:44:44,638 INFO  [i.b.client.BridgeServiceTaskRetrier] [] [] [] : An internal operation forwarding EntityCommandRequest for "entity_id: 7
+component_id: 1003
+" failed on the SpatialOS side of the connection to UnityWorker0 after 0 retries, is the deployment under heavy load?
+io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+2017-11-21 15:44:44,640 WARN  [i.b.commands.BridgeCommandHandler] [] [] [] : Failed to execute command entity_command_request {
+  endpoint {
+    entity_id: 7
+    component_id: 1003
+  }
+  payload: "\332>\002\032\000"
+}
+ on UnityClientbbd1fdd1-25a6-4d42-9904-b86714533f18
+improbable.bridge.commands.exception.CommandException: DEADLINE_EXCEEDED
+	at improbable.bridge.commands.exception.CommandException.ofStatusRuntimeException(CommandException.java:76) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.commands.exception.CommandException.of(CommandException.java:27) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeInternalServiceClient.lambda$invokeCommand$2(BridgeInternalServiceClient.java:93) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:239) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:229) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:130) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:664) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture$CatchingFuture.setResult(AbstractCatchingFuture.java:210) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture.run(AbstractCatchingFuture.java:138) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:112) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.SettableFuture.setException(SettableFuture.java:54) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeServiceTaskRetrier.onFailure(BridgeServiceTaskRetrier.java:102) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1228) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$GrpcFuture.setException(ClientCalls.java:466) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_101]
+Caused by: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+2017-11-21 15:44:44,677 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] Incoming command request with ID 123 to entity ID 7 and component ID 1003 was not handled by the worker within the given timeout.
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:46:06,029 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac via rpc
+2017-11-21 15:46:06,031 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac without a position hint, so using a random bridge service
+2017-11-21 15:46:06,032 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac)
+2017-11-21 15:46:06,059 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac"
+ registered with bridge internal service
+2017-11-21 15:46:06,059 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac"
+
+2017-11-21 15:46:06,060 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac registered with SpatialOS successfully.
+2017-11-21 15:46:06,060 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:46:06,061 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac) started.
+2017-11-21 15:46:06,658 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:46:54,113 WARN  [i.e.lifecycle.EntityLifecycleClient] [] [] [] : Entity 8 of type [Player] moved to position (-14.926382064819336, -275.64404296875, 758.409912109375) which is out of bounds.
+2017-11-21 15:46:54,114 WARN  [i.gsim.entity.EntityUserActor] [] [] [] : Removing Entity(8) that moved out of GSim boundary.
+improbable.entity.lifecycle.EntityOutOfBoundsException: Entity 8 of type [Player] moved to position (-14.926382064819336, -275.64404296875, 758.409912109375) which is out of bounds.
+	at improbable.entity.lifecycle.EntityLifecycleClient.assertWithinBounds(EntityLifecycleClient.java:334) ~[fabric__runtime_deploy.jar:na]
+	at improbable.entity.lifecycle.EntityLifecycleClient.spawnEntityWithId(EntityLifecycleClient.java:278) ~[fabric__runtime_deploy.jar:na]
+	at improbable.entity.lifecycle.EntityLifecycleClient.spawnEntityWithId(EntityLifecycleClient.java:253) ~[fabric__runtime_deploy.jar:na]
+	at improbable.entity.lifecycle.EntityLifecycleClient.spawnMigratedEntity(EntityLifecycleClient.java:212) ~[fabric__runtime_deploy.jar:na]
+	at improbable.gsim.entity.EntityUserActor.improbable$gsim$entity$EntityUserActor$$createInNewGSim(EntityUserActor.scala:186) ~[fabric__runtime_deploy.jar:na]
+	at improbable.gsim.entity.EntityUserActor$$anonfun$3.applyOrElse(EntityUserActor.scala:134) [fabric__runtime_deploy.jar:na]
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36) [fabric__runtime_deploy.jar:na]
+	at improbable.core.actor.subscription.AnonymousFunctionSubscription.forward(AnonymousFunctionSubscription.scala:44) [fabric__runtime_deploy.jar:na]
+	at improbable.core.actor.subscription.AnonymousFunctionSubscription.forwardToSubscriptions(AnonymousFunctionSubscription.scala:34) [fabric__runtime_deploy.jar:na]
+	at improbable.core.actor.extensible.ExtensibleActor$$anonfun$receive$1.applyOrElse(ExtensibleActor.scala:60) [fabric__runtime_deploy.jar:na]
+	at akka.actor.Actor$class.aroundReceive(Actor.scala:482) [..__akka_actor_artifact__jar__akka-actor_2.11-2.4.4.jar:na]
+	at improbable.core.actor.extensible.ExtensibleActor.aroundReceive(ExtensibleActor.scala:14) [fabric__runtime_deploy.jar:na]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:526) [..__akka_actor_artifact__jar__akka-actor_2.11-2.4.4.jar:na]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:495) [..__akka_actor_artifact__jar__akka-actor_2.11-2.4.4.jar:na]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257) [..__akka_actor_artifact__jar__akka-actor_2.11-2.4.4.jar:na]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224) [..__akka_actor_artifact__jar__akka-actor_2.11-2.4.4.jar:na]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234) [..__akka_actor_artifact__jar__akka-actor_2.11-2.4.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [fabric__runtime_deploy.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [fabric__runtime_deploy.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [fabric__runtime_deploy.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [fabric__runtime_deploy.jar:na]
+2017-11-21 15:46:56,343 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac
+2017-11-21 15:46:56,344 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac"
+ unregistered with bridge internal service
+2017-11-21 15:46:56,344 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac)
+2017-11-21 15:46:56,344 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:46:56,345 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient23878a48-01aa-4514-9e8f-d9e355d3d0ac) stopped.
+2017-11-21 15:48:04,766 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106 via rpc
+2017-11-21 15:48:04,767 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106 without a position hint, so using a random bridge service
+2017-11-21 15:48:04,768 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106)
+2017-11-21 15:48:04,796 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106"
+ registered with bridge internal service
+2017-11-21 15:48:04,798 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106"
+
+2017-11-21 15:48:04,798 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106 registered with SpatialOS successfully.
+2017-11-21 15:48:04,798 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:48:04,799 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106) started.
+2017-11-21 15:48:05,396 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:48:16,485 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106
+2017-11-21 15:48:16,487 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106"
+ unregistered with bridge internal service
+2017-11-21 15:48:16,487 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:48:16,487 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106)
+2017-11-21 15:48:16,488 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient4a72a527-933c-40fb-8d20-f5095bfcd106) stopped.
+2017-11-21 15:48:41,333 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClienta5abd605-0ad4-4d00-857e-323bee67e257 via rpc
+2017-11-21 15:48:41,336 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClienta5abd605-0ad4-4d00-857e-323bee67e257 without a position hint, so using a random bridge service
+2017-11-21 15:48:41,336 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClienta5abd605-0ad4-4d00-857e-323bee67e257)
+2017-11-21 15:48:41,363 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClienta5abd605-0ad4-4d00-857e-323bee67e257"
+ registered with bridge internal service
+2017-11-21 15:48:41,363 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClienta5abd605-0ad4-4d00-857e-323bee67e257"
+
+2017-11-21 15:48:41,364 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClienta5abd605-0ad4-4d00-857e-323bee67e257 registered with SpatialOS successfully.
+2017-11-21 15:48:41,364 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:48:41,365 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClienta5abd605-0ad4-4d00-857e-323bee67e257) started.
+2017-11-21 15:48:41,962 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:51:25,641 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClienta5abd605-0ad4-4d00-857e-323bee67e257) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClienta5abd605-0ad4-4d00-857e-323bee67e257
+2017-11-21 15:51:25,642 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClienta5abd605-0ad4-4d00-857e-323bee67e257)
+2017-11-21 15:51:25,642 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClienta5abd605-0ad4-4d00-857e-323bee67e257) stopped.
+2017-11-21 15:51:25,642 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClienta5abd605-0ad4-4d00-857e-323bee67e257"
+ unregistered with bridge internal service
+2017-11-21 15:51:25,642 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClienta5abd605-0ad4-4d00-857e-323bee67e257) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:51:32,059 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74 via rpc
+2017-11-21 15:51:32,060 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74 without a position hint, so using a random bridge service
+2017-11-21 15:51:32,061 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74)
+2017-11-21 15:51:32,087 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74"
+ registered with bridge internal service
+2017-11-21 15:51:32,088 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74"
+
+2017-11-21 15:51:32,088 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74 registered with SpatialOS successfully.
+2017-11-21 15:51:32,088 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:51:32,089 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74) started.
+2017-11-21 15:51:32,688 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:52:15,092 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/Gamelogic/Player/PlayerMover.cs(19,20): warning CS0108: `PlayerMover.rigidbody' hides inherited member `UnityEngine.Component.rigidbody'. Use the new keyword if hiding was intended
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,092 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/Gamelogic/Player/ThirdPersonCamera.cs(14,21): warning CS0108: `Assets.Gamelogic.Player.ThirdPersonCamera.camera' hides inherited member `UnityEngine.Component.camera'. Use the new keyword if hiding was intended
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,093 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/Gamelogic/Player/PlayerInputSender.cs(26,13): warning CS0219: The variable `zAxis' is assigned but its value is never used
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,093 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/Gamelogic/Player/PlayerMover.cs(31,7): warning CS0219: The variable `direction' is assigned but its value is never used
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,094 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Bloom.cs(109,97): warning CS0618: `UnityEngine.Camera.hdr' is obsolete: `use Camera.allowHDR instead.'
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,095 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BloomAndFlares.cs(112,97): warning CS0618: `UnityEngine.Camera.hdr' is obsolete: `use Camera.allowHDR instead.'
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,095 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/MotionBlur.cs(24,29): warning CS0618: `UnityEngine.SystemInfo.supportsRenderTextures' is obsolete: `supportsRenderTextures always returns true, no need to call it'
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,095 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs(97,65): warning CS0618: `UnityEngine.SystemInfo.supportsRenderTextures' is obsolete: `supportsRenderTextures always returns true, no need to call it'
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,096 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/SunShafts.cs(93,52): warning CS0618: `UnityEngine.Camera.hdr' is obsolete: `use Camera.allowHDR instead.'
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,101 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/Gamelogic/Player/PlayerInputSender.cs(12,21): warning CS0414: The private field `PlayerInputSender.cannonFirer' is assigned but its value is never used
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,102 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74] Assets/Gamelogic/Player/PlayerInputSender.cs(13,23): warning CS0414: The private field `PlayerInputSender.rb' is assigned but its value is never used
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:15,909 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74
+2017-11-21 15:52:15,910 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74)
+2017-11-21 15:52:15,911 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74"
+ unregistered with bridge internal service
+2017-11-21 15:52:15,912 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:52:15,912 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient9bf7c2a2-2796-447d-ad52-aadc8f0a6b74) stopped.
+2017-11-21 15:52:26,661 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0 via rpc
+2017-11-21 15:52:26,662 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0 without a position hint, so using a random bridge service
+2017-11-21 15:52:26,663 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0)
+2017-11-21 15:52:26,691 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0"
+ registered with bridge internal service
+2017-11-21 15:52:26,691 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0"
+
+2017-11-21 15:52:26,692 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0 registered with SpatialOS successfully.
+2017-11-21 15:52:26,692 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:52:26,692 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0) started.
+2017-11-21 15:52:27,291 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:52:49,141 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0
+2017-11-21 15:52:49,142 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0"
+ unregistered with bridge internal service
+2017-11-21 15:52:49,142 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0)
+2017-11-21 15:52:49,142 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:52:49,143 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0) stopped.
+2017-11-21 15:52:50,066 INFO  [i.b.client.BridgeServiceTaskRetrier] [] [] [] : An internal operation forwarding EntityCommandRequest for "entity_id: 12
+component_id: 1003
+" failed on the SpatialOS side of the connection to UnityWorker0 after 0 retries, is the deployment under heavy load?
+io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+2017-11-21 15:52:50,068 WARN  [i.b.commands.BridgeCommandHandler] [] [] [] : Failed to execute command entity_command_request {
+  endpoint {
+    entity_id: 12
+    component_id: 1003
+  }
+  payload: "\332>\002\032\000"
+}
+ on UnityClient331c4326-9c5b-4202-9dfa-8b2c7b856fe0
+improbable.bridge.commands.exception.CommandException: DEADLINE_EXCEEDED
+	at improbable.bridge.commands.exception.CommandException.ofStatusRuntimeException(CommandException.java:76) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.commands.exception.CommandException.of(CommandException.java:27) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeInternalServiceClient.lambda$invokeCommand$2(BridgeInternalServiceClient.java:93) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:239) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:229) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:130) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:664) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture$CatchingFuture.setResult(AbstractCatchingFuture.java:210) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture.run(AbstractCatchingFuture.java:138) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:112) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.SettableFuture.setException(SettableFuture.java:54) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeServiceTaskRetrier.onFailure(BridgeServiceTaskRetrier.java:102) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1228) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$GrpcFuture.setException(ClientCalls.java:466) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_101]
+Caused by: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+2017-11-21 15:52:50,086 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] Incoming command request with ID 220 to entity ID 12 and component ID 1003 was not handled by the worker within the given timeout.
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:52:58,875 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535 via rpc
+2017-11-21 15:52:58,879 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535 without a position hint, so using a random bridge service
+2017-11-21 15:52:58,879 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535)
+2017-11-21 15:52:58,907 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535"
+ registered with bridge internal service
+2017-11-21 15:52:58,907 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535"
+
+2017-11-21 15:52:58,908 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535 registered with SpatialOS successfully.
+2017-11-21 15:52:58,908 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:52:58,908 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535) started.
+2017-11-21 15:52:59,507 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:53:34,715 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535
+2017-11-21 15:53:34,716 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535"
+ unregistered with bridge internal service
+2017-11-21 15:53:34,716 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535)
+2017-11-21 15:53:34,716 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:53:34,716 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535) stopped.
+2017-11-21 15:53:35,631 INFO  [i.b.client.BridgeServiceTaskRetrier] [] [] [] : An internal operation forwarding EntityCommandRequest for "entity_id: 13
+component_id: 1003
+" failed on the SpatialOS side of the connection to UnityWorker0 after 0 retries, is the deployment under heavy load?
+io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: Timed out trying to invoke command
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_101]
+2017-11-21 15:53:35,633 WARN  [i.b.commands.BridgeCommandHandler] [] [] [] : Failed to execute command entity_command_request {
+  endpoint {
+    entity_id: 13
+    component_id: 1003
+  }
+  payload: "\332>\002\032\000"
+}
+ on UnityCliente0bce08b-1f89-4218-8cc1-7c40eec68535
+improbable.bridge.commands.exception.CommandException: INTERNAL_ERROR
+	at improbable.bridge.commands.exception.CommandException.ofStatusRuntimeException(CommandException.java:76) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.commands.exception.CommandException.of(CommandException.java:27) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeInternalServiceClient.lambda$invokeCommand$2(BridgeInternalServiceClient.java:93) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:239) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture$TransformFuture.doTransform(AbstractTransformFuture.java:229) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:130) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:664) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture$CatchingFuture.setResult(AbstractCatchingFuture.java:210) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractCatchingFuture.run(AbstractCatchingFuture.java:138) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:112) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.SettableFuture.setException(SettableFuture.java:54) ~[fabric__runtime_deploy.jar:na]
+	at improbable.bridge.client.BridgeServiceTaskRetrier.onFailure(BridgeServiceTaskRetrier.java:102) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.Futures$CallbackListener.run(Futures.java:1228) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:911) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:822) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:686) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$GrpcFuture.setException(ClientCalls.java:466) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_101]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_101]
+Caused by: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: Timed out trying to invoke command
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+2017-11-21 15:53:35,667 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] Incoming command request with ID 233 to entity ID 13 and component ID 1003 was not handled by the worker within the given timeout.
+ in  -[WorkerLogger:Unity]
+2017-11-21 15:53:40,955 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClientf284419f-3141-4be2-88c2-05822b50149f via rpc
+2017-11-21 15:53:40,956 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClientf284419f-3141-4be2-88c2-05822b50149f without a position hint, so using a random bridge service
+2017-11-21 15:53:40,957 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClientf284419f-3141-4be2-88c2-05822b50149f)
+2017-11-21 15:53:40,984 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientf284419f-3141-4be2-88c2-05822b50149f"
+ registered with bridge internal service
+2017-11-21 15:53:40,985 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClientf284419f-3141-4be2-88c2-05822b50149f"
+
+2017-11-21 15:53:40,986 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClientf284419f-3141-4be2-88c2-05822b50149f registered with SpatialOS successfully.
+2017-11-21 15:53:40,986 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:53:40,986 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientf284419f-3141-4be2-88c2-05822b50149f) started.
+2017-11-21 15:53:41,583 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:55:28,203 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b via rpc
+2017-11-21 15:55:28,204 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b without a position hint, so using a random bridge service
+2017-11-21 15:55:28,206 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),2)].get().toString() for Engine(UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b)
+2017-11-21 15:55:28,238 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b"
+ registered with bridge internal service
+2017-11-21 15:55:28,238 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b"
+
+2017-11-21 15:55:28,239 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b registered with SpatialOS successfully.
+2017-11-21 15:55:28,239 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:55:28,240 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b) started.
+2017-11-21 15:55:28,837 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:56:09,447 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b
+2017-11-21 15:56:09,448 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b"
+ unregistered with bridge internal service
+2017-11-21 15:56:09,449 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b)
+2017-11-21 15:56:09,449 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:56:09,450 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient3fc4e3d2-cce1-445a-a9b8-ae52595f6a9b) stopped.
+2017-11-21 15:56:15,702 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClientf284419f-3141-4be2-88c2-05822b50149f) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClientf284419f-3141-4be2-88c2-05822b50149f
+2017-11-21 15:56:15,705 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClientf284419f-3141-4be2-88c2-05822b50149f)
+2017-11-21 15:56:15,705 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientf284419f-3141-4be2-88c2-05822b50149f"
+ unregistered with bridge internal service
+2017-11-21 15:56:15,705 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClientf284419f-3141-4be2-88c2-05822b50149f) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:56:15,706 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientf284419f-3141-4be2-88c2-05822b50149f) stopped.
+2017-11-21 15:57:44,834 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e via rpc
+2017-11-21 15:57:44,835 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e without a position hint, so using a random bridge service
+2017-11-21 15:57:44,836 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "a68a54d3-7c6f-4b36-8c7a-cfc4398803c6"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e)
+2017-11-21 15:57:44,863 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e"
+ registered with bridge internal service
+2017-11-21 15:57:44,864 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e"
+
+2017-11-21 15:57:44,865 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e registered with SpatialOS successfully.
+2017-11-21 15:57:44,865 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-21 15:57:44,865 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e) started.
+2017-11-21 15:57:45,414 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-21 15:57:53,334 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e) sending Disconnected to akka://akkaFabric/user/BridgeModule:a68a54d3-7c6f-4b36-8c7a-cfc4398803c6/BridgeActor-UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e
+2017-11-21 15:57:53,335 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e)
+2017-11-21 15:57:53,335 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e) stopped.
+2017-11-21 15:57:53,335 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e"
+ unregistered with bridge internal service
+2017-11-21 15:57:53,336 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClientda7c7b9e-4ec4-475d-ad1c-ef5120b2ca6e) on BridgeModuleEndpoint(a68a54d3-7c6f-4b36-8c7a-cfc4398803c6) stopped.
+2017-11-21 15:57:57,658 INFO  [i.c.discovery.ServiceDiscoveryImpl] [] [] [] : Shutting down all services
+2017-11-21 15:57:57,966 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.StatusDiscoveryInternalService) on 127.0.0.1:5301.
+2017-11-21 15:57:57,967 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.ModuleService) on 127.0.0.1:9000.
+2017-11-21 15:57:57,967 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.HealthCheckService) on 127.0.0.1:9001.
+2017-11-21 15:57:57,968 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.PerfInternalService) on 127.0.0.1:9002.
+2017-11-21 15:57:57,968 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ContentionInternalService) on 127.0.0.1:9003.
+2017-11-21 15:57:57,968 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.FeatureService) on 127.0.0.1:9004.
+2017-11-21 15:57:57,968 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.NodeConfigurationInternalService) on 127.0.0.1:9005.
+2017-11-21 15:57:57,969 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.WorldExtentsInternalService) on 127.0.0.1:9006.
+2017-11-21 15:57:57,970 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.EntityIdInternalService) on 127.0.0.1:9007.
+2017-11-21 15:57:57,971 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.WorkerPrestartRegistryInternalService) on 127.0.0.1:9008.
+2017-11-21 15:57:57,972 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RouterLookupInternalService) on 127.0.0.1:9009.
+2017-11-21 15:57:57,973 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RouterInternalService) on 127.0.0.1:9010.
+2017-11-21 15:57:57,974 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RemoteMessageInternalService) on 127.0.0.1:9011.
+2017-11-21 15:57:57,974 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.LocalBrokerInternalService) on 127.0.0.1:9012.
+2017-11-21 15:57:57,975 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeOracleInternalService) on 127.0.0.1:9013.
+2017-11-21 15:57:57,976 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.GlobalBrokerInternalService) on 127.0.0.1:9014.
+2017-11-21 15:57:57,977 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeServiceOracleInternalService) on 127.0.0.1:9015.
+2017-11-21 15:57:57,977 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.LocalSnapshotInternalService) on 127.0.0.1:9016.
+2017-11-21 15:57:57,978 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ScalingStatsInternalService) on 127.0.0.1:9017.
+2017-11-21 15:57:57,979 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.EntityQueryInternalService) on 127.0.0.1:9018.
+2017-11-21 15:57:57,980 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeInternalService) on 127.0.0.1:9019.
+2017-11-21 15:57:57,981 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.inner.worker.WorkerRunner) on 127.0.0.1:9020.
+2017-11-21 15:57:57,982 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ReceptionistInternalService) on 127.0.0.1:9021.
+2017-11-21 15:57:57,982 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.ReceptionistService) on 127.0.0.1:7777.
