@@ -1,70 +1,114 @@
-==========> Opened at 2017-11-22 09:24:01.8958515 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-22 09:24:05.201074 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.3s category=success
-==========> Opened at 2017-11-22 09:24:50.7660596 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-22 09:24:54.3119077 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.2s
-==========> Opened at 2017-11-22 09:26:24.6841642 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-22 09:26:28.2066815 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-22 09:29:36.0234097 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-22 09:29:38.7386072 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-22 09:29:58.4036093 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-22 09:30:02.1684194 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity
-debug Found project root at C:\Users\Salvatore\Desktop\S.E\CUBEX\Game
-debug Found version '12.0.1' in file C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Salvatore\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Salvatore\Desktop\S.E\CUBEX\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.2s category=success
+==========> Opened at 2017-11-22 11:57:04.932363 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 11:57:22.2713547 +0100 CET
+debug Executing [spatial.exe build build-config UnityClient UnityWorker]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Building worker assemblies.
+info Generating bridge settings for UnityClient.
+debug Worker 'UnityClient' defined at 'C:\Users\Felix\Documenti\github\Game3\workers\unity\spatialos.UnityClient.worker.json' has no managed launch configuration defined.
+info Generating bridge settings for UnityWorker.
+info Generating managed worker configuration for UnityWorker.
+info 'spatial.exe build build-config UnityClient UnityWorker' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 11:58:00.0795172 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 11:58:02.0926324 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 11:58:21.7047541 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-22 11:58:23.2258411 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 11:58:23.3678492 +0100 CET
+debug Executing [spatial.exe prepare-for-run]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Building schema descriptor.
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Running within a SpatialOS project, using the default input paths '[C:\Users\Felix\Documenti\github\Game3\schema C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library]'
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
+debug C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
+debug Changes detected. Generating code.
+debug Cleaning output directories [C:\Users\Felix\Documenti\github\Game3\build\descriptor\output C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor]
+info Generating descriptor. 0/2 percent=0
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\core\ClientAuthorityCheck.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\core\PlayerCreation.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\core\Quaternion.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\core\Rotation.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\player\ClientConnection.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\player\Health.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\player\PlayerInput.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\schema\improbable\player\Score.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library\improbable\standard_library.schema]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--proto_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --schema_path=C:\Users\Felix\Documenti\github\Game3\schema --schema_path=C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library C:\Users\Felix\Documenti\github\Game3\build\dependencies\schema\standard_library\improbable\vector3.schema]
+info Generating descriptor. 1/2 percent=50
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\3f8f23d513634794\ClientAuthorityCheck.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\core\ClientAuthorityCheck.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\865e09ab70a458c3\PlayerCreation.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\core\PlayerCreation.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\96e6613e5f94e110\Quaternion.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\core\Quaternion.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\0d099e5854b0897e\Rotation.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\core\Rotation.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\90266f83964dc3f0\ClientConnection.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\player\ClientConnection.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\9bfb08f6e718ffa2\Health.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\player\Health.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\70e8528edb8280e1\PlayerInput.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\player\PlayerInput.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\545dfe65b2ea4817\Score.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\player\Score.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\dc296bf046258ab9\standard_library.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\standard_library.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\82d613df2802f19a\vector3.proto.descriptor C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir\improbable\vector3.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\f5fdc8895432e621\descriptor.proto.descriptor C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto\google\protobuf\descriptor.proto]
+debug In '', C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\protoc.exe [--proto_path=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_proto_ir --proto_path=C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto --descriptor_set_out=C:\Users\Felix\Documenti\github\Game3\build\descriptor\generated_descriptor\859fc75d3fc201b4\entity_state.proto.descriptor C:\Users\Felix\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\proto\improbable\entity_state.proto]
+debug Writing unified schema to 'C:\Users\Felix\Documenti\github\Game3\build\descriptor\output\schema.descriptor'
+info Generating descriptor. 2/2 percent=100
+debug Saving cache data to C:\Users\Felix\Documenti\github\Game3\build\descriptor\cache.json.
+info 'spatial.exe prepare-for-run' succeeded duration=1.9s category=success
+==========> Opened at 2017-11-22 11:59:42.2473609 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 11:59:43.5034327 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3\workers\unity
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found version '12.0.1' in file C:\Users\Felix\Documenti\github\Game3\spatialos.json
+debug Skipping extraction of [C:\Users\Felix\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Felix\Documenti\github\Game3\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-22 12:00:15.0542373 +0100 CET
+debug Executing [spatial.exe worker launch UnityClient default]
+debug Current directory = C:\Users\Felix\Documenti\github\Game3
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug Found project root at C:\Users\Felix\Documenti\github\Game3
+debug In 'C:\Users\Felix\Documenti\github\Game3\workers\unity', build/worker/UnityClient@Windows/UnityClient@Windows.exe [+assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName your_project_name_here -logfile external-default-unityclient.log]
+info Mono path[0] = 'C:/Users/Felix/Documenti/github/Game3/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Managed'
+info Mono path[1] = 'C:/Users/Felix/Documenti/github/Game3/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono'
+info Mono config path = 'C:/Users/Felix/Documenti/github/Game3/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono/etc'
+info Player data archive not found at `C:/Users/Felix/Documenti/github/Game3/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
+info 'spatial.exe worker launch UnityClient default' succeeded duration=3m:53s category=success

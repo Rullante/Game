@@ -2,7 +2,7 @@
 using Improbable.Collections;
 using UnityEngine;
 
-namespace Assets.Gamelogic.Shoot
+namespace Assets.Gamelogic.Shoots
 {
 	public class DestroyShoot : MonoBehaviour
 	{

@@ -1,4 +1,4 @@
-﻿using Assets.Gamelogic.Shoot;
+﻿using Assets.Gamelogic.Shoots;
 using UnityEngine;
 using Improbable.Unity;
 using Improbable.Unity.Visualizer;

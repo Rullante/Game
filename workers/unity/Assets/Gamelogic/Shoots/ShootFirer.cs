@@ -2,7 +2,7 @@
 using Improbable.Player;
 using Improbable.Unity.Visualizer;
 
-namespace Assets.Gamelogic.Shoot
+namespace Assets.Gamelogic.Shoots
 {
 	// This MonoBehaviour will be enabled on both client and server-side workers
 	public class ShootFirer : MonoBehaviour

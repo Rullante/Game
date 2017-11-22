@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Gamelogic.Shoot
+namespace Assets.Gamelogic.Shoots
 {
 	public class Shoot : MonoBehaviour
 	{
