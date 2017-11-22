@@ -34,9 +34,8 @@ namespace Assets.Gamelogic.Shoot
 
             if (other != null && other.gameObject.tag == "Lava")
             {
-                // Dead
+                // Player dies when collides with lava
                 HealthWriter.Send(new Health.Update().SetCurrentHealth(0));
-
             }
         }
 	}
