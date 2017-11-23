@@ -1,41 +1,41 @@
 Initialize engine version: 5.6.0f3 (497a0f351392)
 GfxDevice: creating device client; threaded=1
-d3d11: D3D_FEATURE_LEVEL_11_1 not-recognized (only 11.0 runtime installed?)
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GT 720M (ID=0x1140)
-    Vendor:   NVIDIA
-    VRAM:     2000 MB
-    Driver:   22.21.13.8165
+    Renderer: AMD Mobility Radeon HD 5000 Series (ID=0x68c1)
+    Vendor:   ATI
+    VRAM:     1014 MB
+    Driver:   15.200.1062.1004
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Generated.Code.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Generated.Code.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Threading.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Threading.dll into Unity Child Domain
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll (this message is harmless)
-Loading C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll into Unity Child Domain
-- Completed reload, in  0.822 seconds
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Generated.Code.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Generated.Code.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Threading.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Threading.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll (this message is harmless)
+Loading C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll into Unity Child Domain
+- Completed reload, in  1.294 seconds
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.270160 ms
+UnloadTime: 3.240338 ms
 Command line build/worker/UnityClient@Windows/UnityClient@Windows.exe +assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName your_project_name_here -logfile external-default-unityclient.log
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -46,9 +46,9 @@ ProjectName = your_project_name_here
 AssemblyName = local_assembly
 DeploymentId = 
 DeploymentTag = prod
-EngineId = UnityClient006675f5-553a-4b61-b775-44b4a63ab91f
+EngineId = UnityClienta93f3c81-ad14-4e38-8310-e0fcfee3417f
 EnginePlatform = UnityClient
-WorkerId = UnityClient006675f5-553a-4b61-b775-44b4a63ab91f
+WorkerId = UnityClienta93f3c81-ad14-4e38-8310-e0fcfee3417f
 WorkerPlatform = UnityClient
 EntityCreationLimitPerFrame = 100
 InfraServiceUrl = http://127.0.0.1:21000
@@ -79,18 +79,18 @@ LogExceptionToSpatialOs = True
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 ClientMetrics OS=Windows 7 Service Pack 1 (6.1.7601) 64bit.
-Processor: type Intel(R) Core(TM) i7-3537U CPU @ 2.00GHz, cores 4.
-Graphics: id 4416, vendor 4318, name NVIDIA GeForce GT 720M, size 2000.
-Memory: 6029.
+Processor: type Intel(R) Core(TM) i7 CPU M 620 @ 2.67GHz, cores 4.
+Graphics: id 26817, vendor 4098, name AMD Mobility Radeon HD 5000 Series, size 1014.
+Memory: 3956.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Mono.Security.dll (this message is harmless)
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Configuration.dll (this message is harmless)
-Platform assembly: C:\Users\Felix\Documenti\github\Game3\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\Documenti\github\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Xml.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1f88 -> priority: 1 
-  Thread -> id: 2a54 -> priority: 1 
+  Thread -> id: 24f4 -> priority: 1 
+  Thread -> id: 1bc8 -> priority: 1 
 Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
  
 (Filename:  Line: 371)

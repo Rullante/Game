@@ -46,6 +46,7 @@ public class PlayerMover : MonoBehaviour {
 		if (HealthWriter.Data.currentHealth <= 0){
 			HealthWriter.Send (new Health.Update ().SetCurrentHealth (1000));
 			transform.position = new Vector3 (0, 10, 0);
+            
     }
 }
 }
