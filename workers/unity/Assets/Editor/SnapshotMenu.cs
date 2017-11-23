@@ -18,8 +18,9 @@ namespace Assets.Editor
 			var currentEntityId = 1;
 
 			snapshotEntities.Add(new EntityId(currentEntityId++), EntityTemplateFactory.CreatePlayerCreatorTemplate());
+            PopulateSnapshotWithEnemyEntities(ref snapshotEntities, ref currentEntityId);
 
-			SaveSnapshot(snapshotEntities);
+            SaveSnapshot(snapshotEntities);
 		}
 
 		private static void SaveSnapshot(IDictionary<EntityId, Entity> snapshotEntities)
@@ -36,5 +37,20 @@ namespace Assets.Editor
 				Debug.LogFormat("Successfully generated initial world snapshot at {0}", SimulationSettings.DefaultSnapshotPath);
 			}
 		}
-	}
+
+
+        public static void PopulateSnapshotWithEnemyEntities(ref Dictionary<EntityId, Entity> snapshotEntities, ref int nextAvailableId)
+        {
+            for (var i = 0; i < SimulationSettings.TotalEnemies; i++)
+            {
+                // Choose a starting position for this pirate entity
+                var enemyCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.EnemiesSpawnDiameter, 0,
+                    (Random.value - 0.5f) * SimulationSettings.EnemiesSpawnDiameter);
+                var enemyRotation = System.Convert.ToUInt32(Random.value * 360);
+
+                snapshotEntities.Add(new EntityId(nextAvailableId++),
+                    EntityTemplateFactory.CreateEnemyEntityTemplate(enemyCoordinates, enemyRotation));
+            }
+        }
+    }
 }

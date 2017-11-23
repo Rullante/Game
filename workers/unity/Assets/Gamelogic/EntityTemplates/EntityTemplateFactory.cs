@@ -46,5 +46,20 @@ namespace Assets.Gamelogic.EntityTemplates
             return playerTemplate;
         }
 
+        public static Entity CreateEnemyEntityTemplate(Vector3 initialPosition, uint initialRotation)
+        {
+            var enemyEntityTemplate = EntityBuilder.Begin()
+                .AddPositionComponent(initialPosition, CommonRequirementSets.PhysicsOnly)
+                .AddMetadataComponent(SimulationSettings.EnemyCubePrefabName)
+                .SetPersistence(true)
+                .SetReadAcl(CommonRequirementSets.PhysicsOrVisual)
+                .AddComponent(new Rotation.Data(Quaternion.identity.ToNativeQuaternion()), CommonRequirementSets.PhysicsOnly)
+                .AddComponent(new PlayerInput.Data(new Joystick(xAxis: 0, yAxis: 0, zAxis: 0)), CommonRequirementSets.PhysicsOnly)
+                .Build();
+
+            return enemyEntityTemplate;
+        }
+
+
     }
 }
