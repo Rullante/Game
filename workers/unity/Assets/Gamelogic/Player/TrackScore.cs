@@ -35,9 +35,10 @@ namespace Assets.Gamelogic.Player
 			int newScore = ScoreWriter.Data.numberOfPoints + (int)request.amount;
 			ScoreWriter.Send(new Score.Update().SetNumberOfPoints(newScore));
             // Acknowledge command receipt
-            if (newScore == 1)
-                SimulationSettings.flag = true;
-			return new AwardResponse(request.amount);
+            if (newScore == 1) { 
+                SimulationSettings.Flag = true;
+            }
+            return new AwardResponse(request.amount);
 		}
 	}
 }

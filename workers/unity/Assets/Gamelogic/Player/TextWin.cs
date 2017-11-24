@@ -22,8 +22,7 @@ namespace Assets.Gamelogic.Player
         private void Awake()
         {
             textWin = GameObject.Find("Canvas/TextWin").GetComponent<Text>();
-
-            updateGUI(0);
+            
         }
 
 
@@ -46,13 +45,10 @@ namespace Assets.Gamelogic.Player
 
         void updateGUI(int score)
         {
-            
-            
-                if (score == 1)
+                if (score == 1) 
                     textWin.text = "YOU WIN";
                 else
                     textWin.text = "YOU LOSE";
-            
 
         }
     }

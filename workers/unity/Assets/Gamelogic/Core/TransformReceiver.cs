@@ -20,15 +20,6 @@ namespace Assets.Gamelogic.Core
             RotationReader.ComponentUpdated.Add(OnRotationUpdated);
         }
 
-        void Update()
-        {
-            if (PositionReader.Authority == Authority.Authoritative)
-            {
-                transform.position = PositionReader.Data.coords.ToUnityVector();
-                transform.rotation = RotationReader.Data.rotation.ToUnityQuaternion();
-            }
-        }
-
         void OnDisable()
         {
             PositionReader.ComponentUpdated.Remove(OnPositionUpdated);
