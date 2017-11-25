@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Lava
   - Cannonball
+  - Environment
   layers:
   - Default
   - TransparentFX
