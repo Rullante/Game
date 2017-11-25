@@ -1,354 +1,82 @@
-==========> Opened at 2017-11-23 23:16:31.6520962 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master\workers\unity
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-23 23:16:33.784773 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master\workers\unity
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-23 23:16:51.255781 +0100 CET
-debug Executing [spatial.exe upload Team8Assembly]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Executing internal command: [prepare-for-run]
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Building schema descriptor.
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
-debug In '', C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Mario\Desktop\prova\Game-master\schema --schema_path=C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
-debug C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
-info   No changes detected, skipping code generation.
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-info Uploading assets of project beta_oscar_bacon_891 to assembly Team8Assembly
-info Uploading UnityClient assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\UnityClient --artifact_type=UnityClient --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Found 1 artifacts (29.00B)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (29.00B/29.00B)
-debug 1 total artifacts. 1 uploaded, 0 skipped, 0 failed.
-info Uploading UnityWorker assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\UnityWorker --artifact_type=UnityWorker --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Found 1 artifacts (30.00B)
-debug Found 2 artifacts (1.45KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (1.42KB/1.45KB)
-debug Uploading artifacts (1.45KB/1.45KB)
-debug 2 total artifacts. 1 uploaded, 1 skipped, 0 failed.
-info Uploading schema assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\schema --artifact_type=schema --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (schema) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\schema) as no config was found, continuing rest of upload
-debug Found 1 artifacts (16.78KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (16.78KB/16.78KB)
-debug 1 total artifacts. 1 uploaded, 0 skipped, 0 failed.
-info Uploading unity assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\unity --artifact_type=unity --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (unity) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\unity) as no config was found, continuing rest of upload
-debug Found 1 artifacts (7.90KB)
-debug Found 2 artifacts (8.66KB)
-debug Found 3 artifacts (16.55KB)
-debug Found 4 artifacts (17.31KB)
-debug Found 5 artifacts (25.21KB)
-debug Found 6 artifacts (25.98KB)
-debug Found 7 artifacts (341.32KB)
-debug Found 8 artifacts (343.26KB)
-debug Found 9 artifacts (624.62KB)
-debug Found 10 artifacts (626.56KB)
-debug Found 11 artifacts (910.64KB)
-debug Found 12 artifacts (912.58KB)
-debug Found 13 artifacts (917.24KB)
-debug Found 14 artifacts (917.74KB)
-debug Found 15 artifacts (922.40KB)
-debug Found 16 artifacts (922.91KB)
-debug Found 17 artifacts (927.58KB)
-debug Found 18 artifacts (928.08KB)
-debug Found 19 artifacts (932.48KB)
-debug Found 20 artifacts (932.75KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (779.00B/932.75KB)
-debug Uploading artifacts (8.66KB/932.75KB)
-debug Uploading artifacts (16.55KB/932.75KB)
-debug Uploading artifacts (24.46KB/932.75KB)
-debug Uploading artifacts (25.22KB/932.75KB)
-debug Uploading artifacts (25.98KB/932.75KB)
-debug Uploading artifacts (27.91KB/932.75KB)
-debug Uploading artifacts (29.85KB/932.75KB)
-debug Uploading artifacts (345.20KB/932.75KB)
-debug Uploading artifacts (626.56KB/932.75KB)
-debug Uploading artifacts (628.50KB/932.75KB)
-debug Uploading artifacts (912.58KB/932.75KB)
-debug Uploading artifacts (913.08KB/932.75KB)
-debug Uploading artifacts (917.74KB/932.75KB)
-debug Uploading artifacts (922.40KB/932.75KB)
-debug Uploading artifacts (922.91KB/932.75KB)
-debug Uploading artifacts (927.58KB/932.75KB)
-debug Uploading artifacts (928.08KB/932.75KB)
-debug Uploading artifacts (928.35KB/932.75KB)
-debug Uploading artifacts (932.75KB/932.75KB)
-debug 20 total artifacts. 20 uploaded, 0 skipped, 0 failed.
-info Uploading worker assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\worker --artifact_type=worker --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (worker) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\worker) as no config was found, continuing rest of upload
-debug Found 1 artifacts (30.51MB)
-debug Found 2 artifacts (51.75MB)
-debug Found 3 artifacts (80.41MB)
-debug Found 4 artifacts (126.97MB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (30.51MB/126.97MB)
-==========> Opened at 2017-11-23 23:24:27.5425593 +0100 CET
-debug Executing [spatial.exe upload Team8Assembly]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Executing internal command: [prepare-for-run]
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Building schema descriptor.
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
-debug In '', C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Mario\Desktop\prova\Game-master\schema --schema_path=C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
-debug C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
-info   No changes detected, skipping code generation.
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-info Uploading assets of project beta_oscar_bacon_891 to assembly Team8Assembly
-info Uploading UnityClient assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\UnityClient --artifact_type=UnityClient --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Found 1 artifacts (29.00B)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (29.00B/29.00B)
-debug 1 total artifacts. 0 uploaded, 1 skipped, 0 failed.
-info Uploading UnityWorker assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\UnityWorker --artifact_type=UnityWorker --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Found 1 artifacts (30.00B)
-debug Found 2 artifacts (1.45KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (30.00B/1.45KB)
-debug Uploading artifacts (1.45KB/1.45KB)
-debug 2 total artifacts. 0 uploaded, 2 skipped, 0 failed.
-info Uploading schema assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\schema --artifact_type=schema --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (schema) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\schema) as no config was found, continuing rest of upload
-debug Found 1 artifacts (16.78KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (16.78KB/16.78KB)
-debug 1 total artifacts. 0 uploaded, 1 skipped, 0 failed.
-info Uploading unity assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\unity --artifact_type=unity --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (unity) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\unity) as no config was found, continuing rest of upload
-debug Found 1 artifacts (7.90KB)
-debug Found 2 artifacts (8.66KB)
-debug Found 3 artifacts (16.55KB)
-debug Found 4 artifacts (17.31KB)
-debug Found 5 artifacts (25.21KB)
-debug Found 6 artifacts (25.98KB)
-debug Found 7 artifacts (341.32KB)
-debug Found 8 artifacts (343.26KB)
-debug Found 9 artifacts (624.62KB)
-debug Found 10 artifacts (626.56KB)
-debug Found 11 artifacts (910.64KB)
-debug Found 12 artifacts (912.58KB)
-debug Found 13 artifacts (917.24KB)
-debug Found 14 artifacts (917.74KB)
-debug Found 15 artifacts (922.40KB)
-debug Found 16 artifacts (922.91KB)
-debug Found 17 artifacts (927.58KB)
-debug Found 18 artifacts (928.08KB)
-debug Found 19 artifacts (932.48KB)
-debug Found 20 artifacts (932.75KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (7.90KB/932.75KB)
-debug Uploading artifacts (8.66KB/932.75KB)
-debug Uploading artifacts (16.55KB/932.75KB)
-debug Uploading artifacts (17.31KB/932.75KB)
-debug Uploading artifacts (25.21KB/932.75KB)
-debug Uploading artifacts (25.98KB/932.75KB)
-debug Uploading artifacts (27.91KB/932.75KB)
-debug Uploading artifacts (343.26KB/932.75KB)
-debug Uploading artifacts (624.62KB/932.75KB)
-debug Uploading artifacts (626.56KB/932.75KB)
-debug Uploading artifacts (628.50KB/932.75KB)
-debug Uploading artifacts (912.58KB/932.75KB)
-debug Uploading artifacts (917.24KB/932.75KB)
-debug Uploading artifacts (921.90KB/932.75KB)
-debug Uploading artifacts (922.40KB/932.75KB)
-debug Uploading artifacts (922.91KB/932.75KB)
-debug Uploading artifacts (927.58KB/932.75KB)
-debug Uploading artifacts (928.08KB/932.75KB)
-debug Uploading artifacts (932.48KB/932.75KB)
-debug Uploading artifacts (932.75KB/932.75KB)
-debug 20 total artifacts. 0 uploaded, 20 skipped, 0 failed.
-info Uploading worker assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\worker --artifact_type=worker --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (worker) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\worker) as no config was found, continuing rest of upload
-debug Found 1 artifacts (30.51MB)
-debug Found 2 artifacts (51.75MB)
-debug Found 3 artifacts (80.41MB)
-debug Found 4 artifacts (126.97MB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (30.51MB/126.97MB)
-debug Uploading artifacts (77.07MB/126.97MB)
-debug Uploading artifacts (98.31MB/126.97MB)
-debug Uploading artifacts (126.97MB/126.97MB)
-debug 4 total artifacts. 3 uploaded, 1 skipped, 0 failed.
-info 'spatial.exe upload Team8Assembly' succeeded duration=13m:49s category=success
-==========> Opened at 2017-11-24 00:08:43.8848681 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master\workers\unity
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.2s
-==========> Opened at 2017-11-24 00:08:46.0900416 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master\workers\unity
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.1s
-==========> Opened at 2017-11-24 00:11:47.8269784 +0100 CET
+==========> Opened at 2017-11-25 09:29:22.169182 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-25 09:29:23.4633412 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-25 09:33:35.1728762 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-25 09:33:36.5217297 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-25 09:33:41.6512391 +0100 CET
 debug Executing [spatial.exe build build-config UnityClient UnityWorker]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
 debug Building worker assemblies.
 info Generating bridge settings for UnityClient.
-debug Worker 'UnityClient' defined at 'C:\Users\Mario\Desktop\prova\Game-master\workers\unity\spatialos.UnityClient.worker.json' has no managed launch configuration defined.
+debug Worker 'UnityClient' defined at 'C:\Users\Mario\Documents\GitHub\Game\workers\unity\spatialos.UnityClient.worker.json' has no managed launch configuration defined.
 info Generating bridge settings for UnityWorker.
 info Generating managed worker configuration for UnityWorker.
-info 'spatial.exe build build-config UnityClient UnityWorker' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-24 00:13:18.482862 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master\workers\unity
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-24 00:13:20.6449281 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master\workers\unity
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Desktop\prova\Game-master\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-24 00:13:51.1015864 +0100 CET
-debug Executing [spatial.exe upload Team8Assembly]
-debug Current directory = C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
-debug Executing internal command: [prepare-for-run]
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
+info 'spatial.exe build build-config UnityClient UnityWorker' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-25 09:34:04.9400018 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-25 09:34:06.0961389 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-25 09:34:12.996074 +0100 CET
+debug Executing [spatial.exe prepare-for-run]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
 debug Building schema descriptor.
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Desktop\prova\Game-master\schema C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library]'
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Running within a SpatialOS project, using the default input paths '[C:\Users\Mario\Documents\GitHub\Game\schema C:\Users\Mario\Documents\GitHub\Game\build\dependencies\schema\standard_library]'
 debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
 debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\78566ccefaa6c3b8889d2c9056b73984e92dba7b\tools\12.0.1\schema_compiler-x86_64-win32.zip] to C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32. Nothing has changed.
-debug In '', C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Mario\Desktop\prova\Game-master\schema --schema_path=C:\Users\Mario\Desktop\prova\Game-master\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
+debug In '', C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Mario\Documents\GitHub\Game\schema --schema_path=C:\Users\Mario\Documents\GitHub\Game\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
 debug C:\Users\Mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
-info   No changes detected, skipping code generation.
-debug Found project root at C:\Users\Mario\Desktop\prova\Game-master
-debug Found version '12.0.1' in file C:\Users\Mario\Desktop\prova\Game-master\spatialos.json
-info Uploading assets of project beta_oscar_bacon_891 to assembly Team8Assembly
-info Uploading UnityClient assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\UnityClient --artifact_type=UnityClient --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Found 1 artifacts (29.00B)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (29.00B/29.00B)
-debug 1 total artifacts. 0 uploaded, 1 skipped, 0 failed.
-info Uploading UnityWorker assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\UnityWorker --artifact_type=UnityWorker --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Found 1 artifacts (30.00B)
-debug Found 2 artifacts (1.45KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (1.42KB/1.45KB)
-debug Uploading artifacts (1.45KB/1.45KB)
-debug 2 total artifacts. 0 uploaded, 2 skipped, 0 failed.
-info Uploading schema assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\schema --artifact_type=schema --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (schema) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\schema) as no config was found, continuing rest of upload
-debug Found 1 artifacts (16.78KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (16.78KB/16.78KB)
-debug 1 total artifacts. 0 uploaded, 1 skipped, 0 failed.
-info Uploading unity assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\unity --artifact_type=unity --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (unity) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\unity) as no config was found, continuing rest of upload
-debug Found 1 artifacts (7.90KB)
-debug Found 2 artifacts (8.66KB)
-debug Found 3 artifacts (16.55KB)
-debug Found 4 artifacts (17.31KB)
-debug Found 5 artifacts (25.21KB)
-debug Found 6 artifacts (25.98KB)
-debug Found 7 artifacts (341.32KB)
-debug Found 8 artifacts (343.26KB)
-debug Found 9 artifacts (624.62KB)
-debug Found 10 artifacts (626.56KB)
-debug Found 11 artifacts (910.64KB)
-debug Found 12 artifacts (912.58KB)
-debug Found 13 artifacts (917.24KB)
-debug Found 14 artifacts (917.74KB)
-debug Found 15 artifacts (922.40KB)
-debug Found 16 artifacts (922.91KB)
-debug Found 17 artifacts (927.58KB)
-debug Found 18 artifacts (928.08KB)
-debug Found 19 artifacts (932.48KB)
-debug Found 20 artifacts (932.75KB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (7.90KB/932.75KB)
-debug Uploading artifacts (15.79KB/932.75KB)
-debug Uploading artifacts (16.55KB/932.75KB)
-debug Uploading artifacts (17.31KB/932.75KB)
-debug Uploading artifacts (25.21KB/932.75KB)
-debug Uploading artifacts (25.98KB/932.75KB)
-debug Uploading artifacts (341.32KB/932.75KB)
-debug Uploading artifacts (343.26KB/932.75KB)
-debug Uploading artifacts (624.62KB/932.75KB)
-debug Uploading artifacts (626.56KB/932.75KB)
-debug Uploading artifacts (910.64KB/932.75KB)
-debug Uploading artifacts (912.58KB/932.75KB)
-debug Uploading artifacts (913.08KB/932.75KB)
-debug Uploading artifacts (917.74KB/932.75KB)
-debug Uploading artifacts (922.40KB/932.75KB)
-debug Uploading artifacts (922.91KB/932.75KB)
-debug Uploading artifacts (923.41KB/932.75KB)
-debug Uploading artifacts (928.08KB/932.75KB)
-debug Uploading artifacts (932.48KB/932.75KB)
-debug Uploading artifacts (932.75KB/932.75KB)
-debug 20 total artifacts. 0 uploaded, 20 skipped, 0 failed.
-info Uploading worker assets
-debug In '', spatial [assembly upload beta_oscar_bacon_891 Team8Assembly C:\Users\Mario\Desktop\prova\Game-master\build\assembly\worker --artifact_type=worker --public=true --log_level=info --environment=production --spatial_os_version=12.0.1]
-debug Not uploading worker assembly (worker) for files found in (C:\Users\Mario\Desktop\prova\Game-master\build\assembly\worker) as no config was found, continuing rest of upload
-debug Found 1 artifacts (30.51MB)
-debug Found 2 artifacts (51.74MB)
-debug Found 3 artifacts (80.39MB)
-debug Found 4 artifacts (126.95MB)
-debug Uploading for Project(beta_oscar_bacon_891) to Assembly(Team8Assembly)
-debug Uploading artifacts (21.23MB/126.95MB)
-debug Uploading artifacts (67.79MB/126.95MB)
-debug Uploading artifacts (98.30MB/126.95MB)
-debug Uploading artifacts (126.95MB/126.95MB)
-debug 4 total artifacts. 3 uploaded, 1 skipped, 0 failed.
-info 'spatial.exe upload Team8Assembly' succeeded category=success duration=11m:28s
+info No changes detected, skipping code generation.
+info 'spatial.exe prepare-for-run' succeeded duration=0.2s category=success
+==========> Opened at 2017-11-25 09:34:33.2195913 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.3s category=success
+==========> Opened at 2017-11-25 09:34:35.2195051 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Mario\Documents\GitHub\Game\workers\unity
+debug Found project root at C:\Users\Mario\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Mario\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Mario\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded category=success duration=0.2s
