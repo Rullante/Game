@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using Assets.Gamelogic.Core;
 using Improbable.Player;
 using Improbable.Core;
 using Improbable.Unity;
@@ -12,41 +11,41 @@ using UnityEngine.UI;
 namespace Assets.Gamelogic.Player
 {
     [WorkerType(WorkerPlatform.UnityClient)]
-    public class TextWin : MonoBehaviour
+    public class HealtScript : MonoBehaviour
     {
-        [Require] private Score.Reader ScoreReader;
+        [Require] private Health.Reader healthReader;
         [Require] private ClientAuthorityCheck.Writer ClientAuthorityCheckWriter;
 
-        private Text textWin;
+        private Slider healtSlider;
 
         private void Awake()
         {
-            textWin = GameObject.Find("Canvas/TextWin").GetComponent<Text>();
-            
+            healtSlider = GameObject.Find("Canvas/Slider").GetComponent<Slider>();
+
         }
 
 
         private void OnEnable()
         {
             // Register callback for when components change
-            ScoreReader.NumberOfPointsUpdated.Add(OnNumberOfPointsUpdated);
+            healthReader.CurrentHealthUpdated.Add(OnHealtUpdated);
         }
 
         private void OnDisable()
         {
             // Deregister callback for when components change
-            ScoreReader.NumberOfPointsUpdated.Remove(OnNumberOfPointsUpdated);
+            healthReader.CurrentHealthUpdated.Add(OnHealtUpdated);
         }
 
-        private void OnNumberOfPointsUpdated(int numberOfPoint)
+        private void OnHealtUpdated(int currentHealt)
         {
-            updateGUI(numberOfPoint);
+            updateGUI(currentHealt);
         }
 
-        void updateGUI(int score)
+        void updateGUI(int currentHealt)
         {
-                if (score == 3) 
-                    textWin.text = "YOU WIN";
+            healtSlider.value = currentHealt;
+
         }
     }
 }

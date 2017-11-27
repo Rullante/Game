@@ -8,26 +8,27 @@ namespace Assets.Gamelogic.Shoots
 	public class ShootFirer : MonoBehaviour
 	{
 
-		[Require] private PlayerInput.Reader PlayerControlsReader;
+		[Require] private PlayerInput.Reader PlayerInputReader;
 				private Shoot shoot;
 
 				private void OnEnable()
 				{
-					PlayerControlsReader.FireTriggered.Add (OnFire);
+					PlayerInputReader.FireTriggered.Add (OnFire);
 	
 				}
 
 				private void OnDisable()
 				{
-					PlayerControlsReader.FireTriggered.Remove(OnFire);
+					PlayerInputReader.FireTriggered.Remove(OnFire);
 		
 				}
 
 				private void OnFire(Fire fire)
 				{
-					// Respond to FireLeft event
-					AttemptToFireCannons(transform.forward);
-				}
+                // Respond to FireLeft event
+                var dir = new Vector3(PlayerInputReader.Data.joystick.xAxis, 0, PlayerInputReader.Data.joystick.yAxis);
+                AttemptToFireCannons(dir);
+                }
 
 			
 

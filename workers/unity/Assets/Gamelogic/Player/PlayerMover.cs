@@ -16,7 +16,8 @@ public class PlayerMover : MonoBehaviour {
 	[Require] private Rotation.Writer RotationWriter;
 	[Require] private Health.Writer HealthWriter;
 	[Require] private PlayerInput.Reader PlayerInputReader;
-	private Rigidbody rigidbody;
+    [Require] private Score.Writer ScoreWriter;
+    private Rigidbody rigidbody;
 
 
 
@@ -44,6 +45,11 @@ public class PlayerMover : MonoBehaviour {
 		RotationWriter.Send(rotationUpdate);
         
 		if (HealthWriter.Data.currentHealth <= 0){
+            if (ScoreWriter.Data.numberOfPoints > 0)
+            {
+                int newScore = ScoreWriter.Data.numberOfPoints - 1;
+                ScoreWriter.Send(new Score.Update().SetNumberOfPoints(newScore));
+            }
 			HealthWriter.Send (new Health.Update ().SetCurrentHealth (1000));
 			transform.position = new Vector3 (0, 10, 0);
             

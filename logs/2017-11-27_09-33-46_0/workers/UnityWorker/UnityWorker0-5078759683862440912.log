@@ -1,0 +1,131 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Generated.Code.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Generated.Code.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\System.Threading.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\System.Threading.dll into Unity Child Domain
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Improbable.UnityDll.dll (this message is harmless)
+Loading C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Improbable.UnityDll.dll into Unity Child Domain
+- Completed reload, in  0.029 seconds
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 1.355878 ms
+Command line C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows.exe +projectName beta_oscar_bacon_891 +receptionistIp 127.0.0.1 +receptionistPort 7777 +workerType UnityWorker +workerId UnityWorker0 +useInternalIpForBridge true +infraServicesUrl http://127.0.0.1:21000 +assemblyName local_assembly +linkProtocol RakNet -logfile C:\Users\Erasmo\Documents\GitHub\Game\logs\2017-11-27_09-33-46_0\workers\UnityWorker\UnityWorker0-5078759683862440912.log -batchmode -nographics
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WorkerConfiguration settings
+AppName = 
+ProjectName = beta_oscar_bacon_891
+AssemblyName = local_assembly
+DeploymentId = 
+DeploymentTag = prod
+EngineId = UnityWorker0
+EnginePlatform = UnityWorker
+WorkerId = UnityWorker0
+WorkerPlatform = UnityWorker
+EntityCreationLimitPerFrame = 100
+InfraServiceUrl = http://127.0.0.1:21000
+LocatorHost = locator.improbable.io
+ReceptionistHost = 127.0.0.1
+ReceptionistPort = 7777
+LinkProtocol = RakNet
+LoginToken = 
+ProtocolLoggingOnStartup = False
+ProtocolLogPrefix = protocol-
+ProtocolLogMaxFileBytes = 104857600
+RaknetHeartbeatTimeoutMillis = 60000
+ReceiveQueueCapacity = 32768
+SendQueueCapacity = 16384
+ShowDebugTraces = False
+SteamToken = 
+TcpMultiplexLevel = 1
+UseInstrumentation = True
+UsePerInstanceAssetCache = True
+UsePrefabPooling = False
+LogDebugToSpatialOs = False
+LogAssertToSpatialOs = False
+LogWarningToSpatialOs = True
+LogErrorToSpatialOs = True
+LogExceptionToSpatialOs = True
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\Erasmo\AppData\Local\Temp\zip-downloader2796919798448660490\bb210dcc9af4c638731ce5d6f7dbc739\UnityWorker@Windows_Data\Managed\System.Xml.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 17dc -> priority: 1 
+  Thread -> id: 2554 -> priority: 1 
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1514)
+
+The referenced script on this Behaviour (Game Object 'Player') is missing!
+ 
+(Filename:  Line: 1743)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1514)
+
+The referenced script on this Behaviour (Game Object 'Player') is missing!
+ 
+(Filename:  Line: 1743)
+
+The referenced script on this Behaviour (Game Object 'Player') is missing!
+ 
+(Filename:  Line: 1743)
+
+GetComponentsInChildren returned a null element for GameObject Player(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1514)
+
+The referenced script on this Behaviour (Game Object 'Player') is missing!
+ 
+(Filename:  Line: 1743)
+
+The referenced script on this Behaviour (Game Object 'Player') is missing!
+ 
+(Filename:  Line: 1743)
+
+GetComponentsInChildren returned a null element for GameObject Player(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AwardPoints command succeeded. Points awarded: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Incoming command request with ID 80 to entity ID 13 and component ID 1003 was not handled by the worker within the given timeout.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Disconnected: RakNet connection lost.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

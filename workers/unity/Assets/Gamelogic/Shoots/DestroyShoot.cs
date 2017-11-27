@@ -9,7 +9,7 @@ namespace Assets.Gamelogic.Shoots
 		public Option<EntityId> firerEntityId = new Option<EntityId>();
 
 		[SerializeField]
-		private float SecondsUntilDestroy = 4f;
+		private float SecondsUntilDestroy = 2f;
 		private float spawnTime;
 
 		void Start()

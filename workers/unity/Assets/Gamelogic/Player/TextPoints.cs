@@ -12,17 +12,22 @@ using UnityEngine.UI;
 namespace Assets.Gamelogic.Player
 {
     [WorkerType(WorkerPlatform.UnityClient)]
-    public class TextWin : MonoBehaviour
+    public class TextPoints : MonoBehaviour
     {
         [Require] private Score.Reader ScoreReader;
         [Require] private ClientAuthorityCheck.Writer ClientAuthorityCheckWriter;
 
-        private Text textWin;
+        private Text textPoints;
 
         private void Awake()
         {
-            textWin = GameObject.Find("Canvas/TextWin").GetComponent<Text>();
-            
+            textPoints = GameObject.Find("Canvas/TextPoints").GetComponent<Text>();
+            if (SimulationSettings.Flag == false)
+            {
+                SimulationSettings.Flag = true;
+                updateGUI(0);
+              
+            }
         }
 
 
@@ -45,8 +50,8 @@ namespace Assets.Gamelogic.Player
 
         void updateGUI(int score)
         {
-                if (score == 3) 
-                    textWin.text = "YOU WIN";
+            textPoints.text = "Points: " + score + "/3" ;
+           
         }
     }
 }
