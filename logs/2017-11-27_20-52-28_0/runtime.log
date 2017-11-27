@@ -1,0 +1,1159 @@
+2017-11-27 20:52:40,141 INFO  [i.deployment.InternalGameLauncher] [] [] [] : Parsed 362 internal flags at startup
+2017-11-27 20:52:40,563 INFO  [i.deployment.InternalGameLauncher] [] [] [] : SpatialOS runtime version: 11-20171114T103507Z-cc9d195
+2017-11-27 20:52:41,091 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Initialized Fabric flagz registry with 11 set fields.
+2017-11-27 20:52:42,415 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.StatusDiscoveryInternalService) on 127.0.0.1:5301.
+2017-11-27 20:52:42,416 INFO  [i.c.discovery.ServiceDiscoveryImpl] [] [] [] : Status discovery address: host: "127.0.0.1"
+port: 5301
+
+2017-11-27 20:52:42,434 INFO  [improbable.module.ModuleNode] [] [] [] : Starting Fabric node as master (IP: 127.0.0.1).
+2017-11-27 20:52:42,436 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_NODES_STARTED
+2017-11-27 20:52:42,437 INFO  [improbable.module.ModuleNode] [] [] [] : Node master has started, waiting for other nodes to reach the same checkpoint.
+2017-11-27 20:52:42,439 INFO  [improbable.module.ModuleNode] [] [] [] : All nodes have been started.
+2017-11-27 20:52:42,465 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ModuleService) on 127.0.0.1:9000.
+2017-11-27 20:52:42,494 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.HealthCheckService) on 127.0.0.1:9001.
+2017-11-27 20:52:42,515 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.PerfInternalService) on 127.0.0.1:9002.
+2017-11-27 20:52:42,542 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ContentionInternalService) on 127.0.0.1:9003.
+2017-11-27 20:52:42,609 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.FeatureService) on 127.0.0.1:9004.
+2017-11-27 20:52:42,668 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Initialized worker flagz registry with 0 set fields.
+2017-11-27 20:52:42,670 INFO  [improbable.module.ModuleNode] [] [] [] : Using master node configuration loader.
+2017-11-27 20:52:42,700 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.NodeConfigurationInternalService) on 127.0.0.1:9005.
+2017-11-27 20:52:42,747 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Using roles [MASTER, GSIM, BRIDGE, WORKER_RUNNER, INSPECTION] for node node_id {
+  deployment_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+private_ip: "127.0.0.1"
+roles: MASTER
+roles: GSIM
+roles: BRIDGE
+roles: WORKER_RUNNER
+roles: INSPECTION
+
+2017-11-27 20:52:42,809 INFO  [improbable.core.config.node.GsimGrid] [] [] [] : Created gsim grid configuration of size (1500, 1500) with 1 columns and 1 rows, using gsims of (30, 30) chunks.
+2017-11-27 20:52:42,852 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Original deployment module configuration (before parsing): {deployment_id {
+  project_id {
+    name: "beta_oscar_bacon_891"
+  }
+  name: "local"
+}
+name: "master"
+=[ProfilingModule, BridgeModuleOracleModule, BridgeOracleModule, PersistenceModule, ReceptionistModule, RouterModule, GSimModule, BridgeModule, EngineStartupModule, InspectionRestModule]}
+2017-11-27 20:52:42,912 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Master successfully loaded configurations for 1 node(s).
+2017-11-27 20:52:42,928 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded node configuration: node_id {
+  deployment_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+gsim_configurations {
+  extent {
+    bottom_left {
+      x_in_chunks: -15
+      z_in_chunks: -15
+    }
+    top_right {
+      x_in_chunks: 15
+      z_in_chunks: 15
+    }
+  }
+}
+start_router: true
+start_bridge_oracle: true
+start_bridge_module_oracle: true
+start_engine_startup_module: true
+start_receptionist_service: true
+start_inspection_rest_module: true
+start_snapshot_service: true
+start_profiling_module: true
+bridge_modules: "BridgeModule"
+gsim_modules: "GSimModule"
+
+2017-11-27 20:52:42,929 INFO  [improbable.module.ModuleNode] [] [] [] : Using master world extents provider.
+2017-11-27 20:52:42,979 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorldExtentsInternalService) on 127.0.0.1:9006.
+2017-11-27 20:52:42,986 INFO  [i.c.world.MasterWorldExtentsProvider] [] [] [] : Successfully initialized world extents with 1 rectangle(s).
+2017-11-27 20:52:42,998 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded world extents: WorldExtents{proto=rectangles {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+  responsible_gsim_id {
+  }
+}
+bounding_rectangle {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+}
+}
+2017-11-27 20:52:43,322 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-27 20:52:43,323 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 8 server(s) (previously: 0)
+2017-11-27 20:52:43,338 INFO  [i.e.schema.ParsedFileDescriptorSet] [] [] [] : Parsed file descriptors of 13 proto files.
+2017-11-27 20:52:43,418 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.player.Score, improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.core.Rotation, improbable.player.Health, improbable.core.ClientAuthorityCheck, improbable.player.ClientConnection, improbable.player.PlayerInput, improbable.core.PlayerCreation]
+2017-11-27 20:52:43,438 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.player.Score, improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.internal.EntityAuthority, improbable.core.ClientAuthorityCheck, improbable.core.PlayerCreation, improbable.player.ClientConnection, improbable.core.Rotation, improbable.player.PlayerInput, improbable.player.Health]
+2017-11-27 20:52:43,440 INFO  [improbable.module.ModuleNode] [] [] [] : Successfully loaded schema for entities
+2017-11-27 20:52:43,443 INFO  [improbable.module.ModuleNode] [] [] [] : Validating snapshot at startup and determining max entity id
+2017-11-27 20:52:43,455 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-27 20:52:43,501 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171127205226971
+2017-11-27 20:52:43,658 INFO  [improbable.module.ModuleNode] [] [] [] : Determined the first entity id for the id assigner as 12
+2017-11-27 20:52:43,669 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityIdInternalService) on 127.0.0.1:9007.
+2017-11-27 20:52:43,713 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorkerPrestartRegistryInternalService) on 127.0.0.1:9008.
+2017-11-27 20:52:43,735 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterLookupInternalService) on 127.0.0.1:9009.
+2017-11-27 20:52:43,737 INFO  [i.module.router.ActorSystemFactory$] [] [] [] : Attempting to create ActorSystem akkaFabric with configRecord akkaFabric
+2017-11-27 20:52:44,287 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 11 server(s) (previously: 8)
+2017-11-27 20:52:44,598 INFO  [akka.event.slf4j.Slf4jLogger] [] [] [] : Slf4jLogger started
+2017-11-27 20:52:48,641 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Parsed 1 worker loadbalancing configuration(s)
+2017-11-27 20:52:48,653 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Successfully loaded loadbalancing configurations: {UnityWorker=improbable.loadbalancing.params.AutoHexGridLoadbalancerParams@6bb4568}
+2017-11-27 20:52:48,875 INFO  [i.w.a.WorkerAssemblyProviderFactory] [] [] [] : Loaded worker assemblies for these workers types: UnityClient, UnityWorker.
+2017-11-27 20:52:48,882 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded worker assemblies: [worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityClient"
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "visual"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 200.0
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+, worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityWorker"
+  }
+}
+worker_launch_configuration {
+  platform: WINDOWS
+  worker_zip {
+    command: "UnityWorker@Windows.exe"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Windows.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: MACOS
+  worker_zip {
+    command: "UnityWorker@Mac.app/Contents/MacOS/UnityWorker@Mac"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Mac.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: LINUX
+  worker_zip {
+    command: "UnityWorker@Linux"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Linux.zip"
+    }
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "physics"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 200.0
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+]
+2017-11-27 20:52:48,888 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : Worker configuration for 'UnityClient' does not contain a launch configuration for the current platform 'WINDOWS', so Fabric will not start any managed workers of this type
+2017-11-27 20:52:48,889 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : The following worker configurations do not contain valid managed launch configurations for the current platform WINDOWS, and the runtime will be unable to launch managed workers of this type: [UnityClient]. This is expected for worker types you intend to only connect manually.
+2017-11-27 20:52:48,906 INFO  [i.w.permissions.PermissionsFactory] [] [] [] : Created permissions manager with permissions: {UnityWorker=Permissions{{/sys/CreateEntity=, /sys/DeleteEntity=, /sys/EntityQuery={"component":["*"]}}}, UnityClient=Permissions{{/sys/EntityQuery={"component":[]}}}}
+2017-11-27 20:52:53,789 INFO  [improbable.module.ModuleNode] [] [] [] : Starting router on master
+2017-11-27 20:52:53,806 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterInternalService) on 127.0.0.1:9010.
+2017-11-27 20:52:53,810 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Attempting to register RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-27 20:52:53,843 INFO  [i.c.m.r.l.RouterLookupInternalServiceImpl] [] [] [] : 1/1 router modules started
+2017-11-27 20:52:53,844 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Registered RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-27 20:52:53,846 INFO  [improbable.module.ModuleNode] [] [] [] : Attempting to get addresses of all RouterModules from master node
+2017-11-27 20:52:53,863 INFO  [improbable.module.ModuleNode] [] [] [] : Got all RouterModules from master node
+2017-11-27 20:52:53,901 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RemoteMessageInternalService) on 127.0.0.1:9011.
+2017-11-27 20:52:53,934 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.LocalBrokerInternalService) on 127.0.0.1:9012.
+2017-11-27 20:52:53,952 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for all router modules in the deployment to have started
+2017-11-27 20:52:53,956 INFO  [improbable.module.ModuleNode] [] [] [] : All router modules in the deployment started
+2017-11-27 20:52:54,095 INFO  [org.eclipse.jetty.server.Server] [] [] [] : jetty-8.y.z-SNAPSHOT
+2017-11-27 20:52:54,154 INFO  [o.e.jetty.server.AbstractConnector] [] [] [] : Started SelectChannelConnector@0.0.0.0:5006
+2017-11-27 20:52:54,155 INFO  [improbable.http.ServletContainer$] [] [] [] : Servlet container started
+2017-11-27 20:52:54,157 INFO  [improbable.module.ModuleNode] [] [] [] : Starting BridgeOracle on master
+2017-11-27 20:52:54,175 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeOracle to have started
+2017-11-27 20:52:54,280 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 14 server(s) (previously: 11)
+2017-11-27 20:52:54,582 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeOracleInternalService) on 127.0.0.1:9013.
+2017-11-27 20:52:55,274 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeOracle started
+2017-11-27 20:52:55,274 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 15 server(s) (previously: 14)
+2017-11-27 20:52:55,291 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.GlobalBrokerInternalService) on 127.0.0.1:9014.
+2017-11-27 20:52:55,293 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeModuleOracle to have started
+2017-11-27 20:52:55,296 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleOracleActor(Actor[akka://akkaFabric/user/BridgeModuleOracleModule#-1458593689]).
+2017-11-27 20:52:55,327 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeServiceOracleInternalService) on 127.0.0.1:9015.
+2017-11-27 20:52:56,273 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 17 server(s) (previously: 15)
+2017-11-27 20:52:56,273 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeModuleOracle started
+2017-11-27 20:52:56,283 INFO  [improbable.module.ModuleNode] [] [] [] : Starting gsim GSimModule
+2017-11-27 20:52:56,295 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 entity query service(s) to start.
+2017-11-27 20:52:56,337 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.LocalSnapshotInternalService) on 127.0.0.1:9016.
+2017-11-27 20:52:56,375 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ScalingStatsInternalService) on 127.0.0.1:9017.
+2017-11-27 20:52:56,391 INFO  [i.p.gsim.GSimPersistenceWriter] [] [] [] : Transitioning GSimPersistenceActor(0) from State [Idle] to [Idle].  Time Elapsed: 2 milliseconds
+2017-11-27 20:52:56,419 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityQueryInternalService) on 127.0.0.1:9018.
+2017-11-27 20:52:56,608 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-27 20:52:57,376 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 entity query service(s) have started.
+2017-11-27 20:52:57,377 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 20 server(s) (previously: 17)
+2017-11-27 20:52:57,385 INFO  [improbable.module.ModuleNode] [] [] [] : Creating entity query client.
+2017-11-27 20:52:57,589 INFO  [improbable.module.ModuleNode] [] [] [] : Entity query client created with directory: EntityQueryServiceDirectory{allServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9018
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], localServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9018
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], remoteServices=[]}
+2017-11-27 20:52:57,615 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 bridge service(s) to start.
+2017-11-27 20:52:57,682 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleActor(Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462#-1090303815]).
+2017-11-27 20:52:57,759 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeInternalService) on 127.0.0.1:9019.
+2017-11-27 20:52:57,760 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Waiting for BridgeModuleOracle service to be available
+2017-11-27 20:52:57,813 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Registered(BridgeModuleEndpoint(343bbe2d-c977-4550-a9ca-dd9d795ab462)) on BridgeModuleOracleService
+2017-11-27 20:52:58,283 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 21 server(s) (previously: 20)
+2017-11-27 20:52:58,283 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 bridge service(s) have started.
+2017-11-27 20:52:58,288 INFO  [improbable.module.ModuleNode] [] [] [] : Starting WorkerRunner service (EngineStartupModule)
+2017-11-27 20:52:58,295 INFO  [improbable.worker.exec.WorkerStats] [] [] [] : Cannot read /proc/self/stat; worker stats reporting will not work.
+2017-11-27 20:52:58,314 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.inner.worker.WorkerRunner) on 127.0.0.1:9020.
+2017-11-27 20:52:58,333 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ReceptionistInternalService) on 127.0.0.1:9021.
+2017-11-27 20:52:58,350 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ReceptionistService) on 127.0.0.1:7777.
+2017-11-27 20:52:58,351 INFO  [improbable.module.ModuleNode] [] [] [] : Starting InspectionRestModule
+2017-11-27 20:52:58,353 INFO  [improbable.module.ModuleNode] [] [] [] : Starting ProfilingModule
+2017-11-27 20:52:58,354 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_MODULES_STARTED
+2017-11-27 20:52:58,355 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on this node started, waiting for other nodes to reach the same checkpoint.
+2017-11-27 20:52:58,362 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started ProfilingModuleActor(Actor[akka://akkaFabric/user/ProfilingModule#-157948653]).
+2017-11-27 20:52:58,367 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.debug.HeatmapCellCacheInternalService) on 127.0.0.1:9022.
+2017-11-27 20:52:58,430 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.InspectionService) on 127.0.0.1:9023.
+2017-11-27 20:52:58,532 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started InspectionRestModuleActor(Actor[akka://akkaFabric/user/InspectionRestModule#-775222263]).
+2017-11-27 20:52:58,550 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-27 20:52:59,278 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on all nodes have been started.
+2017-11-27 20:52:59,278 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-27 20:52:59,278 INFO  [improbable.module.ModuleNode] [] [] [] : Loading a snapshot.
+2017-11-27 20:52:59,279 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 26 server(s) (previously: 21)
+2017-11-27 20:52:59,314 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loading snapshot on GSim(0).
+2017-11-27 20:52:59,322 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-27 20:52:59,338 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171127205226971
+2017-11-27 20:52:59,343 INFO  [i.p.gsim.GSimPersistenceLoader] [] [] [] : Loading snapshot
+2017-11-27 20:52:59,410 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loaded 11 entities on GSim(0).
+2017-11-27 20:52:59,443 INFO  [i.p.c.PersistenceLoaderCoordinatorActor] [] [] [] : All Snapshots loaded.
+2017-11-27 20:52:59,445 INFO  [improbable.module.ModuleNode] [] [] [] : Snapshot has been loaded.
+2017-11-27 20:52:59,445 INFO  [improbable.module.ModuleNode] [] [] [] : Starting SnapshotService.
+2017-11-27 20:52:59,499 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.SnapshotService) on 127.0.0.1:9024.
+2017-11-27 20:52:59,507 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: LOAD_SNAPSHOT_FINISHED
+2017-11-27 20:52:59,509 INFO  [improbable.module.ModuleNode] [] [] [] : SpatialOS runtime startup complete.
+2017-11-27 20:52:59,561 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : LoadbalancerParams for worker type [UnityWorker]: [AutoHexGridLoadbalancerParams{energyLimitingEnabled=true, energyLimit=1.0E9, minWorkerRange=1500.0, maxWorkerRange=1500.0, maxWorkerStepSize=0.0, workerExpansionTimeMs=60000, workerGridSize=0, loadbalancerEnabled=false, hexGridMode=AUTO, scalerAdvisorType=CONSTANT, maxWorkers=1, initialWorkers=1, numEntitiesPerWorker=9223372036854775807, statusReportPeriodMs=30000, pointsOfInterestEnabled=false, hexGridSolution=AutoValue_HexGridSolution{workersUsed=1, hexagonEdgeLength=1500.0, hexagonOrientation=POINTY_TOP, bounds=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}}, pointsOfInterestSolution=Empty}]
+2017-11-27 20:52:59,871 INFO  [spray.can.server.HttpListener] [akka://akkaFabric/user/IO-HTTP/listener-0] [akkaFabric-akka.actor.default-dispatcher-26] [] : Bound to /0.0.0.0:5005
+2017-11-27 20:53:00,277 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-27 20:53:00,279 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 27 server(s) (previously: 26)
+2017-11-27 20:53:00,533 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker0
+2017-11-27 20:53:00,581 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-27 20:53:00,581 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting internal receptionist service to register with service discovery
+2017-11-27 20:53:00,591 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the internal receptionist service in service discovery
+2017-11-27 20:53:00,604 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Awaiting public receptionist service to register with service discovery
+2017-11-27 20:53:00,606 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Successfully found the public receptionist service in service discovery
+2017-11-27 20:53:04,993 INFO  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Created log file for worker UnityWorker0, type (UnityWorker): [C:\Users\Felice\Documents\GitHub\Game2\logs\2017-11-27_20-52-28_0\workers\UnityWorker\UnityWorker0-7988866399017555828.log]
+2017-11-27 20:53:04,996 INFO  [i.worker.exec.CommandLineExecutor] [] [] [] : Running command: C:\Users\Felice\AppData\Local\Temp\zip-downloader7237365698301174332\f6a929035c3116d0af4acf440214b812\UnityWorker@Windows.exe +projectName beta_oscar_bacon_891 +receptionistIp 127.0.0.1 +receptionistPort 7777 +workerType UnityWorker +workerId UnityWorker0 +useInternalIpForBridge true +infraServicesUrl http://127.0.0.1:21000 +assemblyName local_assembly +linkProtocol RakNet -logfile C:\Users\Felice\Documents\GitHub\Game2\logs\2017-11-27_20-52-28_0\workers\UnityWorker\UnityWorker0-7988866399017555828.log -batchmode -nographics
+2017-11-27 20:53:11,880 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityWorker0 via rpc
+2017-11-27 20:53:11,888 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Selected legacy_guid: "343bbe2d-c977-4550-a9ca-dd9d795ab462"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+ with position  which is the nearest bridge service to position (0.0, 0.0, 0.0)
+2017-11-27 20:53:11,902 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "343bbe2d-c977-4550-a9ca-dd9d795ab462"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),0)].get().toString() for Engine(UnityWorker0)
+2017-11-27 20:53:12,347 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityWorker0"
+ registered with bridge internal service
+2017-11-27 20:53:12,360 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityWorker0"
+
+2017-11-27 20:53:12,360 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityWorker0 registered with SpatialOS successfully.
+2017-11-27 20:53:12,372 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-27 20:53:12,374 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityWorker0) started.
+2017-11-27 20:53:12,382 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Worker UnityWorker0 registered with the BridgeOracleWorker manager
+2017-11-27 20:53:13,120 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-27 20:53:26,186 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc via rpc
+2017-11-27 20:53:26,190 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc without a position hint, so using a random bridge service
+2017-11-27 20:53:26,194 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "343bbe2d-c977-4550-a9ca-dd9d795ab462"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc)
+2017-11-27 20:53:26,228 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : LoadbalancerParams for worker type [UnityClient]: [FlagzLoadbalancerParams{energyLimitingEnabled=true, energyLimit=1.0E9, minWorkerRange=Infinity, maxWorkerRange=Infinity, maxWorkerStepSize=50.0, workerExpansionTimeMs=60000, workerGridSize=5, loadbalancerEnabled=true, hexGridMode=OFF, scalerAdvisorType=ENTITY_COUNT, maxWorkers=25, initialWorkers=25, numEntitiesPerWorker=9223372036854775807, statusReportPeriodMs=2000, pointsOfInterestEnabled=false, hexGridSolution=Empty, pointsOfInterestSolution=Empty}]
+2017-11-27 20:53:26,238 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc"
+ registered with bridge internal service
+2017-11-27 20:53:26,242 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc"
+
+2017-11-27 20:53:26,249 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc registered with SpatialOS successfully.
+2017-11-27 20:53:26,249 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-27 20:53:26,256 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc) started.
+2017-11-27 20:53:26,835 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-27 20:53:27,852 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:53:27,854 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:53:27,948 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:53:27,950 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:53:27,955 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:53:27,956 ERROR [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] GetComponentsInChildren returned a null element for GameObject Player(Clone)
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:53:28,566 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour is missing!
+ in UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:34)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:28,607 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:34)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,238 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,248 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,292 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,620 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,641 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,652 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,961 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour is missing!
+ in UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Improbable.Unity.ComponentFactory.UnityPrefabFactory:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/UnityPrefabFactory.cs:13)
+Improbable.Unity.ComponentFactory.PrefabFactoryMetrics:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/PrefabFactoryMetrics.cs:30)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:119)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:29,993 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Improbable.Unity.ComponentFactory.UnityPrefabFactory:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/UnityPrefabFactory.cs:13)
+Improbable.Unity.ComponentFactory.PrefabFactoryMetrics:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/PrefabFactoryMetrics.cs:30)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:119)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:30,013 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Improbable.Unity.ComponentFactory.UnityPrefabFactory:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/UnityPrefabFactory.cs:13)
+Improbable.Unity.ComponentFactory.PrefabFactoryMetrics:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/PrefabFactoryMetrics.cs:30)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:119)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:30,054 ERROR [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] GetComponentsInChildren returned a null element for GameObject Player(Clone)
+ in UnityEngine.Debug:LogErrorFormat(String, Object[])
+Improbable.Unity.Visualizer.VisualizerMetadataLookup:ExtractVisualizers(GameObject) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Unity/Visualizer/VisualizerMetadataLookup.cs:257)
+Improbable.Unity.Internal.EntityVisualizers:.ctor(EntityId, GameObject) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Unity/Internal/EntityVisualizers.cs:77)
+Improbable.Unity.Internal.EntityObject:.ctor(EntityId, GameObject, String, IInterestedComponentUpdaterProvider) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Unity/Internal/EntityObject.cs:39)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:121)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:35,807 ERROR [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] UnassignedReferenceException: The variable NotReadyWarning of SplashScreenControlle has not been assigned.
+You probably need to assign the NotReadyWarning variable of the SplashScreenControlle script in the inspector.
+ in Assets.SplashScreenControlle.ConnectionTimeout () (at Assets/SplashScreenControlle.cs:46)
+Assets.Gamelogic.Utils.TimerUtils+<WaitAndPerform>c__Iterator0.MoveNext () (at Assets/Gamelogic/Utils/TimerUtils.cs:12)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at C:/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)
+ -[WorkerLogger:Unity]
+2017-11-27 20:53:35,940 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc) sending Disconnected to akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc
+2017-11-27 20:53:35,946 INFO  [i.b.n.raknet.reporter.RakNetReporter] [] [] [] : Tried to send to RakNet(UnityClient) on Port(7001)13 after closing. Payload: component_update {
+  entity_id: 12
+  component_id: 54
+  entity_c... (Logged every 1000 times)
+2017-11-27 20:53:35,993 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc)
+2017-11-27 20:53:35,997 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc) stopped.
+2017-11-27 20:53:35,998 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc"
+ unregistered with bridge internal service
+2017-11-27 20:53:36,001 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc) on BridgeModuleEndpoint(343bbe2d-c977-4550-a9ca-dd9d795ab462) stopped.
+2017-11-27 20:53:36,013 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,019 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [2] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,020 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [3] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,020 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [4] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,021 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [5] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,026 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [6] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,026 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [7] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,027 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [8] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,028 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [9] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:53:36,029 INFO  [akka.actor.LocalActorRef] [akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc] [akkaFabric-akka.actor.default-dispatcher-4] [] : Message [improbable.fabric.internal.pubsub.PubSubMessageProto$PubSubMessage] from Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] to Actor[akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient73f2da32-5371-4d09-af43-a8d6c722ddcc#-1982116777] was not delivered. [10] dead letters encountered, no more dead letters will be logged. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+2017-11-27 20:55:25,613 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Attempting to get positionHint for UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76 via rpc
+2017-11-27 20:55:25,616 INFO  [i.b.s.BridgeServicePicker] [] [] [] : Starting UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76 without a position hint, so using a random bridge service
+2017-11-27 20:55:25,619 INFO  [i.m.b.o.m.BridgeModuleOracleActor] [] [] [] : BridgeServicePicker returned module Optional[legacy_guid: "343bbe2d-c977-4550-a9ca-dd9d795ab462"
+address {
+  host: "127.0.0.1"
+  port: 9019
+}
+] with load Optional[BridgeModuleLoadBalanceInfo((0.0, 0.0, 0.0),1)].get().toString() for Engine(UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76)
+2017-11-27 20:55:25,656 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76"
+ registered with bridge internal service
+2017-11-27 20:55:25,660 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : Got bridge started rpc from bridge: worker_id: "UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76"
+
+2017-11-27 20:55:25,661 INFO  [i.b.o.s.BridgeOracleInternalServiceImpl] [] [] [] : The worker UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76 registered with SpatialOS successfully.
+2017-11-27 20:55:25,661 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge started to self for bridge endpoint BridgeOracleEndpoint
+2017-11-27 20:55:25,667 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76) started.
+2017-11-27 20:55:26,254 INFO  [i.b.n.raknet.GuardedRakPeerInterface] [] [] [] : New RakNet connection established with 127.0.0.1
+2017-11-27 20:55:26,623 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:55:26,626 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:55:26,632 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:55:26,635 ERROR [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityWorker0] GetComponentsInChildren returned a null element for GameObject Player(Clone)
+ in  -[WorkerLogger:Unity]
+2017-11-27 20:55:27,259 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour is missing!
+ in UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:34)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:27,262 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:34)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:27,651 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:27,662 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:27,685 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:27,882 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:27,885 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:27,893 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEditor.PrefabUtility:CreatePrefab(String, GameObject)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:36)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:28,195 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour is missing!
+ in UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Improbable.Unity.ComponentFactory.UnityPrefabFactory:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/UnityPrefabFactory.cs:13)
+Improbable.Unity.ComponentFactory.PrefabFactoryMetrics:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/PrefabFactoryMetrics.cs:30)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:119)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:28,208 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Improbable.Unity.ComponentFactory.UnityPrefabFactory:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/UnityPrefabFactory.cs:13)
+Improbable.Unity.ComponentFactory.PrefabFactoryMetrics:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/PrefabFactoryMetrics.cs:30)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:119)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:28,238 WARN  [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] The referenced script on this Behaviour (Game Object 'Player') is missing!
+ in UnityEngine.Object:Instantiate(GameObject, Vector3, Quaternion)
+Improbable.Unity.ComponentFactory.UnityPrefabFactory:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/UnityPrefabFactory.cs:13)
+Improbable.Unity.ComponentFactory.PrefabFactoryMetrics:MakeComponent(GameObject, String) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/LegacyEntityPipeline/ComponentFactory/PrefabFactoryMetrics.cs:30)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:119)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:28,290 ERROR [i.b.logging.EngineLogMessageHandler] [] [] [] : [Worker: UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76] GetComponentsInChildren returned a null element for GameObject Player(Clone)
+ in UnityEngine.Debug:LogErrorFormat(String, Object[])
+Improbable.Unity.Visualizer.VisualizerMetadataLookup:ExtractVisualizers(GameObject) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Unity/Visualizer/VisualizerMetadataLookup.cs:257)
+Improbable.Unity.Internal.EntityVisualizers:.ctor(EntityId, GameObject) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Unity/Internal/EntityVisualizers.cs:77)
+Improbable.Unity.Internal.EntityObject:.ctor(EntityId, GameObject, String, IInterestedComponentUpdaterProvider) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Unity/Internal/EntityObject.cs:39)
+Improbable.Unity.Core.LegacyEntityCreator:InstantiateEntityObject(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:121)
+Improbable.Unity.Core.LegacyEntityCreator:OnMakeEntitySuccess(EntityId, String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:238)
+Improbable.Unity.Core.<MakeEntity>c__AnonStorey0:<>m__0(String) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:100)
+Improbable.Unity.Entity.<PrepareTemplate>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:37)
+Improbable.Unity.Assets.<LoadAsset>c__AnonStorey0:<>m__0(GameObject) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:28)
+Improbable.Unity.EditorTools.Assets.EditorPrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/Editor/Assets/EditorPrefabGameObjectLoader.cs:43)
+Improbable.Unity.Assets.PrefabGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PrefabGameObjectLoader.cs:39)
+Improbable.Unity.Assets.PreprocessingGameObjectLoader:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/PreprocessingGameObjectLoader.cs:25)
+Improbable.Unity.Assets.CachingAssetDatabase:LoadAsset(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/CachingAssetDatabase.cs:31)
+Improbable.Unity.Entity.AssetDatabaseTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Entity/AssetDatabaseTemplateProvider.cs:25)
+Improbable.Unity.Entity.DefaultTemplateProvider:PrepareTemplate(String, Action`1, Action`1) (at Assets/Plugins/Improbable/Sdk/Src/Unity/Assets/DefaultTemplateProvider.cs:123)
+Improbable.Unity.Core.LegacyEntityCreator:MakeEntity(EntityId, String, Action`2) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:97)
+Improbable.Unity.Core.LegacyEntityCreator:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/LegacyEntityCreator.cs:220)
+Improbable.Unity.Core.ThrottledEntityDispatcher:AddComponent(AddComponentPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/ThrottledEntityDispatcher.cs:96)
+Improbable.Unity.Core.EntityPipelineExtensions:DispatchOp(IEntityPipelineBlock, IEntityPipelineOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineExtensions.cs:85)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:ReleaseCriticalSectionOps() (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:69)
+Improbable.Unity.Core.CriticalSectionPipelineBlock:CriticalSection(CriticalSectionPipelineOp) (at Assets/Plugins/Improbable/Sdk/Src/Unity/UnityAddons/LegacyEntityPipeline/CriticalSectionPipelineBlock.cs:49)
+Improbable.Unity.Core.EntityPipelineImpl:<RegisterDispatcherCallbacks>m__37(CriticalSectionOp) (at C:/w/ee9378522cbb9fd1/UnitySdk/Improbable.Unity/Assets/Precompiled/UnityAddons/EntityPipeline/EntityPipelineImpl.cs:70)
+Improbable.Worker.Internal.Callbacks`1:InvokeAllReverse(CriticalSectionOp)
+Improbable.Worker.Dispatcher:CriticalSectionThunk(Void*, CriticalSectionOp*)
+Improbable.Worker.Internal.WorkerProtocol:Dispatcher_Process(DispatcherHandle, OpListHandle)
+Improbable.Worker.Dispatcher:Process(OpList)
+Improbable.Unity.Core.ConnectionLifecycle:ProcessEvents() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:367)
+Improbable.Unity.Core.ConnectionLifecycle:Update() (at Assets/Plugins/Improbable/Sdk/Src/Unity/Core/ConnectionLifecycle.cs:149)
+ -[WorkerLogger:Unity]
+2017-11-27 20:55:35,023 INFO  [i.b.n.BridgeActorTransportLinkListener] [] [] [] : TransportLinkListener(UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76) sending Disconnected to akka://akkaFabric/user/BridgeModule:343bbe2d-c977-4550-a9ca-dd9d795ab462/BridgeActor-UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76
+2017-11-27 20:55:35,027 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Sending bridge stopped to self for bridge endpoint BridgeEndpoint(UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76)
+2017-11-27 20:55:35,032 INFO  [i.module.bridge.oracle.BridgeOracle] [] [] [] : Bridge(UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76) stopped.
+2017-11-27 20:55:35,032 INFO  [i.b.i.BridgeInternalServiceImpl] [] [] [] : Bridge worker_id: "UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76"
+ unregistered with bridge internal service
+2017-11-27 20:55:35,037 INFO  [improbable.bridge.BridgeActor] [] [] [] : Bridge(UnityClient12b72a1d-133f-4bf5-9a84-76ec07e6cb76) on BridgeModuleEndpoint(343bbe2d-c977-4550-a9ca-dd9d795ab462) stopped.
+2017-11-27 21:10:17,533 INFO  [i.c.discovery.ServiceDiscoveryImpl] [] [] [] : Shutting down all services
+2017-11-27 21:10:17,552 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.StatusDiscoveryInternalService) on 127.0.0.1:5301.
+2017-11-27 21:10:17,556 WARN  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Fabric flagz update stream failed.
+io.grpc.StatusRuntimeException: UNAVAILABLE
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:395) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.io.IOException: Connessione in corso interrotta forzatamente dall'host remoto
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_151]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_151]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_151]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_151]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_151]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[fabric__runtime_deploy.jar:na]
+	... 1 common frames omitted
+2017-11-27 21:10:17,557 WARN  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Worker flagz update stream failed.
+io.grpc.StatusRuntimeException: UNAVAILABLE
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:395) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) [fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: java.io.IOException: Connessione in corso interrotta forzatamente dall'host remoto
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_151]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_151]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_151]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_151]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_151]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1100) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:372) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:123) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[fabric__runtime_deploy.jar:na]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138) ~[fabric__runtime_deploy.jar:na]
+	... 1 common frames omitted
+2017-11-27 21:10:17,558 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.ModuleService) on 127.0.0.1:9000.
+2017-11-27 21:10:17,570 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Exponential backoff of 0 seconds after retry 1 of refreshing Fabric flagz.
+2017-11-27 21:10:17,570 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.HealthCheckService) on 127.0.0.1:9001.
+2017-11-27 21:10:17,571 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Exponential backoff of 0 seconds after retry 1 of refreshing worker flagz.
+2017-11-27 21:10:17,572 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.PerfInternalService) on 127.0.0.1:9002.
+2017-11-27 21:10:17,572 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ContentionInternalService) on 127.0.0.1:9003.
+2017-11-27 21:10:17,572 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.FeatureService) on 127.0.0.1:9004.
+2017-11-27 21:10:17,573 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.NodeConfigurationInternalService) on 127.0.0.1:9005.
+2017-11-27 21:10:17,575 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.WorldExtentsInternalService) on 127.0.0.1:9006.
+2017-11-27 21:10:17,582 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.EntityIdInternalService) on 127.0.0.1:9007.
+2017-11-27 21:10:17,583 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.WorkerPrestartRegistryInternalService) on 127.0.0.1:9008.
+2017-11-27 21:10:17,584 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RouterLookupInternalService) on 127.0.0.1:9009.
+2017-11-27 21:10:17,586 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RouterInternalService) on 127.0.0.1:9010.
+2017-11-27 21:10:17,586 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.RemoteMessageInternalService) on 127.0.0.1:9011.
+2017-11-27 21:10:17,587 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.LocalBrokerInternalService) on 127.0.0.1:9012.
+2017-11-27 21:10:17,588 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeOracleInternalService) on 127.0.0.1:9013.
+2017-11-27 21:10:17,588 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.GlobalBrokerInternalService) on 127.0.0.1:9014.
+2017-11-27 21:10:17,592 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeServiceOracleInternalService) on 127.0.0.1:9015.
+2017-11-27 21:10:17,592 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.LocalSnapshotInternalService) on 127.0.0.1:9016.
+2017-11-27 21:10:17,593 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ScalingStatsInternalService) on 127.0.0.1:9017.
+2017-11-27 21:10:17,594 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.EntityQueryInternalService) on 127.0.0.1:9018.
+2017-11-27 21:10:17,595 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.BridgeInternalService) on 127.0.0.1:9019.
+2017-11-27 21:10:17,596 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.inner.worker.WorkerRunner) on 127.0.0.1:9020.
+2017-11-27 21:10:17,596 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Stopped Service(improbable.fabric.internal.service.ReceptionistInternalService) on 127.0.0.1:9021.
+2017-11-27 21:10:17,597 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Stopped Service(improbable.platform.runtime.ReceptionistService) on 127.0.0.1:7777.
