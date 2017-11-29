@@ -1,15 +1,26 @@
-﻿using UnityEngine;
-using Assets.Gamelogic.Core;
+﻿using Assets.Gamelogic.Core;
 using Assets.Gamelogic.Utils;
 using Improbable.Unity.Core;
+using System;
+using UnityEngine;
 using UnityEngine.UI;
+
+
 
 public class SplashScreenControlle : MonoBehaviour
 {
 	[SerializeField]
 	private Button ConnectButton;
+    [SerializeField]
+    private InputField nameText;
+    private string name;
 
-	public void AttemptSpatialOsConnection()
+    public string GetName()
+    {
+        return name;
+    }
+
+    public void AttemptSpatialOsConnection()
 	{
 		DisableConnectionButton();
 		AttemptConnection();
@@ -22,9 +33,20 @@ public class SplashScreenControlle : MonoBehaviour
 
 	private void AttemptConnection()
 	{
-		FindObjectOfType<Bootstrap>().ConnectToClient();
-		StartCoroutine(TimerUtils.WaitAndPerform(SimulationSettings.ClientConnectionTimeoutSecs, ConnectionTimeout));
-	}
+        name = nameText.text;
+        if (name.Length >= 1 && name.Length < 15)
+        {
+
+            // Disable connect button
+            ConnectButton.interactable = false;
+
+            
+            Debug.LogWarning("Nickname: "  + name);
+            FindObjectOfType<Bootstrap>().ConnectToClient();
+            StartCoroutine(TimerUtils.WaitAndPerform(SimulationSettings.ClientConnectionTimeoutSecs, ConnectionTimeout));
+        }
+        
+    }
 
 	private void ConnectionTimeout()
 	{
@@ -33,6 +55,7 @@ public class SplashScreenControlle : MonoBehaviour
 			SpatialOS.Disconnect();
 		}
 
-		ConnectButton.interactable = true;
+        
+        ConnectButton.interactable = true;
 	}
 }

@@ -1,6 +1,8 @@
 package improbable.core;
 
-type CreatePlayerRequest {}
+type CreatePlayerRequest {
+	string player_name = 1;
+}
 type CreatePlayerResponse {
     int32 status_code = 1;
 }

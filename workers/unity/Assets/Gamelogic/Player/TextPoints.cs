@@ -16,7 +16,7 @@ namespace Assets.Gamelogic.Player
     {
         [Require] private Score.Reader ScoreReader;
         [Require] private ClientAuthorityCheck.Writer ClientAuthorityCheckWriter;
-
+        
         private Text textPoints;
 
         private void Awake()
@@ -45,7 +45,9 @@ namespace Assets.Gamelogic.Player
 
         private void OnNumberOfPointsUpdated(int numberOfPoint)
         {
+            
             updateGUI(numberOfPoint);
+
         }
 
         void updateGUI(int score)

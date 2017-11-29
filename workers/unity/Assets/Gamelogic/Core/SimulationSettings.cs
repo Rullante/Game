@@ -6,7 +6,6 @@ namespace Assets.Gamelogic.Core
     {
         public static readonly string PlayerPrefabName = "Player";
         public static readonly string PlayerCreatorPrefabName = "PlayerCreator";
-        public static readonly string EnemyCubePrefabName = "EnemyCube";
 
 
         public static readonly Quaternion InitialThirdPersonCameraRotation = Quaternion.Euler(40, 0, 0);

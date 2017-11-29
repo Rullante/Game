@@ -1,0 +1,6 @@
+package improbable.core;
+
+component PlayerData {
+    id = 1600;
+    string name = 1;
+}

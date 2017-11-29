@@ -3,6 +3,7 @@ using Improbable.Core;
 using Improbable.Unity.Visualizer;
 using Improbable.Worker;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Gamelogic.Core
 {
@@ -10,7 +11,10 @@ namespace Assets.Gamelogic.Core
     {
         [Require] private Position.Reader PositionReader;
         [Require] private Rotation.Reader RotationReader;
+        [Require] private PlayerData.Reader PlayerDataReader;
+        public Canvas username;
 
+        
         void OnEnable()
         {
             transform.position = PositionReader.Data.coords.ToUnityVector();
@@ -18,6 +22,8 @@ namespace Assets.Gamelogic.Core
 
             PositionReader.ComponentUpdated.Add(OnPositionUpdated);
             RotationReader.ComponentUpdated.Add(OnRotationUpdated);
+
+            username.GetComponentInChildren<Text>().text = PlayerDataReader.Data.name;
         }
 
         void OnDisable()

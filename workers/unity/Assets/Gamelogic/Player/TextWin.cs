@@ -8,45 +8,39 @@ using Improbable.Core;
 using Improbable.Unity;
 using Improbable.Unity.Visualizer;
 using UnityEngine.UI;
+using Improbable.Unity.Core.EntityQueries;
+using Improbable.Unity.Core;
+using UnityEngine.SceneManagement;
+using System;
 
 namespace Assets.Gamelogic.Player
 {
-    [WorkerType(WorkerPlatform.UnityClient)]
+    
     public class TextWin : MonoBehaviour
     {
-        [Require] private Score.Reader ScoreReader;
         [Require] private ClientAuthorityCheck.Writer ClientAuthorityCheckWriter;
-
-        private Text textWin;
-
-        private void Awake()
-        {
-            textWin = GameObject.Find("Canvas/TextWin").GetComponent<Text>();
-            
-        }
-
+        [Require] private Winning.Reader WinningReader;
+        
 
         private void OnEnable()
         {
             // Register callback for when components change
-            ScoreReader.NumberOfPointsUpdated.Add(OnNumberOfPointsUpdated);
+            WinningReader.WinTriggered.Add(OnWin);
         }
 
+        
         private void OnDisable()
         {
             // Deregister callback for when components change
-            ScoreReader.NumberOfPointsUpdated.Remove(OnNumberOfPointsUpdated);
+            WinningReader.WinTriggered.Remove(OnWin);
         }
 
-        private void OnNumberOfPointsUpdated(int numberOfPoint)
+        private void OnWin(Win obj)
         {
-            updateGUI(numberOfPoint);
+            Debug.LogWarning("OOOOK");
+            SceneManager.LoadScene(BuildSettings.SplashScreenScene, LoadSceneMode.Additive);
         }
 
-        void updateGUI(int score)
-        {
-                if (score == 3) 
-                    textWin.text = "YOU WIN";
-        }
+
     }
 }

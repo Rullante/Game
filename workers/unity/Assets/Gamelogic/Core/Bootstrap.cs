@@ -1,10 +1,4 @@
-﻿using System;
-using Assets.Gamelogic.Utils;
-using Improbable;
-using Improbable.Core;
-using Improbable.Unity;
-using Improbable.Unity.Configuration;
-using Improbable;
+﻿using Improbable;
 using Improbable.Core;
 using Improbable.Unity;
 using Improbable.Unity.Configuration;
@@ -12,6 +6,7 @@ using Improbable.Unity.Core;
 using Improbable.Unity.Core.EntityQueries;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Assets.Gamelogic.Core;
 
 // Placed on a GameObject in a Unity scene to execute SpatialOS connection logic on startup.
 namespace Assets.Gamelogic.Core
@@ -79,9 +74,12 @@ namespace Assets.Gamelogic.Core
 		// Send a CreatePlayer command to the PLayerCreator entity requesting a Player entity be spawned.
 		private static void RequestPlayerCreation(EntityId playerCreatorEntityId)
 		{
-			SpatialOS.WorkerCommands.SendCommand(PlayerCreation.Commands.CreatePlayer.Descriptor, new CreatePlayerRequest(), playerCreatorEntityId)
-				.OnFailure(response => OnCreatePlayerFailure(response, playerCreatorEntityId));
-		}
+            string name;
+            name = FindObjectOfType<SplashScreenControlle>().GetName();
+            Debug.LogWarning("Request: " + name);
+            SpatialOS.WorkerCommands.SendCommand(PlayerCreation.Commands.CreatePlayer.Descriptor, new CreatePlayerRequest(name), playerCreatorEntityId)
+            .OnFailure(response => OnCreatePlayerFailure(response, playerCreatorEntityId));
+        }
 
 		private static void OnCreatePlayerFailure(ICommandErrorDetails _, EntityId playerCreatorEntityId)
 		{

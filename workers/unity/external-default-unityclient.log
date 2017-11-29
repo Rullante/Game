@@ -27,7 +27,7 @@ Platform assembly: C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\wor
 Loading C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Threading.dll into Unity Child Domain
 Platform assembly: C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll (this message is harmless)
 Loading C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Improbable.UnityDll.dll into Unity Child Domain
-- Completed reload, in  1.093 seconds
+- Completed reload, in  0.424 seconds
 Platform assembly: C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -35,7 +35,7 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 7.098535 ms
+UnloadTime: 5.921715 ms
 Command line build/worker/UnityClient@Windows/UnityClient@Windows.exe +assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName beta_oscar_bacon_891 -logfile external-default-unityclient.log
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -46,9 +46,9 @@ ProjectName = beta_oscar_bacon_891
 AssemblyName = local_assembly
 DeploymentId = 
 DeploymentTag = prod
-EngineId = UnityClient3a32e7de-4b91-4477-bf43-4973c8641e61
+EngineId = UnityCliente86f941e-5a90-4425-ac3c-fdf0d538e330
 EnginePlatform = UnityClient
-WorkerId = UnityClient3a32e7de-4b91-4477-bf43-4973c8641e61
+WorkerId = UnityCliente86f941e-5a90-4425-ac3c-fdf0d538e330
 WorkerPlatform = UnityClient
 EntityCreationLimitPerFrame = 100
 InfraServiceUrl = http://127.0.0.1:21000
@@ -78,6 +78,17 @@ LogExceptionToSpatialOs = True
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2fa0 -> priority: 1 
+  Thread -> id: 71c -> priority: 1 
+Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+ 
+(Filename:  Line: 371)
+
+Nickname: Mario
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 ClientMetrics OS=Windows 7 Service Pack 1 (6.1.7601) 64bit.
 Processor: type Intel(R) Core(TM) i7 CPU M 620 @ 2.67GHz, cores 4.
 Graphics: id 26817, vendor 4098, name AMD Mobility Radeon HD 5000 Series, size 1014.
@@ -88,12 +99,9 @@ Memory: 3956.
 Platform assembly: C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\Mono.Security.dll (this message is harmless)
 Platform assembly: C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Configuration.dll (this message is harmless)
 Platform assembly: C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\build\worker\UnityClient@Windows\UnityClient@Windows_Data\Managed\System.Xml.dll (this message is harmless)
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 29bc -> priority: 1 
-  Thread -> id: 271c -> priority: 1 
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Request: Mario
  
-(Filename:  Line: 371)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Look rotation viewing vector is zero
  
@@ -103,103 +111,11 @@ Look rotation viewing vector is zero
  
 (Filename:  Line: 92)
 
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Look rotation viewing vector is zero
  
-(Filename:  Line: 371)
+(Filename:  Line: 92)
 
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
+Look rotation viewing vector is zero
  
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
-
-Internal: JobTempAlloc has allocations that are more than 4 frames old - this is not allowed and likely a leak
- 
-(Filename:  Line: 371)
+(Filename:  Line: 92)
 
