@@ -19,20 +19,17 @@ namespace Assets.Gamelogic.Player
     public class TextWin : MonoBehaviour
     {
         [Require] private ClientAuthorityCheck.Writer ClientAuthorityCheckWriter;
-        [Require] private Winning.Reader WinningReader;
         
 
         private void OnEnable()
         {
             // Register callback for when components change
-            WinningReader.WinTriggered.Add(OnWin);
         }
 
         
         private void OnDisable()
         {
             // Deregister callback for when components change
-            WinningReader.WinTriggered.Remove(OnWin);
         }
 
         private void OnWin(Win obj)

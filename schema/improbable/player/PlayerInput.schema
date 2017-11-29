@@ -7,18 +7,8 @@ type Joystick {
 	float z_axis = 3;
 }
 
-type Win{
-}
-
 component PlayerInput {
     id = 1004;
     Joystick joystick = 1;
     event Fire fire;
-}
-
-
-component Winning {
-	id=1010;
-	
-	event Win win;
 }

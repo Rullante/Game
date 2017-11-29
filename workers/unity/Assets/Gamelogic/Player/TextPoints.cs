@@ -8,6 +8,7 @@ using Improbable.Core;
 using Improbable.Unity;
 using Improbable.Unity.Visualizer;
 using UnityEngine.UI;
+using System;
 
 namespace Assets.Gamelogic.Player
 {
@@ -15,12 +16,16 @@ namespace Assets.Gamelogic.Player
     public class TextPoints : MonoBehaviour
     {
         [Require] private Score.Reader ScoreReader;
+        [Require] private Status.Reader StatusReader;
         [Require] private ClientAuthorityCheck.Writer ClientAuthorityCheckWriter;
         
         private Text textPoints;
+        private Text textWin;
 
         private void Awake()
         {
+
+            textWin = GameObject.Find("Canvas/TextWin").GetComponent<Text>();
             textPoints = GameObject.Find("Canvas/TextPoints").GetComponent<Text>();
             if (SimulationSettings.Flag == false)
             {
@@ -35,12 +40,24 @@ namespace Assets.Gamelogic.Player
         {
             // Register callback for when components change
             ScoreReader.NumberOfPointsUpdated.Add(OnNumberOfPointsUpdated);
+            StatusReader.ComponentUpdated.Add(VerifyWin);
         }
 
         private void OnDisable()
         {
             // Deregister callback for when components change
             ScoreReader.NumberOfPointsUpdated.Remove(OnNumberOfPointsUpdated);
+            StatusReader.ComponentUpdated.Remove(VerifyWin);
+        }
+
+        private void VerifyWin(Status.Update obj)
+        {
+            Debug.LogWarning("WIN-LOSE");
+            if (ScoreReader.Data.numberOfPoints == 3) {
+                textWin.text = "YOU WIN";
+            } else {
+                textWin.text = "YOU LOSE";
+            }
         }
 
         private void OnNumberOfPointsUpdated(int numberOfPoint)
@@ -49,7 +66,6 @@ namespace Assets.Gamelogic.Player
             updateGUI(numberOfPoint);
 
         }
-
         void updateGUI(int score)
         {
             textPoints.text = "Points: " + score + "/3" ;

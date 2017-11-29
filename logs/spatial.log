@@ -1,25 +1,25 @@
-==========> Opened at 2017-11-29 17:02:41.4788615 +0100 CET
+==========> Opened at 2017-11-29 19:03:21.2003844 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
 debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
 debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
 info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-29 17:03:21.9721776 +0100 CET
+==========> Opened at 2017-11-29 19:04:16.6232989 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
 debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
 debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
 debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.1s
-==========> Opened at 2017-11-29 17:03:23.5172659 +0100 CET
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-29 19:04:17.9653282 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
 debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
 debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
 info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-29 17:03:41.0212671 +0100 CET
+==========> Opened at 2017-11-29 19:04:31.97238 +0100 CET
 debug Executing [spatial.exe build build-config UnityClient UnityWorker]
 debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
@@ -29,8 +29,8 @@ info Generating bridge settings for UnityClient.
 debug Worker 'UnityClient' defined at 'C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\spatialos.UnityClient.worker.json' has no managed launch configuration defined.
 info Generating bridge settings for UnityWorker.
 info Generating managed worker configuration for UnityWorker.
-info 'spatial.exe build build-config UnityClient UnityWorker' succeeded category=success duration=0.1s
-==========> Opened at 2017-11-29 17:04:09.2988845 +0100 CET
+info 'spatial.exe build build-config UnityClient UnityWorker' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-29 19:05:17.6118294 +0100 CET
 debug Executing [spatial.exe prepare-for-run]
 debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
@@ -44,43 +44,43 @@ debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt
 debug In '', C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\Erasmo\Documents\GitHub\Game\schema --schema_path=C:\Users\Erasmo\Documents\GitHub\Game\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
 debug C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
 info No changes detected, skipping code generation.
-info 'spatial.exe prepare-for-run' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-29 17:04:30.9201212 +0100 CET
+info 'spatial.exe prepare-for-run' succeeded category=success duration=0.3s
+==========> Opened at 2017-11-29 19:05:22.16809 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
 debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
 debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
 debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
 info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-29 17:04:33.2262531 +0100 CET
+==========> Opened at 2017-11-29 19:05:23.9631927 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
 debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
 debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-29 17:05:04.2110253 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
-debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
-debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-29 17:05:05.7561137 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
-debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
-debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
-debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
-debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-29 17:05:06.8341753 +0100 CET
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.2s category=success
+==========> Opened at 2017-11-29 19:05:54.4569368 +0100 CET
 debug Executing [spatial.exe worker launch UnityClient default]
-debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game
+debug Current directory = C:\Users\Erasmo\Documenti\github\Game
+debug Found project root at C:\Users\Erasmo\Documenti\github\Game
+debug Found project root at C:\Users\Erasmo\Documenti\github\Game
+debug In 'C:\Users\Erasmo\Documenti\github\Game\workers\unity', build/worker/UnityClient@Windows/UnityClient@Windows.exe [+assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName beta_oscar_bacon_891 -logfile external-default-unityclient.log]
+info Mono path[0] = 'C:/Users/Erasmo/Documenti/github/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Managed'
+info Mono path[1] = 'C:/Users/Erasmo/Documenti/github/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono'
+info Mono config path = 'C:/Users/Erasmo/Documenti/github/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono/etc'
+==========> Opened at 2017-11-29 19:06:18.7373256 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
+debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-29 19:06:21.0914603 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\Erasmo\Documents\GitHub\Game\workers\unity
 debug Found project root at C:\Users\Erasmo\Documents\GitHub\Game
-debug In 'C:\Users\Erasmo\Documents\GitHub\Game\workers\unity', build/worker/UnityClient@Windows/UnityClient@Windows.exe [+assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName beta_oscar_bacon_891 -logfile external-default-unityclient.log]
-info Mono path[0] = 'C:/Users/Erasmo/Documents/GitHub/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Managed'
-info Mono path[1] = 'C:/Users/Erasmo/Documents/GitHub/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono'
-info Mono config path = 'C:/Users/Erasmo/Documents/GitHub/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono/etc'
-info Player data archive not found at `C:/Users/Erasmo/Documents/GitHub/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
-info 'spatial.exe worker launch UnityClient default' succeeded duration=1m:35s category=success
+debug Found version '12.0.1' in file C:\Users\Erasmo\Documents\GitHub\Game\spatialos.json
+debug Skipping extraction of [C:\Users\Erasmo\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\Erasmo\Documents\GitHub\Game\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+info Player data archive not found at `C:/Users/Erasmo/Documenti/github/Game/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
+info 'spatial.exe worker launch UnityClient default' succeeded duration=57.3s category=success
