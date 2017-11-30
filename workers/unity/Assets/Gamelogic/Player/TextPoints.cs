@@ -12,6 +12,7 @@ using System;
 using Improbable.Entity.Component;
 using Improbable.Unity.Core;
 using Assets.Gamelogic.Utils;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Gamelogic.Player
 {
@@ -23,13 +24,16 @@ namespace Assets.Gamelogic.Player
         [Require] private ClientAuthorityCheck.Writer ClientAuthorityCheckWriter;
         
         private Text textPoints;
-        private Text textWin;
+		private Text textWin;
+		private Image panel;
 
         private void Awake()
         {
 
             textWin = GameObject.Find("Canvas/TextWin").GetComponent<Text>();
             textPoints = GameObject.Find("Canvas/TextPoints").GetComponent<Text>();
+			panel = GameObject.Find("Canvas/Panel").GetComponent<Image>();
+			panel.enabled = false;
             if (SimulationSettings.Flag == false)
             {
                 SimulationSettings.Flag = true;
@@ -60,31 +64,23 @@ namespace Assets.Gamelogic.Player
         }
 		void updateGUI(int score)
 		{
-			textPoints.text = "Points: " + score + "/3" ;
-			if (score == 1000) {
-				textWin.text = "YOU WIN";
-				textPoints.enabled = false;
-			} else if (score == -1){
-				textWin.text = "YOU LOSE";
-				textPoints.enabled = false;
-			}
+			textPoints.text = "Points: " + score + "/" + SimulationSettings.PointsToWin ;
 
 		}
 
 		private void OnGameOver(int gameover){
 			if(gameover == 2){
-			if (ScoreReader.Data.numberOfPoints == 3) {
+				panel.enabled = true;
+				if (ScoreReader.Data.numberOfPoints == SimulationSettings.PointsToWin) {
 				textWin.text = "YOU WIN";
 				textPoints.enabled = false;
-			} else if (ScoreReader.Data.numberOfPoints != 3){
+				} else if (ScoreReader.Data.numberOfPoints != SimulationSettings.PointsToWin){
 				textWin.text = "YOU LOSE";
 				textPoints.enabled = false;
 				}
-
-				FindObjectOfType<Bootstrap>().ConnectToClient();
-				StartCoroutine(TimerUtils.WaitAndPerform(SimulationSettings.ClientConnectionTimeoutSecs, ConnectionTimeout));
+					
+				SpatialOS.Disconnect();
 			}
 		}
-		private void ConnectionTimeout(){}
     }
 }

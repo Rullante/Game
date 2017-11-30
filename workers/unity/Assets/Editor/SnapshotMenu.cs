@@ -45,7 +45,7 @@ namespace Assets.Editor
 			for (var i = 0; i < SimulationSettings.Total; i++)
 			{
 				// Choose a starting position for this pirate entity
-				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0,
+				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0.5f,
 					(Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter);
 				var bonusRotation = System.Convert.ToUInt32(Random.value * 360);
 
@@ -59,7 +59,7 @@ namespace Assets.Editor
 			for (var i = 0; i < SimulationSettings.Total; i++)
 			{
 				// Choose a starting position for this pirate entity
-				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0,
+				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0.5f,
 					(Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter);
 				var bonusRotation = System.Convert.ToUInt32(Random.value * 360);
 
@@ -73,7 +73,7 @@ namespace Assets.Editor
 			for (var i = 0; i < SimulationSettings.Total; i++)
 			{
 				// Choose a starting position for this pirate entity
-				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0,
+				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0.5f,
 					(Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter);
 				var bonusRotation = System.Convert.ToUInt32(Random.value * 360);
 

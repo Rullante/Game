@@ -7,10 +7,10 @@ namespace Assets.Gamelogic.Shoots
 		[SerializeField]
 		private GameObject ShootPrefab;
 
-		private float InitialVelocity = 30f;
+		private float InitialVelocity = 100f;
 		private float MaxPitch = 25f;
-		private float MaxAimDeviationAngle = 2f;
-		private float ShootDistance = 10f;
+		private float MaxAimDeviationAngle = 1f;
+		private float ShootDistance = 40f;
 
 		private float timeShootsWereLastFired;
 		private float shootRechargeTime;

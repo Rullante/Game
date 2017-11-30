@@ -19,10 +19,12 @@ namespace Assets.Gamelogic.Core
         public static readonly uint TotalHeartbeatsBeforeTimeout = 3;
         public static readonly float HeartbeatSendingIntervalSecs = 3;
 
-        public static readonly int TargetClientFramerate = 160;
-        public static readonly int TargetServerFramerate = 160;
-        public static readonly int FixedFramerate = 120;
+        public static readonly int TargetClientFramerate = 50;
+        public static readonly int TargetServerFramerate = 50;
+        public static readonly int FixedFramerate = 60;
 		public static readonly float ClientConnectionTimeoutSecs = 7;
+
+		public static readonly int PointsToWin = 5;
 
         public static bool Flag
         {
@@ -39,7 +41,7 @@ namespace Assets.Gamelogic.Core
 		public static readonly float PlayerAcceleration = 12;
 
         public static readonly float bonusSpawnDiameter = 300;
-        public static readonly float Total = 15;
+        public static readonly float Total = 5;
 
     }
 }

@@ -1,0 +1,134 @@
+Initialize engine version: 5.6.0f3 (497a0f351392)
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Generated.Code.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Generated.Code.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Improbable.WorkerSdkCsharp.Framework.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\System.Threading.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\System.Threading.dll into Unity Child Domain
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Improbable.UnityDll.dll (this message is harmless)
+Loading C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Improbable.UnityDll.dll into Unity Child Domain
+- Completed reload, in  0.030 seconds
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 1.065937 ms
+Scene 'SplashScreen' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 137)
+
+Command line C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows.exe +projectName beta_oscar_bacon_891 +receptionistIp 127.0.0.1 +receptionistPort 7777 +workerType UnityWorker +workerId UnityWorker0 +useInternalIpForBridge true +infraServicesUrl http://127.0.0.1:21000 +assemblyName local_assembly +linkProtocol RakNet -logfile C:\Users\mario\OneDrive\Documenti\GitHub\Team8\logs\2017-11-30_16-24-14_0\workers\UnityWorker\UnityWorker0-1629410936083643575.log -batchmode -nographics
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+WorkerConfiguration settings
+AppName = 
+ProjectName = beta_oscar_bacon_891
+AssemblyName = local_assembly
+DeploymentId = 
+DeploymentTag = prod
+EngineId = UnityWorker0
+EnginePlatform = UnityWorker
+WorkerId = UnityWorker0
+WorkerPlatform = UnityWorker
+EntityCreationLimitPerFrame = 100
+InfraServiceUrl = http://127.0.0.1:21000
+LocatorHost = locator.improbable.io
+ReceptionistHost = 127.0.0.1
+ReceptionistPort = 7777
+LinkProtocol = RakNet
+LoginToken = 
+ProtocolLoggingOnStartup = False
+ProtocolLogPrefix = protocol-
+ProtocolLogMaxFileBytes = 104857600
+RaknetHeartbeatTimeoutMillis = 60000
+ReceiveQueueCapacity = 32768
+SendQueueCapacity = 16384
+ShowDebugTraces = False
+SteamToken = 
+TcpMultiplexLevel = 32
+UseInstrumentation = True
+UsePerInstanceAssetCache = True
+UsePrefabPooling = False
+LogDebugToSpatialOs = False
+LogAssertToSpatialOs = False
+LogWarningToSpatialOs = True
+LogErrorToSpatialOs = True
+LogExceptionToSpatialOs = True
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\Mono.Security.dll (this message is harmless)
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\mario\AppData\Local\Temp\zip-downloader1323009241170077401\ae0366978873b2a1b89fb41c78b89071\UnityWorker@Windows_Data\Managed\System.Xml.dll (this message is harmless)
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 1eac -> priority: 1 
+  Thread -> id: 23a4 -> priority: 1 
+  Thread -> id: 23fc -> priority: 1 
+  Thread -> id: 2f30 -> priority: 1 
+AwardPoints command succeeded. Points awarded: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AwardPoints command succeeded. Points awarded: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+Look rotation viewing vector is zero
+ 
+(Filename:  Line: 92)
+
+called reset
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+queryied
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AwardPoints command succeeded. Points awarded: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Found 2 nearby entities with a health component
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+entity found
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+entity found
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gamewin command succeeded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gamewin command succeeded.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+

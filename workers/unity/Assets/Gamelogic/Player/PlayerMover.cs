@@ -52,6 +52,9 @@ public class PlayerMover : MonoBehaviour {
             }
 			HealthWriter.Send (new Health.Update ().SetCurrentHealth (1000));
 			transform.position = new Vector3 (0, 10, 0);
+			if (rigidbody != null)
+				rigidbody.velocity = new Vector3 (0, 0, 0);
+
             
     }
 }

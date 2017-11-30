@@ -1,32 +1,25 @@
-==========> Opened at 2017-11-30 15:24:33.4892093 +0100 CET
-debug Executing [spatial.exe worker launch UnityClient default]
-debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug In 'C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity', build/worker/UnityClient@Windows/UnityClient@Windows.exe [+assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName beta_oscar_bacon_891 -logfile external-default-unityclient.log]
-info Mono path[0] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Managed'
-info Mono path[1] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono'
-info Mono config path = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono/etc'
-debug Killing {UnityClient@Windows.exe build/worker/UnityClient@Windows/UnityClient@Windows.exe +assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName beta_oscar_bacon_891 -logfile external-default-unityclient.log 16516}
-info Player data archive not found at `C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
-info 'spatial.exe worker launch UnityClient default' succeeded duration=2m:2s category=success
-info Player data archive not found at `C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
-info 'spatial.exe worker launch UnityClient default' succeeded duration=2m:8s category=success
-==========> Opened at 2017-11-30 15:33:43.006078 +0100 CET
-debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
-debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
-debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
-debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-30 15:33:44.1851237 +0100 CET
+==========> Opened at 2017-11-30 18:09:18.2439906 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
 debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
 debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
 info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-30 15:35:41.2785987 +0100 CET
+==========> Opened at 2017-11-30 18:09:24.5769123 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
+debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
+debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
+debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-30 18:09:26.0404834 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
+debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
+debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
+debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-30 18:10:05.8109159 +0100 CET
 debug Executing [spatial.exe build build-config UnityClient UnityWorker]
 debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
@@ -37,7 +30,7 @@ debug Worker 'UnityClient' defined at 'C:\Users\mario\OneDrive\Documenti\GitHub\
 info Generating bridge settings for UnityWorker.
 info Generating managed worker configuration for UnityWorker.
 info 'spatial.exe build build-config UnityClient UnityWorker' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-30 15:36:00.696737 +0100 CET
+==========> Opened at 2017-11-30 18:10:25.6513988 +0100 CET
 debug Executing [spatial.exe prepare-for-run]
 debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
@@ -51,22 +44,22 @@ debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\
 debug In '', C:\Users\mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe [--schema_path=C:\Users\mario\OneDrive\Documenti\GitHub\Team8\schema --schema_path=C:\Users\mario\OneDrive\Documenti\GitHub\Team8\build\dependencies\schema\standard_library --load_all_schema_on_schema_path]
 debug C:\Users\mario\AppData\Local\.improbable\toolbelt\tools\12.0.1\schema_compiler-x86_64-win32\schema_compiler.exe: No outputs specified, validating schema only.
 info No changes detected, skipping code generation.
-info 'spatial.exe prepare-for-run' succeeded duration=0.2s category=success
-==========> Opened at 2017-11-30 15:36:04.2083132 +0100 CET
+info 'spatial.exe prepare-for-run' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-30 18:10:31.5948254 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
 debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
 debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
 debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
-info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.1s
-==========> Opened at 2017-11-30 15:36:05.5839716 +0100 CET
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded duration=0.1s category=success
+==========> Opened at 2017-11-30 18:10:33.1510549 +0100 CET
 debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
 debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
 debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
 debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
 info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
-==========> Opened at 2017-11-30 15:36:25.0413794 +0100 CET
+==========> Opened at 2017-11-30 18:13:42.0848166 +0100 CET
 debug Executing [spatial.exe worker launch UnityClient default]
 debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
@@ -75,27 +68,19 @@ debug In 'C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity', build/w
 info Mono path[0] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Managed'
 info Mono path[1] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono'
 info Mono config path = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono/etc'
-==========> Opened at 2017-11-30 15:36:28.4776241 +0100 CET
-debug Executing [spatial.exe worker launch UnityClient default]
-debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8
+==========> Opened at 2017-11-30 18:14:34.8427088 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32]
+debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
+debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
+debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\59edb0e1351b09eb2e4fe1f046530026d8b29af9\worker_sdk\12.0.1\core-dynamic-x86-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86-win32' succeeded category=success duration=0.1s
+==========> Opened at 2017-11-30 18:14:36.6049366 +0100 CET
+debug Executing [spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32]
+debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity
 debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug In 'C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity', build/worker/UnityClient@Windows/UnityClient@Windows.exe [+assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName beta_oscar_bacon_891 -logfile external-default-unityclient.log]
-info Mono path[0] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Managed'
-info Mono path[1] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono'
-info Mono config path = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono/etc'
-==========> Opened at 2017-11-30 15:36:46.2809887 +0100 CET
-debug Executing [spatial.exe worker launch UnityClient default]
-debug Current directory = C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug Found project root at C:\Users\mario\OneDrive\Documenti\GitHub\Team8
-debug In 'C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity', build/worker/UnityClient@Windows/UnityClient@Windows.exe [+assemblyName local_assembly +workerType UnityClient +infraServicesUrl http://127.0.0.1:21000 +projectName beta_oscar_bacon_891 -logfile external-default-unityclient.log]
-info Mono path[0] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Managed'
-info Mono path[1] = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono'
-info Mono config path = 'C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/Mono/etc'
+debug Found version '12.0.1' in file C:\Users\mario\OneDrive\Documenti\GitHub\Team8\spatialos.json
+debug Skipping extraction of [C:\Users\mario\AppData\Local\.improbable\toolbelt\cache\worker_package\f5e3365f80a0fe506bd318da59d5ed108359925f\worker_sdk\12.0.1\core-dynamic-x86_64-win32.zip] to C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32. Nothing has changed.
+info 'spatial.exe worker_package unpack-to worker_sdk core-dynamic-x86_64-win32 C:\Users\mario\OneDrive\Documenti\GitHub\Team8\workers\unity\Assets\Plugins\Improbable\CoreSdk\core-dynamic-x86_64-win32' succeeded duration=0.1s category=success
 info Player data archive not found at `C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
-info 'spatial.exe worker launch UnityClient default' succeeded duration=2m:24s category=success
-info Player data archive not found at `C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
-info 'spatial.exe worker launch UnityClient default' succeeded duration=2m:29s category=success
-info Player data archive not found at `C:/Users/mario/OneDrive/Documenti/GitHub/Team8/workers/unity/build/worker/UnityClient@Windows/UnityClient@Windows_Data/data.unity3d`, using local filesystem
-info 'spatial.exe worker launch UnityClient default' succeeded duration=2m:9s category=success
+info 'spatial.exe worker launch UnityClient default' succeeded category=success duration=2m:28s

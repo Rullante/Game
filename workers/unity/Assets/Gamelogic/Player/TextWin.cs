@@ -13,6 +13,14 @@ using Improbable.Unity.Core;
 using UnityEngine.SceneManagement;
 using System;
 
+using Assets.Gamelogic.Core;
+using Assets.Gamelogic.Utils;
+using Improbable.Unity.Core;
+using System;
+using UnityEngine;
+using UnityEngine.UI;
+
+
 namespace Assets.Gamelogic.Player
 {
     
