@@ -48,6 +48,46 @@ namespace Assets.Gamelogic.EntityTemplates
             return playerTemplate;
         }
 
+
+
+		public static Entity CreatehealthplusTemplate(Vector3 initialPosition, uint initialRotation)
+		{
+			var healthplus = EntityBuilder.Begin()
+				.AddPositionComponent(initialPosition, CommonRequirementSets.PhysicsOnly)
+				.AddMetadataComponent(SimulationSettings.PlayerPrefabHealthplus)
+				.SetPersistence(true)
+				.SetReadAcl(CommonRequirementSets.PhysicsOrVisual)
+				.AddComponent(new Rotation.Data(Quaternion.identity.ToNativeQuaternion()), CommonRequirementSets.PhysicsOnly)
+				.Build();
+
+			return healthplus;
+		}
+
+		public static Entity CreatehealthlessTemplate(Vector3 initialPosition, uint initialRotation)
+		{
+			var healthless= EntityBuilder.Begin()
+				.AddPositionComponent(initialPosition, CommonRequirementSets.PhysicsOnly)
+				.AddMetadataComponent(SimulationSettings.PlayerPrefabHealthless)
+				.SetPersistence(true)
+				.SetReadAcl(CommonRequirementSets.PhysicsOrVisual)
+				.AddComponent(new Rotation.Data(Quaternion.identity.ToNativeQuaternion()), CommonRequirementSets.PhysicsOnly)
+				.Build();
+
+			return healthless;
+		}
+
+		public static Entity CreatepointsTemplate(Vector3 initialPosition, uint initialRotation)
+		{
+			var points = EntityBuilder.Begin()
+				.AddPositionComponent(initialPosition, CommonRequirementSets.PhysicsOnly)
+				.AddMetadataComponent(SimulationSettings.PlayerPrefabPoints)
+				.SetPersistence(true)
+				.SetReadAcl(CommonRequirementSets.PhysicsOrVisual)
+				.AddComponent(new Rotation.Data(Quaternion.identity.ToNativeQuaternion()), CommonRequirementSets.PhysicsOnly)
+				.Build();
+
+			return points;
+		}
      
 
 

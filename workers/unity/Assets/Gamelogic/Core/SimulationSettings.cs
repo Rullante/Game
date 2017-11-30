@@ -6,6 +6,9 @@ namespace Assets.Gamelogic.Core
     {
         public static readonly string PlayerPrefabName = "Player";
         public static readonly string PlayerCreatorPrefabName = "PlayerCreator";
+		public static readonly string PlayerPrefabHealthplus = "health+";
+		public static readonly string PlayerPrefabHealthless = "health-";
+		public static readonly string PlayerPrefabPoints = "points";
 
 
         public static readonly Quaternion InitialThirdPersonCameraRotation = Quaternion.Euler(40, 0, 0);
@@ -16,9 +19,9 @@ namespace Assets.Gamelogic.Core
         public static readonly uint TotalHeartbeatsBeforeTimeout = 3;
         public static readonly float HeartbeatSendingIntervalSecs = 3;
 
-        public static readonly int TargetClientFramerate = 60;
-        public static readonly int TargetServerFramerate = 60;
-        public static readonly int FixedFramerate = 20;
+        public static readonly int TargetClientFramerate = 160;
+        public static readonly int TargetServerFramerate = 160;
+        public static readonly int FixedFramerate = 120;
 		public static readonly float ClientConnectionTimeoutSecs = 7;
 
         public static bool Flag
@@ -33,10 +36,10 @@ namespace Assets.Gamelogic.Core
         public static readonly string DefaultSnapshotPath = Application.dataPath + "/../../../snapshots/default.snapshot";
 
 		public static readonly float PlayerSpawnHeight = 10;
-		public static readonly float PlayerAcceleration = 15;
+		public static readonly float PlayerAcceleration = 8;
 
-        public static readonly float EnemiesSpawnDiameter = 300;
-        public static readonly float TotalEnemies = 10;
+        public static readonly float bonusSpawnDiameter = 300;
+        public static readonly float Total = 15;
 
     }
 }

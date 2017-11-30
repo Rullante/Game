@@ -18,7 +18,9 @@ namespace Assets.Editor
 			var currentEntityId = 1;
 
 			snapshotEntities.Add(new EntityId(currentEntityId++), EntityTemplateFactory.CreatePlayerCreatorTemplate());
-
+			PopulateSnapshotWithHealthlessEntities(ref snapshotEntities, ref currentEntityId);
+			PopulateSnapshotWithHealthplusEntities(ref snapshotEntities, ref currentEntityId);
+			PopulateSnapshotWithPointsEntities(ref snapshotEntities, ref currentEntityId);
 
             SaveSnapshot(snapshotEntities);
 		}
@@ -37,5 +39,47 @@ namespace Assets.Editor
 				Debug.LogFormat("Successfully generated initial world snapshot at {0}", SimulationSettings.DefaultSnapshotPath);
 			}
 		}
-    }
+
+		public static void PopulateSnapshotWithHealthplusEntities(ref Dictionary<EntityId, Entity> snapshotEntities, ref int nextAvailableId)
+		{
+			for (var i = 0; i < SimulationSettings.Total; i++)
+			{
+				// Choose a starting position for this pirate entity
+				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0,
+					(Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter);
+				var bonusRotation = System.Convert.ToUInt32(Random.value * 360);
+
+				snapshotEntities.Add(new EntityId(nextAvailableId++),
+					EntityTemplateFactory.CreatehealthplusTemplate(bonusCoordinates, bonusRotation));
+			}
+		}
+
+		public static void PopulateSnapshotWithHealthlessEntities(ref Dictionary<EntityId, Entity> snapshotEntities, ref int nextAvailableId)
+		{
+			for (var i = 0; i < SimulationSettings.Total; i++)
+			{
+				// Choose a starting position for this pirate entity
+				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0,
+					(Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter);
+				var bonusRotation = System.Convert.ToUInt32(Random.value * 360);
+
+				snapshotEntities.Add(new EntityId(nextAvailableId++),
+					EntityTemplateFactory.CreatehealthlessTemplate(bonusCoordinates, bonusRotation));
+			}
+		}
+
+		public static void PopulateSnapshotWithPointsEntities(ref Dictionary<EntityId, Entity> snapshotEntities, ref int nextAvailableId)
+		{
+			for (var i = 0; i < SimulationSettings.Total; i++)
+			{
+				// Choose a starting position for this pirate entity
+				var bonusCoordinates = new Vector3((Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter, 0,
+					(Random.value - 0.5f) * SimulationSettings.bonusSpawnDiameter);
+				var bonusRotation = System.Convert.ToUInt32(Random.value * 360);
+
+				snapshotEntities.Add(new EntityId(nextAvailableId++),
+					EntityTemplateFactory.CreatepointsTemplate(bonusCoordinates, bonusRotation));
+			}
+		}
+	}
 }
