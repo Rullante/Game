@@ -10,6 +10,10 @@ using Improbable.Collections;
 using Improbable;
 using Improbable.Worker;
 
+using System.Collections;
+using System.Collections.Generic;
+using System;
+
 namespace Assets.Gamelogic.Player
 {
 	// Add this MonoBehaviour on UnityWorker (server-side) workers only
@@ -42,7 +46,7 @@ namespace Assets.Gamelogic.Player
 			int newScore = ScoreWriter.Data.numberOfPoints + (int)request.amount;
 			ScoreWriter.Send(new Score.Update().SetNumberOfPoints(newScore));
             if (newScore == 3) {
-                ResetQuery();
+				ResetQuery();
                 return new AwardResponse(request.amount);
             }
             else { 
@@ -51,7 +55,7 @@ namespace Assets.Gamelogic.Player
             }
         }
 
-        void ResetQuery()
+		void ResetQuery()
         {
 
             Debug.LogWarning("called reset");
@@ -69,16 +73,17 @@ namespace Assets.Gamelogic.Player
                   foreach (EntityId id in resultMap.Keys)
                   {
                       Entity entity = SpatialOS.GetLocalEntity(id);
-                      if (entity != null)
-                      {
+						if (entity != null){
+                      	{
                           Debug.LogWarning("entity found");
 
-                          SpatialOS.Commands.SendCommand(StatusWriter, Status.Commands.GameWon.Descriptor, new Winner("Game over"), id)
-                              .OnSuccess(OnGameWinSuccess)
-                              .OnFailure(OnGameWinFailure);
+							SpatialOS.Commands.SendCommand(StatusWriter, Status.Commands.GameWon.Descriptor, new Winner("Game over"), id)
+                            .OnSuccess(OnGameWinSuccess)
+                        	.OnFailure(OnGameWinFailure);
 
                       //StatusWriter.Send(new Status.Update().AddGameWon(new Win(gameObject.EntityId().ToString())));
-                  }
+                  		}
+					}
                   }
 
               })

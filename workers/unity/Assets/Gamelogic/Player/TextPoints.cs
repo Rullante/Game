@@ -9,6 +9,9 @@ using Improbable.Unity;
 using Improbable.Unity.Visualizer;
 using UnityEngine.UI;
 using System;
+using Improbable.Entity.Component;
+using Improbable.Unity.Core;
+using Assets.Gamelogic.Utils;
 
 namespace Assets.Gamelogic.Player
 {
@@ -40,36 +43,48 @@ namespace Assets.Gamelogic.Player
         {
             // Register callback for when components change
             ScoreReader.NumberOfPointsUpdated.Add(OnNumberOfPointsUpdated);
-            StatusReader.ComponentUpdated.Add(VerifyWin);
+			StatusReader.GameOverUpdated.Add(OnGameOver);
         }
 
         private void OnDisable()
         {
             // Deregister callback for when components change
             ScoreReader.NumberOfPointsUpdated.Remove(OnNumberOfPointsUpdated);
-            StatusReader.ComponentUpdated.Remove(VerifyWin);
+			StatusReader.GameOverUpdated.Remove(OnGameOver);
         }
-
-        private void VerifyWin(Status.Update obj)
-        {
-            Debug.LogWarning("WIN-LOSE");
-            if (ScoreReader.Data.numberOfPoints == 3) {
-                textWin.text = "YOU WIN";
-            } else {
-                textWin.text = "YOU LOSE";
-            }
-        }
-
         private void OnNumberOfPointsUpdated(int numberOfPoint)
         {
             
             updateGUI(numberOfPoint);
 
         }
-        void updateGUI(int score)
-        {
-            textPoints.text = "Points: " + score + "/3" ;
-           
-        }
+		void updateGUI(int score)
+		{
+			textPoints.text = "Points: " + score + "/3" ;
+			if (score == 1000) {
+				textWin.text = "YOU WIN";
+				textPoints.enabled = false;
+			} else if (score == -1){
+				textWin.text = "YOU LOSE";
+				textPoints.enabled = false;
+			}
+
+		}
+
+		private void OnGameOver(int gameover){
+			if(gameover == 2){
+			if (ScoreReader.Data.numberOfPoints == 3) {
+				textWin.text = "YOU WIN";
+				textPoints.enabled = false;
+			} else if (ScoreReader.Data.numberOfPoints != 3){
+				textWin.text = "YOU LOSE";
+				textPoints.enabled = false;
+				}
+
+				FindObjectOfType<Bootstrap>().ConnectToClient();
+				StartCoroutine(TimerUtils.WaitAndPerform(SimulationSettings.ClientConnectionTimeoutSecs, ConnectionTimeout));
+			}
+		}
+		private void ConnectionTimeout(){}
     }
 }

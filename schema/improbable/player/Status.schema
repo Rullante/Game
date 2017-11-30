@@ -3,15 +3,15 @@ package improbable.player;
 type Winner{
 	string winner_name = 1;
 	}
-type Dead {}
 type Win{
-	string winner_name = 1;
+
 }
 
 component Status {
     // Component ID, unique within the project
     id = 2003;
+    int32 game_over = 1;
 
-	event Dead player_dead;
+
 	command Win game_won(Winner);
 }

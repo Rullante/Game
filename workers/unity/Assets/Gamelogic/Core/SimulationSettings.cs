@@ -36,7 +36,7 @@ namespace Assets.Gamelogic.Core
         public static readonly string DefaultSnapshotPath = Application.dataPath + "/../../../snapshots/default.snapshot";
 
 		public static readonly float PlayerSpawnHeight = 10;
-		public static readonly float PlayerAcceleration = 8;
+		public static readonly float PlayerAcceleration = 12;
 
         public static readonly float bonusSpawnDiameter = 300;
         public static readonly float Total = 15;

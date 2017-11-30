@@ -1,0 +1,1200 @@
+2017-11-30 15:03:54,517 INFO  [i.deployment.InternalGameLauncher] [] [] [] : Parsed 353 internal flags at startup
+2017-11-30 15:03:54,637 INFO  [i.deployment.InternalGameLauncher] [] [] [] : SpatialOS runtime version: 11-20171129T133416Z-20e0e7c
+2017-11-30 15:03:54,775 INFO  [i.c.c.f.FlagzFieldRegistryUpdater] [] [] [] : Initialized Fabric flagz registry with 11 set fields.
+2017-11-30 15:03:55,861 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.StatusDiscoveryInternalService) on 127.0.0.1:5301.
+2017-11-30 15:03:55,866 INFO  [i.c.discovery.ServiceDiscoveryImpl] [] [] [] : Status discovery address: host: "127.0.0.1"
+port: 5301
+
+2017-11-30 15:03:55,869 INFO  [improbable.module.ModuleNode] [] [] [] : Starting Fabric node as master (IP: 127.0.0.1).
+2017-11-30 15:03:55,876 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_NODES_STARTED
+2017-11-30 15:03:55,877 INFO  [improbable.module.ModuleNode] [] [] [] : Node master has started, waiting for other nodes to reach the same checkpoint.
+2017-11-30 15:03:55,877 INFO  [improbable.module.ModuleNode] [] [] [] : All nodes have been started.
+2017-11-30 15:03:55,883 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ModuleService) on 127.0.0.1:9000.
+2017-11-30 15:03:55,889 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.HealthCheckService) on 127.0.0.1:9001.
+2017-11-30 15:03:55,895 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.PerfInternalService) on 127.0.0.1:9002.
+2017-11-30 15:03:55,900 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ContentionInternalService) on 127.0.0.1:9003.
+2017-11-30 15:03:55,913 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.FeatureService) on 127.0.0.1:9004.
+2017-11-30 15:03:55,930 INFO  [i.c.config.flagz.WorkerFlagzUpdater] [] [] [] : Initialized worker flagz registry with 0 set fields.
+2017-11-30 15:03:55,931 INFO  [improbable.module.ModuleNode] [] [] [] : Using master node configuration loader.
+2017-11-30 15:03:55,938 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.NodeConfigurationInternalService) on 127.0.0.1:9005.
+2017-11-30 15:03:55,954 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Using roles [MASTER, GSIM, BRIDGE, WORKER_RUNNER, INSPECTION] for node node_id {
+  deployment_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+private_ip: "127.0.0.1"
+roles: MASTER
+roles: GSIM
+roles: BRIDGE
+roles: WORKER_RUNNER
+roles: INSPECTION
+
+2017-11-30 15:03:55,966 INFO  [improbable.core.config.node.GsimGrid] [] [] [] : Created gsim grid configuration of size (1500, 1500) with 1 columns and 1 rows, using gsims of (30, 30) chunks.
+2017-11-30 15:03:55,976 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Original deployment module configuration (before parsing): {deployment_id {
+  project_id {
+    name: "beta_oscar_bacon_891"
+  }
+  name: "local"
+}
+name: "master"
+=[ProfilingModule, BridgeModuleOracleModule, BridgeOracleModule, PersistenceModule, ReceptionistModule, RouterModule, GSimModule, BridgeModule, EngineStartupModule, InspectionRestModule]}
+2017-11-30 15:03:55,987 INFO  [i.c.c.n.MasterNodeConfigurationLoader] [] [] [] : Master successfully loaded configurations for 1 node(s).
+2017-11-30 15:03:55,992 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded node configuration: node_id {
+  deployment_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local"
+  }
+  name: "master"
+}
+gsim_configurations {
+  extent {
+    bottom_left {
+      x_in_chunks: -15
+      z_in_chunks: -15
+    }
+    top_right {
+      x_in_chunks: 15
+      z_in_chunks: 15
+    }
+  }
+}
+start_router: true
+start_bridge_oracle: true
+start_bridge_module_oracle: true
+start_engine_startup_module: true
+start_receptionist_service: true
+start_inspection_rest_module: true
+start_snapshot_service: true
+start_profiling_module: true
+bridge_modules: "BridgeModule"
+gsim_modules: "GSimModule"
+
+2017-11-30 15:03:55,993 INFO  [improbable.module.ModuleNode] [] [] [] : Using master world extents provider.
+2017-11-30 15:03:56,002 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorldExtentsInternalService) on 127.0.0.1:9006.
+2017-11-30 15:03:56,003 INFO  [i.c.world.MasterWorldExtentsProvider] [] [] [] : Successfully initialized world extents with 1 rectangle(s).
+2017-11-30 15:03:56,005 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded world extents: WorldExtents{proto=rectangles {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+  responsible_gsim_id {
+  }
+}
+bounding_rectangle {
+  bottom_left {
+    x: -750.0
+    z: -750.0
+  }
+  top_right {
+    x: 750.0
+    z: 750.0
+  }
+  is_fully_simulated: true
+}
+}
+2017-11-30 15:03:56,101 INFO  [i.e.schema.ParsedFileDescriptorSet] [] [] [] : Parsed file descriptors of 15 proto files.
+2017-11-30 15:03:56,125 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.core.Rotation, improbable.core.PlayerData, improbable.player.Score, improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.player.Status, improbable.core.PlayerCreation, improbable.player.PlayerInput, improbable.core.ClientAuthorityCheck, improbable.player.ClientConnection, improbable.player.Health]
+2017-11-30 15:03:56,132 INFO  [i.entity.schema.SchemaFactory] [] [] [] : Found components: [improbable.EntityAcl, improbable.Metadata, improbable.Position, improbable.Persistence, improbable.internal.EntityAuthority, improbable.core.PlayerCreation, improbable.player.PlayerInput, improbable.player.Score, improbable.core.Rotation, improbable.player.ClientConnection, improbable.core.ClientAuthorityCheck, improbable.core.PlayerData, improbable.player.Status, improbable.player.Health]
+2017-11-30 15:03:56,132 INFO  [improbable.module.ModuleNode] [] [] [] : Successfully loaded schema for entities
+2017-11-30 15:03:56,133 INFO  [improbable.module.ModuleNode] [] [] [] : Validating snapshot at startup and determining max entity id
+2017-11-30 15:03:56,136 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-30 15:03:56,151 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171130150350284
+2017-11-30 15:03:56,187 INFO  [improbable.module.ModuleNode] [] [] [] : Determined the first entity id for the id assigner as 47
+2017-11-30 15:03:56,190 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityIdInternalService) on 127.0.0.1:9007.
+2017-11-30 15:03:56,204 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.WorkerPrestartRegistryInternalService) on 127.0.0.1:9008.
+2017-11-30 15:03:56,210 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterLookupInternalService) on 127.0.0.1:9009.
+2017-11-30 15:03:56,211 INFO  [i.module.router.ActorSystemFactory$] [] [] [] : Attempting to create ActorSystem akkaFabric with configRecord akkaFabric
+2017-11-30 15:03:56,368 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-30 15:03:56,368 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 11 server(s) (previously: 0)
+2017-11-30 15:03:56,458 INFO  [akka.event.slf4j.Slf4jLogger] [] [] [] : Slf4jLogger started
+2017-11-30 15:03:57,332 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Parsed 1 worker loadbalancing configuration(s)
+2017-11-30 15:03:57,334 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : Successfully loaded loadbalancing configurations: {UnityWorker=improbable.loadbalancing.params.AutoHexGridLoadbalancerParams@3cbc1752}
+2017-11-30 15:03:57,388 INFO  [i.w.a.WorkerAssemblyProviderFactory] [] [] [] : Loaded worker assemblies for these workers types: UnityClient, UnityWorker.
+2017-11-30 15:03:57,389 INFO  [improbable.module.ModuleNode] [] [] [] : Loaded worker assemblies: [worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityClient"
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "visual"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 200.0
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+, worker_assembly_id {
+  assembly_id {
+    project_id {
+      name: "beta_oscar_bacon_891"
+    }
+    name: "local_assembly"
+  }
+  name {
+    name: "UnityWorker"
+  }
+}
+worker_launch_configuration {
+  platform: WINDOWS
+  worker_zip {
+    command: "UnityWorker@Windows.exe"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Windows.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: MACOS
+  worker_zip {
+    command: "UnityWorker@Mac.app/Contents/MacOS/UnityWorker@Mac"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Mac.zip"
+    }
+  }
+}
+worker_launch_configuration {
+  platform: LINUX
+  worker_zip {
+    command: "UnityWorker@Linux"
+    argument: "+projectName"
+    argument: "${IMPROBABLE_PROJECT_NAME}"
+    argument: "+receptionistIp"
+    argument: "${IMPROBABLE_RECEPTIONIST_HOST}"
+    argument: "+receptionistPort"
+    argument: "${IMPROBABLE_RECEPTIONIST_PORT}"
+    argument: "+workerType"
+    argument: "${IMPROBABLE_WORKER_NAME}"
+    argument: "+workerId"
+    argument: "${IMPROBABLE_WORKER_ID}"
+    argument: "+useInternalIpForBridge"
+    argument: "true"
+    argument: "+infraServicesUrl"
+    argument: "${IMPROBABLE_API_URL}"
+    argument: "+assemblyName"
+    argument: "${IMPROBABLE_ASSEMBLY_NAME}"
+    argument: "+linkProtocol"
+    argument: "RakNet"
+    argument: "-logfile"
+    argument: "${IMPROBABLE_LOG_FILE}"
+    argument: "-batchmode"
+    argument: "-nographics"
+    worker_location {
+      filename: "UnityWorker@Linux.zip"
+    }
+  }
+}
+bridge_configuration {
+  worker_attribute_set {
+    attribute {
+      name: "physics"
+    }
+  }
+  entity_interest {
+    range_entity_interest {
+      radius: 200.0
+    }
+  }
+  component_delivery {
+    checkout_all_initially: true
+  }
+}
+]
+2017-11-30 15:03:57,392 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : Worker configuration for 'UnityClient' does not contain a launch configuration for the current platform 'WINDOWS', so Fabric will not start any managed workers of this type
+2017-11-30 15:03:57,393 INFO  [i.w.assembly.WorkerAssemblyProvider] [] [] [] : The following worker configurations do not contain valid managed launch configurations for the current platform WINDOWS, and the runtime will be unable to launch managed workers of this type: [UnityClient]. This is expected for worker types you intend to only connect manually.
+2017-11-30 15:03:57,395 INFO  [i.w.permissions.PermissionsFactory] [] [] [] : Created permissions manager with permissions: {UnityWorker=Permissions{{/sys/CreateEntity=, /sys/DeleteEntity=, /sys/EntityQuery={"component":["*"]}}}, UnityClient=Permissions{{/sys/EntityQuery={"component":[]}}}}
+2017-11-30 15:03:58,609 INFO  [improbable.module.ModuleNode] [] [] [] : Starting router on master
+2017-11-30 15:03:58,614 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RouterInternalService) on 127.0.0.1:9010.
+2017-11-30 15:03:58,614 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Attempting to register RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-30 15:03:58,620 INFO  [i.c.m.r.l.RouterLookupInternalServiceImpl] [] [] [] : 1/1 router modules started
+2017-11-30 15:03:58,621 INFO  [i.c.m.r.RouterInternalServiceImpl] [] [] [] : Registered RouterInternalServiceImpl with RouterLookupInternalService.
+2017-11-30 15:03:58,622 INFO  [improbable.module.ModuleNode] [] [] [] : Attempting to get addresses of all RouterModules from master node
+2017-11-30 15:03:58,629 INFO  [improbable.module.ModuleNode] [] [] [] : Got all RouterModules from master node
+2017-11-30 15:03:58,639 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.RemoteMessageInternalService) on 127.0.0.1:9011.
+2017-11-30 15:03:58,648 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.LocalBrokerInternalService) on 127.0.0.1:9012.
+2017-11-30 15:03:58,650 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for all router modules in the deployment to have started
+2017-11-30 15:03:58,653 INFO  [improbable.module.ModuleNode] [] [] [] : All router modules in the deployment started
+2017-11-30 15:03:58,698 INFO  [org.eclipse.jetty.server.Server] [] [] [] : jetty-8.y.z-SNAPSHOT
+2017-11-30 15:03:58,716 INFO  [o.e.jetty.server.AbstractConnector] [] [] [] : Started SelectChannelConnector@0.0.0.0:5006
+2017-11-30 15:03:58,716 INFO  [improbable.http.ServletContainer$] [] [] [] : Servlet container started
+2017-11-30 15:03:58,718 INFO  [improbable.module.ModuleNode] [] [] [] : Starting BridgeOracle on master
+2017-11-30 15:03:58,724 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeOracle to have started
+2017-11-30 15:03:58,763 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeOracleInternalService) on 127.0.0.1:9013.
+2017-11-30 15:03:58,830 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 15 server(s) (previously: 11)
+2017-11-30 15:03:58,830 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeOracle started
+2017-11-30 15:03:58,840 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.GlobalBrokerInternalService) on 127.0.0.1:9014.
+2017-11-30 15:03:58,842 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for the BridgeModuleOracle to have started
+2017-11-30 15:03:58,844 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleOracleActor(Actor[akka://akkaFabric/user/BridgeModuleOracleModule#1000004941]).
+2017-11-30 15:03:58,854 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeServiceOracleInternalService) on 127.0.0.1:9015.
+2017-11-30 15:03:59,832 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 17 server(s) (previously: 15)
+2017-11-30 15:03:59,832 INFO  [improbable.module.ModuleNode] [] [] [] : Received BridgeModuleOracle started
+2017-11-30 15:03:59,839 INFO  [improbable.module.ModuleNode] [] [] [] : Starting gsim GSimModule
+2017-11-30 15:03:59,844 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 entity query service(s) to start.
+2017-11-30 15:03:59,859 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.LocalSnapshotInternalService) on 127.0.0.1:9016.
+2017-11-30 15:03:59,869 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ScalingStatsInternalService) on 127.0.0.1:9017.
+2017-11-30 15:03:59,874 INFO  [i.p.gsim.GSimPersistenceWriter] [] [] [] : Transitioning GSimPersistenceActor(0) from State [Idle] to [Idle].  Time Elapsed: 0 milliseconds
+2017-11-30 15:03:59,883 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.EntityQueryInternalService) on 127.0.0.1:9018.
+2017-11-30 15:04:00,753 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-30 15:04:00,832 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 20 server(s) (previously: 17)
+2017-11-30 15:04:00,832 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 entity query service(s) have started.
+2017-11-30 15:04:00,833 INFO  [improbable.module.ModuleNode] [] [] [] : Creating entity query client.
+2017-11-30 15:04:00,846 INFO  [improbable.module.ModuleNode] [] [] [] : Entity query client created with directory: EntityQueryServiceDirectory{allServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9018
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], localServices=[EntityQueryInternalServiceInfo{address=host: "127.0.0.1"
+port: 9018
+, extent=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}, isLocal=true}], remoteServices=[]}
+2017-11-30 15:04:00,853 INFO  [improbable.module.ModuleNode] [] [] [] : Waiting for 1 bridge service(s) to start.
+2017-11-30 15:04:00,862 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started BridgeModuleActor(Actor[akka://akkaFabric/user/BridgeModule:4f87a1c7-2ce3-4462-a487-d2a2b27c6472#1917405589]).
+2017-11-30 15:04:00,872 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.BridgeInternalService) on 127.0.0.1:9019.
+2017-11-30 15:04:00,873 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Waiting for BridgeModuleOracle service to be available
+2017-11-30 15:04:00,882 INFO  [i.module.bridge.BridgeModuleActor] [] [] [] : Registered(bridge_service_endpoint {
+  guid: "4f87a1c7-2ce3-4462-a487-d2a2b27c6472"
+}
+) on BridgeModuleOracleService
+2017-11-30 15:04:01,831 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 21 server(s) (previously: 20)
+2017-11-30 15:04:01,831 INFO  [improbable.module.ModuleNode] [] [] [] : All 1 bridge service(s) have started.
+2017-11-30 15:04:01,832 INFO  [improbable.module.ModuleNode] [] [] [] : Starting WorkerRunner service (EngineStartupModule)
+2017-11-30 15:04:01,839 INFO  [improbable.worker.exec.WorkerStats] [] [] [] : Cannot read /proc/self/stat; worker stats reporting will not work.
+2017-11-30 15:04:01,848 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.inner.worker.WorkerRunner) on 127.0.0.1:9020.
+2017-11-30 15:04:01,853 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.service.ReceptionistInternalService) on 127.0.0.1:9021.
+2017-11-30 15:04:01,858 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.ReceptionistService) on 127.0.0.1:7777.
+2017-11-30 15:04:01,859 INFO  [improbable.module.ModuleNode] [] [] [] : Starting InspectionRestModule
+2017-11-30 15:04:01,860 INFO  [improbable.module.ModuleNode] [] [] [] : Starting ProfilingModule
+2017-11-30 15:04:01,861 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: ALL_MODULES_STARTED
+2017-11-30 15:04:01,861 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on this node started, waiting for other nodes to reach the same checkpoint.
+2017-11-30 15:04:01,864 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started ProfilingModuleActor(Actor[akka://akkaFabric/user/ProfilingModule#-400905207]).
+2017-11-30 15:04:01,866 INFO  [i.core.discovery.server.LocalServer] [] [] [] : Registered Service(improbable.fabric.internal.debug.HeatmapCellCacheInternalService) on 127.0.0.1:9022.
+2017-11-30 15:04:01,884 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.InspectionService) on 127.0.0.1:9023.
+2017-11-30 15:04:01,941 INFO  [i.c.a.e.ExtensibleActorReporter] [] [] [] : Started InspectionRestModuleActor(Actor[akka://akkaFabric/user/InspectionRestModule#-32707172]).
+2017-11-30 15:04:02,234 INFO  [spray.can.server.HttpListener] [akka://akkaFabric/user/IO-HTTP/listener-0] [akkaFabric-akka.actor.default-dispatcher-16] [] : Bound to /0.0.0.0:5005
+2017-11-30 15:04:02,754 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Skipping reconciliation because no WorkerRunner service is available. This message is expected at startup but should not persist through the deployment
+2017-11-30 15:04:02,833 INFO  [improbable.module.ModuleNode] [] [] [] : All modules on all nodes have been started.
+2017-11-30 15:04:02,833 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-30 15:04:02,833 INFO  [improbable.module.ModuleNode] [] [] [] : Loading a snapshot.
+2017-11-30 15:04:02,833 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 26 server(s) (previously: 21)
+2017-11-30 15:04:02,847 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loading snapshot on GSim(0).
+2017-11-30 15:04:02,848 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Requesting download URL for Snapshot(local@latest) matching []
+2017-11-30 15:04:02,853 INFO  [i.p.s.storage.LegacySnapshotStorage] [] [] [] : Downloading snapshot from http://127.0.0.1:21000/snapshots/20171130150350284
+2017-11-30 15:04:02,856 INFO  [i.p.gsim.GSimPersistenceLoader] [] [] [] : Loading snapshot
+2017-11-30 15:04:02,936 INFO  [i.p.g.GSimPersistenceLoadOrchestrator] [] [] [] : Loaded 46 entities on GSim(0).
+2017-11-30 15:04:02,938 INFO  [i.p.c.PersistenceLoaderCoordinatorActor] [] [] [] : All Snapshots loaded.
+2017-11-30 15:04:02,938 INFO  [i.l.params.LoadbalancerParamsFactory] [] [] [] : LoadbalancerParams for worker type [UnityWorker]: [AutoHexGridLoadbalancerParams{energyLimitingEnabled=true, energyLimit=1.0E9, minWorkerRange=1500.0, maxWorkerRange=1500.0, maxWorkerStepSize=0.0, workerExpansionTimeMs=60000, workerGridSize=0, loadbalancerEnabled=false, hexGridMode=AUTO, scalerAdvisorType=CONSTANT, maxWorkers=1, initialWorkers=1, numEntitiesPerWorker=9223372036854775807, statusReportPeriodMs=30000, pointsOfInterestEnabled=false, hexGridSolution=AutoValue_HexGridSolution{workersUsed=1, hexagonEdgeLength=1500.0, hexagonOrientation=POINTY_TOP, bounds=Rectangle{minX=-750.0, minZ=-750.0, maxX=750.0, maxZ=750.0}}, pointsOfInterestSolution=Empty}]
+2017-11-30 15:04:02,939 INFO  [improbable.module.ModuleNode] [] [] [] : Snapshot has been loaded.
+2017-11-30 15:04:02,939 INFO  [improbable.module.ModuleNode] [] [] [] : Starting SnapshotService.
+2017-11-30 15:04:02,947 INFO  [i.core.discovery.server.PublicServer] [] [] [] : Registered Service(improbable.platform.runtime.SnapshotService) on 127.0.0.1:9024.
+2017-11-30 15:04:02,948 INFO  [i.c.d.client.CheckpointDiscoveryImpl] [] [] [] : Reached a checkpoint: LOAD_SNAPSHOT_FINISHED
+2017-11-30 15:04:02,951 INFO  [improbable.module.ModuleNode] [] [] [] : SpatialOS runtime startup complete.
+2017-11-30 15:04:03,823 INFO  [i.c.d.g.GlobalCheckpointDiscoveryImpl] [] [] [] : Global checkpoint discovery refreshed checkpoints.
+2017-11-30 15:04:03,823 INFO  [i.c.d.g.GlobalServiceDiscoveryImpl] [] [] [] : Global service discovery refreshed 27 server(s) (previously: 26)
+2017-11-30 15:04:03,852 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker0
+2017-11-30 15:04:03,865 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-30 15:04:05,679 WARN  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Failed to retrieve the download the worker(UnityWorker0) from the SpatialOS platform. If this warning appears repeatedly there could be a problem with your worker configuration. [config=command: "UnityWorker@Windows.exe"
+arguments: "+projectName"
+arguments: "${IMPROBABLE_PROJECT_NAME}"
+arguments: "+receptionistIp"
+arguments: "${IMPROBABLE_RECEPTIONIST_HOST}"
+arguments: "+receptionistPort"
+arguments: "${IMPROBABLE_RECEPTIONIST_PORT}"
+arguments: "+workerType"
+arguments: "UnityWorker"
+arguments: "+workerId"
+arguments: "UnityWorker0"
+arguments: "+useInternalIpForBridge"
+arguments: "true"
+arguments: "+infraServicesUrl"
+arguments: "http://127.0.0.1:21000"
+arguments: "+assemblyName"
+arguments: "local_assembly"
+arguments: "+linkProtocol"
+arguments: "RakNet"
+arguments: "-logfile"
+arguments: "${IMPROBABLE_LOG_FILE}"
+arguments: "-batchmode"
+arguments: "-nographics"
+zip {
+  filename: "UnityWorker@Windows.zip"
+}
+], [platform=UnityWorker]
+improbable.core.artifact.ArtifactException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 1803 ms and 3 attempts.
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:151) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetUnzippedArtifact(ArtifactClient.java:97) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.getWorkerZip(WorkerStartupExecutor.java:141) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.executeInternal(WorkerStartupExecutor.java:167) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.execute(WorkerStartupExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.startWorker(WorkerRunnerImpl.java:132) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.start(WorkerRunnerImpl.java:79) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.worker.WorkerRunnerGrpc$MethodHandlers.invoke(WorkerRunnerGrpc.java:326) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ServerCalls$1$1.onHalfClose(ServerCalls.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:48) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:38) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:267) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$2.runInContext(ServerImpl.java:573) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 1803 ms and 3 attempts.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:149) ~[fabric__runtime_deploy.jar:na]
+	... 18 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: Failed to retry future after 1803 ms and 3 attempts.
+	at improbable.common.async.FutureRetrier.abort(FutureRetrier.java:110) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.scheduleAttemptOrAbort(FutureRetrier.java:100) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:91) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.lambda$scheduleAttemptOrAbort$0(FutureRetrier.java:98) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	... 3 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:87) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:05,684 WARN  [i.worker.exec.RemoteWorkerRunner] [] [] [] : Remote failed to start UnityWorker worker UnityWorker0.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.startWorker(RemoteWorkerRunner.java:217) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.lambda$startWorkerAsync$5(RemoteWorkerRunner.java:171) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) ~[fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:06,755 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker1
+2017-11-30 15:04:06,755 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-30 15:04:08,865 WARN  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Failed to retrieve the download the worker(UnityWorker1) from the SpatialOS platform. If this warning appears repeatedly there could be a problem with your worker configuration. [config=command: "UnityWorker@Windows.exe"
+arguments: "+projectName"
+arguments: "${IMPROBABLE_PROJECT_NAME}"
+arguments: "+receptionistIp"
+arguments: "${IMPROBABLE_RECEPTIONIST_HOST}"
+arguments: "+receptionistPort"
+arguments: "${IMPROBABLE_RECEPTIONIST_PORT}"
+arguments: "+workerType"
+arguments: "UnityWorker"
+arguments: "+workerId"
+arguments: "UnityWorker1"
+arguments: "+useInternalIpForBridge"
+arguments: "true"
+arguments: "+infraServicesUrl"
+arguments: "http://127.0.0.1:21000"
+arguments: "+assemblyName"
+arguments: "local_assembly"
+arguments: "+linkProtocol"
+arguments: "RakNet"
+arguments: "-logfile"
+arguments: "${IMPROBABLE_LOG_FILE}"
+arguments: "-batchmode"
+arguments: "-nographics"
+zip {
+  filename: "UnityWorker@Windows.zip"
+}
+], [platform=UnityWorker]
+improbable.core.artifact.ArtifactException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2105 ms and 3 attempts.
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:151) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetUnzippedArtifact(ArtifactClient.java:97) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.getWorkerZip(WorkerStartupExecutor.java:141) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.executeInternal(WorkerStartupExecutor.java:167) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.execute(WorkerStartupExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.startWorker(WorkerRunnerImpl.java:132) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.start(WorkerRunnerImpl.java:79) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.worker.WorkerRunnerGrpc$MethodHandlers.invoke(WorkerRunnerGrpc.java:326) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ServerCalls$1$1.onHalfClose(ServerCalls.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:48) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:38) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:267) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$2.runInContext(ServerImpl.java:573) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2105 ms and 3 attempts.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:149) ~[fabric__runtime_deploy.jar:na]
+	... 18 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: Failed to retry future after 2105 ms and 3 attempts.
+	at improbable.common.async.FutureRetrier.abort(FutureRetrier.java:110) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.scheduleAttemptOrAbort(FutureRetrier.java:100) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:91) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.lambda$scheduleAttemptOrAbort$0(FutureRetrier.java:98) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	... 3 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:87) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:08,867 WARN  [i.worker.exec.RemoteWorkerRunner] [] [] [] : Remote failed to start UnityWorker worker UnityWorker1.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.startWorker(RemoteWorkerRunner.java:217) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.lambda$startWorkerAsync$5(RemoteWorkerRunner.java:171) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) ~[fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:10,754 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker2
+2017-11-30 15:04:10,755 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-30 15:04:12,884 WARN  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Failed to retrieve the download the worker(UnityWorker2) from the SpatialOS platform. If this warning appears repeatedly there could be a problem with your worker configuration. [config=command: "UnityWorker@Windows.exe"
+arguments: "+projectName"
+arguments: "${IMPROBABLE_PROJECT_NAME}"
+arguments: "+receptionistIp"
+arguments: "${IMPROBABLE_RECEPTIONIST_HOST}"
+arguments: "+receptionistPort"
+arguments: "${IMPROBABLE_RECEPTIONIST_PORT}"
+arguments: "+workerType"
+arguments: "UnityWorker"
+arguments: "+workerId"
+arguments: "UnityWorker2"
+arguments: "+useInternalIpForBridge"
+arguments: "true"
+arguments: "+infraServicesUrl"
+arguments: "http://127.0.0.1:21000"
+arguments: "+assemblyName"
+arguments: "local_assembly"
+arguments: "+linkProtocol"
+arguments: "RakNet"
+arguments: "-logfile"
+arguments: "${IMPROBABLE_LOG_FILE}"
+arguments: "-batchmode"
+arguments: "-nographics"
+zip {
+  filename: "UnityWorker@Windows.zip"
+}
+], [platform=UnityWorker]
+improbable.core.artifact.ArtifactException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2126 ms and 3 attempts.
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:151) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetUnzippedArtifact(ArtifactClient.java:97) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.getWorkerZip(WorkerStartupExecutor.java:141) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.executeInternal(WorkerStartupExecutor.java:167) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.execute(WorkerStartupExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.startWorker(WorkerRunnerImpl.java:132) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.start(WorkerRunnerImpl.java:79) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.worker.WorkerRunnerGrpc$MethodHandlers.invoke(WorkerRunnerGrpc.java:326) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ServerCalls$1$1.onHalfClose(ServerCalls.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:48) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:38) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:267) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$2.runInContext(ServerImpl.java:573) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2126 ms and 3 attempts.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:149) ~[fabric__runtime_deploy.jar:na]
+	... 18 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: Failed to retry future after 2126 ms and 3 attempts.
+	at improbable.common.async.FutureRetrier.abort(FutureRetrier.java:110) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.scheduleAttemptOrAbort(FutureRetrier.java:100) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:91) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.lambda$scheduleAttemptOrAbort$0(FutureRetrier.java:98) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	... 3 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:87) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:12,886 WARN  [i.worker.exec.RemoteWorkerRunner] [] [] [] : Remote failed to start UnityWorker worker UnityWorker2.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.startWorker(RemoteWorkerRunner.java:217) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.lambda$startWorkerAsync$5(RemoteWorkerRunner.java:171) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) ~[fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:14,755 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker3
+2017-11-30 15:04:14,756 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-30 15:04:17,134 WARN  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Failed to retrieve the download the worker(UnityWorker3) from the SpatialOS platform. If this warning appears repeatedly there could be a problem with your worker configuration. [config=command: "UnityWorker@Windows.exe"
+arguments: "+projectName"
+arguments: "${IMPROBABLE_PROJECT_NAME}"
+arguments: "+receptionistIp"
+arguments: "${IMPROBABLE_RECEPTIONIST_HOST}"
+arguments: "+receptionistPort"
+arguments: "${IMPROBABLE_RECEPTIONIST_PORT}"
+arguments: "+workerType"
+arguments: "UnityWorker"
+arguments: "+workerId"
+arguments: "UnityWorker3"
+arguments: "+useInternalIpForBridge"
+arguments: "true"
+arguments: "+infraServicesUrl"
+arguments: "http://127.0.0.1:21000"
+arguments: "+assemblyName"
+arguments: "local_assembly"
+arguments: "+linkProtocol"
+arguments: "RakNet"
+arguments: "-logfile"
+arguments: "${IMPROBABLE_LOG_FILE}"
+arguments: "-batchmode"
+arguments: "-nographics"
+zip {
+  filename: "UnityWorker@Windows.zip"
+}
+], [platform=UnityWorker]
+improbable.core.artifact.ArtifactException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2370 ms and 3 attempts.
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:151) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetUnzippedArtifact(ArtifactClient.java:97) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.getWorkerZip(WorkerStartupExecutor.java:141) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.executeInternal(WorkerStartupExecutor.java:167) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.execute(WorkerStartupExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.startWorker(WorkerRunnerImpl.java:132) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.start(WorkerRunnerImpl.java:79) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.worker.WorkerRunnerGrpc$MethodHandlers.invoke(WorkerRunnerGrpc.java:326) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ServerCalls$1$1.onHalfClose(ServerCalls.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:48) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:38) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:267) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$2.runInContext(ServerImpl.java:573) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2370 ms and 3 attempts.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:149) ~[fabric__runtime_deploy.jar:na]
+	... 18 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: Failed to retry future after 2370 ms and 3 attempts.
+	at improbable.common.async.FutureRetrier.abort(FutureRetrier.java:110) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.scheduleAttemptOrAbort(FutureRetrier.java:100) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:91) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.lambda$scheduleAttemptOrAbort$0(FutureRetrier.java:98) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	... 3 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:87) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:17,138 WARN  [i.worker.exec.RemoteWorkerRunner] [] [] [] : Remote failed to start UnityWorker worker UnityWorker3.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.startWorker(RemoteWorkerRunner.java:217) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.lambda$startWorkerAsync$5(RemoteWorkerRunner.java:171) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) ~[fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:18,754 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker4
+2017-11-30 15:04:18,755 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-30 15:04:21,022 WARN  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Failed to retrieve the download the worker(UnityWorker4) from the SpatialOS platform. If this warning appears repeatedly there could be a problem with your worker configuration. [config=command: "UnityWorker@Windows.exe"
+arguments: "+projectName"
+arguments: "${IMPROBABLE_PROJECT_NAME}"
+arguments: "+receptionistIp"
+arguments: "${IMPROBABLE_RECEPTIONIST_HOST}"
+arguments: "+receptionistPort"
+arguments: "${IMPROBABLE_RECEPTIONIST_PORT}"
+arguments: "+workerType"
+arguments: "UnityWorker"
+arguments: "+workerId"
+arguments: "UnityWorker4"
+arguments: "+useInternalIpForBridge"
+arguments: "true"
+arguments: "+infraServicesUrl"
+arguments: "http://127.0.0.1:21000"
+arguments: "+assemblyName"
+arguments: "local_assembly"
+arguments: "+linkProtocol"
+arguments: "RakNet"
+arguments: "-logfile"
+arguments: "${IMPROBABLE_LOG_FILE}"
+arguments: "-batchmode"
+arguments: "-nographics"
+zip {
+  filename: "UnityWorker@Windows.zip"
+}
+], [platform=UnityWorker]
+improbable.core.artifact.ArtifactException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2260 ms and 3 attempts.
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:151) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetUnzippedArtifact(ArtifactClient.java:97) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.getWorkerZip(WorkerStartupExecutor.java:141) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.executeInternal(WorkerStartupExecutor.java:167) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.execute(WorkerStartupExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.startWorker(WorkerRunnerImpl.java:132) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.start(WorkerRunnerImpl.java:79) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.worker.WorkerRunnerGrpc$MethodHandlers.invoke(WorkerRunnerGrpc.java:326) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ServerCalls$1$1.onHalfClose(ServerCalls.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:48) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:38) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:267) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$2.runInContext(ServerImpl.java:573) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2260 ms and 3 attempts.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:149) ~[fabric__runtime_deploy.jar:na]
+	... 18 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: Failed to retry future after 2260 ms and 3 attempts.
+	at improbable.common.async.FutureRetrier.abort(FutureRetrier.java:110) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.scheduleAttemptOrAbort(FutureRetrier.java:100) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:91) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.lambda$scheduleAttemptOrAbort$0(FutureRetrier.java:98) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	... 3 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:87) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:21,025 WARN  [i.worker.exec.RemoteWorkerRunner] [] [] [] : Remote failed to start UnityWorker worker UnityWorker4.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.startWorker(RemoteWorkerRunner.java:217) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.lambda$startWorkerAsync$5(RemoteWorkerRunner.java:171) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) ~[fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:22,755 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker5
+2017-11-30 15:04:22,757 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-30 15:04:24,705 WARN  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Failed to retrieve the download the worker(UnityWorker5) from the SpatialOS platform. If this warning appears repeatedly there could be a problem with your worker configuration. [config=command: "UnityWorker@Windows.exe"
+arguments: "+projectName"
+arguments: "${IMPROBABLE_PROJECT_NAME}"
+arguments: "+receptionistIp"
+arguments: "${IMPROBABLE_RECEPTIONIST_HOST}"
+arguments: "+receptionistPort"
+arguments: "${IMPROBABLE_RECEPTIONIST_PORT}"
+arguments: "+workerType"
+arguments: "UnityWorker"
+arguments: "+workerId"
+arguments: "UnityWorker5"
+arguments: "+useInternalIpForBridge"
+arguments: "true"
+arguments: "+infraServicesUrl"
+arguments: "http://127.0.0.1:21000"
+arguments: "+assemblyName"
+arguments: "local_assembly"
+arguments: "+linkProtocol"
+arguments: "RakNet"
+arguments: "-logfile"
+arguments: "${IMPROBABLE_LOG_FILE}"
+arguments: "-batchmode"
+arguments: "-nographics"
+zip {
+  filename: "UnityWorker@Windows.zip"
+}
+], [platform=UnityWorker]
+improbable.core.artifact.ArtifactException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 1944 ms and 3 attempts.
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:151) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetUnzippedArtifact(ArtifactClient.java:97) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.getWorkerZip(WorkerStartupExecutor.java:141) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.executeInternal(WorkerStartupExecutor.java:167) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.execute(WorkerStartupExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.startWorker(WorkerRunnerImpl.java:132) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.start(WorkerRunnerImpl.java:79) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.worker.WorkerRunnerGrpc$MethodHandlers.invoke(WorkerRunnerGrpc.java:326) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ServerCalls$1$1.onHalfClose(ServerCalls.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:48) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:38) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:267) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$2.runInContext(ServerImpl.java:573) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 1944 ms and 3 attempts.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:149) ~[fabric__runtime_deploy.jar:na]
+	... 18 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: Failed to retry future after 1944 ms and 3 attempts.
+	at improbable.common.async.FutureRetrier.abort(FutureRetrier.java:110) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.scheduleAttemptOrAbort(FutureRetrier.java:100) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:91) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.lambda$scheduleAttemptOrAbort$0(FutureRetrier.java:98) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	... 3 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:87) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:24,707 WARN  [i.worker.exec.RemoteWorkerRunner] [] [] [] : Remote failed to start UnityWorker worker UnityWorker5.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.startWorker(RemoteWorkerRunner.java:217) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.lambda$startWorkerAsync$5(RemoteWorkerRunner.java:171) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) ~[fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:24,754 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker6
+2017-11-30 15:04:24,755 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
+2017-11-30 15:04:27,177 WARN  [i.worker.exec.WorkerStartupExecutor] [] [] [] : Failed to retrieve the download the worker(UnityWorker6) from the SpatialOS platform. If this warning appears repeatedly there could be a problem with your worker configuration. [config=command: "UnityWorker@Windows.exe"
+arguments: "+projectName"
+arguments: "${IMPROBABLE_PROJECT_NAME}"
+arguments: "+receptionistIp"
+arguments: "${IMPROBABLE_RECEPTIONIST_HOST}"
+arguments: "+receptionistPort"
+arguments: "${IMPROBABLE_RECEPTIONIST_PORT}"
+arguments: "+workerType"
+arguments: "UnityWorker"
+arguments: "+workerId"
+arguments: "UnityWorker6"
+arguments: "+useInternalIpForBridge"
+arguments: "true"
+arguments: "+infraServicesUrl"
+arguments: "http://127.0.0.1:21000"
+arguments: "+assemblyName"
+arguments: "local_assembly"
+arguments: "+linkProtocol"
+arguments: "RakNet"
+arguments: "-logfile"
+arguments: "${IMPROBABLE_LOG_FILE}"
+arguments: "-batchmode"
+arguments: "-nographics"
+zip {
+  filename: "UnityWorker@Windows.zip"
+}
+], [platform=UnityWorker]
+improbable.core.artifact.ArtifactException: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2419 ms and 3 attempts.
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:151) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetUnzippedArtifact(ArtifactClient.java:97) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.getWorkerZip(WorkerStartupExecutor.java:141) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.executeInternal(WorkerStartupExecutor.java:167) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerStartupExecutor.execute(WorkerStartupExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.startWorker(WorkerRunnerImpl.java:132) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.WorkerRunnerImpl.start(WorkerRunnerImpl.java:79) [fabric__runtime_deploy.jar:na]
+	at improbable.platform.inner.worker.WorkerRunnerGrpc$MethodHandlers.invoke(WorkerRunnerGrpc.java:326) [fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ServerCalls$1$1.onHalfClose(ServerCalls.java:148) [fabric__runtime_deploy.jar:na]
+	at io.grpc.PartialForwardingServerCallListener.onHalfClose(PartialForwardingServerCallListener.java:48) [fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingServerCallListener.onHalfClose(ForwardingServerCallListener.java:38) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerCallImpl$ServerStreamListenerImpl.halfClosed(ServerCallImpl.java:267) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ServerImpl$JumpToApplicationThreadServerStreamListener$2.runInContext(ServerImpl.java:573) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.ExecutionException: Failed to retry future after 2419 ms and 3 attempts.
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.core.artifact.ArtifactClient.blockingGetAndProcessArtifactWithRetries(ArtifactClient.java:149) ~[fabric__runtime_deploy.jar:na]
+	... 18 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: Failed to retry future after 2419 ms and 3 attempts.
+	at improbable.common.async.FutureRetrier.abort(FutureRetrier.java:110) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.scheduleAttemptOrAbort(FutureRetrier.java:100) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:91) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.lambda$scheduleAttemptOrAbort$0(FutureRetrier.java:98) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.8.0_151]
+	... 3 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FutureRetrier.blockingMakeAttempt(FutureRetrier.java:87) ~[fabric__runtime_deploy.jar:na]
+	... 13 common frames omitted
+Caused by: io.grpc.StatusRuntimeException: NOT_FOUND: Artifact(assembly_id:<project_id:<name:"beta_oscar_bacon_891" > name:"local_assembly" > name:"UnityWorker@Windows.zip" ) does not exist
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) [fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) [fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) [fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:27,178 WARN  [i.worker.exec.RemoteWorkerRunner] [] [] [] : Remote failed to start UnityWorker worker UnityWorker6.
+java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:482) ~[fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.startWorker(RemoteWorkerRunner.java:217) [fabric__runtime_deploy.jar:na]
+	at improbable.worker.exec.RemoteWorkerRunner.lambda$startWorkerAsync$5(RemoteWorkerRunner.java:171) [fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.8.0_151]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:111) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:58) ~[fabric__runtime_deploy.jar:na]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:75) ~[fabric__runtime_deploy.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.8.0_151]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.8.0_151]
+Caused by: io.grpc.StatusRuntimeException: INVALID_ARGUMENT: Invalid configuration
+	at io.grpc.Status.asRuntimeException(Status.java:543) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:442) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:56) ~[fabric__runtime_deploy.jar:na]
+	at me.dinowernli.grpc.prometheus.MonitoringClientCallListener.onClose(MonitoringClientCallListener.java:50) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:426) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl.access$100(ClientCallImpl.java:76) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:512) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$700(ClientCallImpl.java:429) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:544) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:52) ~[fabric__runtime_deploy.jar:na]
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:117) ~[fabric__runtime_deploy.jar:na]
+	at improbable.common.async.FabricListeningExecutorService.lambda$instrumentRunnable$1(FabricListeningExecutorService.java:176) ~[fabric__runtime_deploy.jar:na]
+	... 3 common frames omitted
+2017-11-30 15:04:28,754 INFO  [i.b.o.m.BridgeOracleWorkerManager] [] [] [] : Trying to start managed worker UnityWorker7
+2017-11-30 15:04:28,755 INFO  [i.bridge.oracle.scaling.WorkerScaler] [] [] [] : Starting 1 new managed workers for attribute_set {
+  attribute: "physics"
+}
+ (required: 1, existing: 0)
